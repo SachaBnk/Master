@@ -1,4 +1,4 @@
-#let lyrics = (
+#let _lyrics = (
   "Audi", "famam", "illus.",
   "Solus", "in", "hostes", "ruit",
   "et", "patriam", "servavit.",
@@ -24,10 +24,10 @@
 )
 
 #let audifamam(n) = {
-  let N = lyrics.len()
+  let N = _lyrics.len()
   for i in range(n) {
-    lyrics.at(calc.rem-euclid(i, N)) + " "
+    _lyrics.at(calc.rem-euclid(i, N)) + " "
   }
 }
 
-#audifamam(1000)
+// #audifamam(1000)
