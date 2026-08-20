@@ -17,7 +17,7 @@
   "Ille", "iuxta", "me.",
   "Socii", "sunt", "mihi,",
   "qui", "olim", "viri", "fortes",
-  "rivalesque", "erant",
+  "rivalesque", "erant.",
 
   "Saeve", "certando", "pugnandoque",
   "Splendor", "crescit."
