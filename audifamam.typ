@@ -20,7 +20,7 @@
   "rivalesque", "erant.",
 
   "Saeve", "certando", "pugnandoque",
-  "Splendor", "crescit."
+  "splendor", "crescit."
 )
 
 #let audifamam(n) = {
