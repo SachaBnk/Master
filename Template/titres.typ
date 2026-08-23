@@ -14,11 +14,11 @@
   align(center,
   block(
     radius: 1em,
-    stroke: 1pt,
+    stroke: (paint: color_def.at(0), thickness: 2pt),
     clip: true,
     table(
       fill: (_, y)=>(if (y==0){color_def.at(0)} else {color_def.at(1)}),
-      stroke: (x,y)=>(top : if (y>0) { black }),
+      stroke: (paint: color_def.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
       align(left, block(inset: 1em, body))
     )
@@ -41,11 +41,11 @@
   align(center,
   block(
     radius: 1em,
-    stroke: 1pt,
+    stroke: (paint: color_thm.at(0), thickness: 2pt),
     clip: true,
     table(
       fill: (_, y)=>(if (y==0){color_thm.at(0)} else {color_thm.at(1)}),
-      stroke: (x,y)=>(top : if (y>0) { black }),
+      stroke: (paint: color_thm.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
       align(left, block(inset: 1em, body))
     )
@@ -69,11 +69,11 @@
   block(
     width: 100%,
     radius: 1em,
-    stroke: 1pt,
+    stroke: (paint: colors.at(0), thickness: 2pt),
     clip: true,
     table(
       fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
-      stroke: (x,y)=>(top : if (y>0) { black }),
+      stroke: (paint: colors.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
       align(left, block(inset: 1em, body))
     )
@@ -91,3 +91,59 @@
   }
   " "+body
 }
+
+#let exemple(..titre, body) = { 
+  let colors = (rgb("#118f11"), rgb("#cae0c7"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Exemple "+ titre.pos().at(0)
+  }
+  else{
+    header = "Exemple"
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
+      align(left, block(inset: 1em, body))
+    )
+  )
+  )
+}
+#let ex = exemple
+
+
+#let remarque(..titre, body) = { 
+  let colors = (rgb("#d46633"), rgb("#fff"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Remarque "+ titre.pos().at(0)+ " : "
+  }
+  else{
+    header = "Remarque : "
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      columns: (10%, 90%),
+      fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
+      align(left, block(inset: 1em, header+body))
+    )
+  )
+  )
+}
+#let rq = remarque
