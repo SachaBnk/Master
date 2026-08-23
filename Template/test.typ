@@ -22,4 +22,10 @@
 #def()[#rq()[#audifamam(30)]]
 
 #pagebreak()
-= I. Test
+#demo("du lemme")[#audifamam(200) 
+
+#lemme()[test] 
+
+#rq()[caca]
+
+test]

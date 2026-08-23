@@ -3,7 +3,7 @@
 
 
 #let definition(..titre, body) = {
-  let color_def = (rgb("#d43333"), rgb("#fbd1d1"))
+  let color_def = (rgb("#d43333"), rgb("#fff9f9"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Définition "+ titre.pos().at(0)
@@ -121,7 +121,7 @@
 
 
 #let remarque(..titre, body) = { 
-  let colors = (rgb("#d46633"), rgb("#fff"))
+  let colors = (rgb("#d46633"), rgb("#ffffff"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Remarque "+ titre.pos().at(0)+ " : "
@@ -147,3 +147,32 @@
   )
 }
 #let rq = remarque
+
+
+#let preuve(..titre, body) = { 
+  let colors = (rgb("#1e118f"), rgb("#c1c5f2"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Preuve "+ titre.pos().at(0)
+  }
+  else{
+    header = "Preuve"
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
+      align(left, block(inset: 1em, body))
+    )
+  )
+  )
+}
+
+#let demo = preuve
