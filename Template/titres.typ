@@ -250,7 +250,7 @@
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
-      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
+      align(horizon+center, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
       align(left, block(inset: 1em, strong(header)+body))
     )
   )
@@ -278,7 +278,7 @@
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
-      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
+      align(horizon+center, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
       align(left, block(inset: 1em, strong(header)+body))
     )
   )
@@ -299,7 +299,7 @@
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
-      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "⚠️"))),
+      align(horizon+center, block(width: 100%, inset : 0.5em, text(2em, white, "⚠️"))),
       align(left, block(inset: 1em, body))
     )
   )

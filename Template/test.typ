@@ -1,6 +1,7 @@
 #import "titres.typ" : *
 #import "../audifamam.typ" : audifamam
 #import "frontpage.typ" : frontpage
+#import "raccourcis.typ"
 
 #set text(font: "Arial",size: 14pt, lang: "fr")
 #frontpage("Chapitre test")
@@ -30,9 +31,11 @@
 
 test]
 
-#thm()[]
+#thm()[#audifamam(40)
+$ sum_(i=0)^oo 1/n^2 $
+]
 #corollaire()[#audifamam(25)]
 
 #rappel()[Zelda > Marie]
 
-#attention()[]
+#attention()[#audifamam(10)]
