@@ -55,6 +55,33 @@
 #let thm = theoreme
 
 
+#let corollaire(..titre, body) = { 
+  let colors = (rgb("#d43333"), rgb("#fbd1d1"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Corollaire "+ titre.pos().at(0)+ " : "
+  }
+  else{
+    header = "Corollaire : "
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      columns: (10%, 90%),
+      fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "➡"))),
+      align(left, block(inset: 1em, strong(header)+body))
+    )
+  )
+  )
+}
+
 
 #let proposition(..titre, body) = {
   let colors = (rgb("#d43333"), rgb("#fbd1d1"))
@@ -119,6 +146,31 @@
 }
 #let ex = exemple
 
+#let exemples(..titre, body) = { 
+  let colors = (rgb("#118f11"), rgb("#cae0c7"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Exemples "+ titre.pos().at(0)
+  }
+  else{
+    header = "Exemples"
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
+      align(left, block(inset: 1em, body))
+    )
+  )
+  )
+}
 
 #let remarque(..titre, body) = { 
   let colors = (rgb("#d46633"), rgb("#ffffff"))
@@ -140,8 +192,8 @@
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
-      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
-      align(left, block(inset: 1em, header+body))
+      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "🔍"))),
+      align(left, block(inset: 1em, strong(header)+body))
     )
   )
   )
@@ -150,7 +202,7 @@
 
 
 #let preuve(..titre, body) = { 
-  let colors = (rgb("#1e118f"), rgb("#c1c5f2"))
+  let colors = (rgb("#1e118f"), rgb("#cbe0ff"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Preuve "+ titre.pos().at(0)
@@ -176,3 +228,80 @@
 }
 
 #let demo = preuve
+
+
+#let rappel(..titre, body) = { 
+  let colors = (rgb("#e73886"), rgb("#ffe9f7"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Rappel "+ titre.pos().at(0)+ " : "
+  }
+  else{
+    header = "Rappel : "
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      columns: (10%, 90%),
+      fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
+      align(left, block(inset: 1em, strong(header)+body))
+    )
+  )
+  )
+}
+
+
+#let rappels(..titre, body) = { 
+  let colors = (rgb("#e73886"), rgb("#ffe9f7"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Rappels "+ titre.pos().at(0)+ " : "
+  }
+  else{
+    header = "Rappels : "
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      columns: (10%, 90%),
+      fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "💭"))),
+      align(left, block(inset: 1em, strong(header)+body))
+    )
+  )
+  )
+}
+
+
+#let attention(body) = { 
+  let colors = (rgb("#d46633"), rgb("#ffffff"))
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      columns: (10%, 90%),
+      fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "⚠️"))),
+      align(left, block(inset: 1em, body))
+    )
+  )
+  )
+}

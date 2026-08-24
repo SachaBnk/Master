@@ -16,16 +16,23 @@
 #ex("test")[
   #audifamam(100)
 ]
+#exemples()[]
 
 #remarque()[#audifamam(59)]
 
 #def()[#rq()[#audifamam(30)]]
 
-#pagebreak()
-#demo("du lemme")[#audifamam(200) 
+#demo("test")[#audifamam(200) 
 
 #lemme()[test] 
 
 #rq()[caca]
 
 test]
+
+#thm()[]
+#corollaire()[#audifamam(25)]
+
+#rappel()[Zelda > Marie]
+
+#attention()[]
