@@ -1,11 +1,11 @@
 #import "titres.typ" : *
-#import "../audifamam.typ" : audifamam
+#import "../Template/audifamam.typ" : audifamam
 #import "frontpage.typ" : frontpage
 #import "raccourcis.typ"
 
-#set text(font: "Arial",size: 14pt, lang: "fr")
+// #set text(font: "Arial",size: 14pt, lang: "fr")
 #frontpage("Chapitre test")
-
+#set page(numbering: "1 sur 1", number-align: center)
 
 #audifamam(50)
 
@@ -13,7 +13,7 @@
 #thm("test")[#audifamam(50)]
 #prop("test")[#audifamam(5)]
 #lemme("test")[#audifamam(10)]
-#pagebreak()
+
 #ex("test")[
   #audifamam(100)
 ]
@@ -31,6 +31,7 @@
 
 test]
 
+#pagebreak()
 #thm()[#audifamam(40)
 $ sum_(i=0)^oo 1/n^2 $
 ]

@@ -302,3 +302,5 @@
 
 #let redstar = $colr((star))$
 #let Nil = $"Nil"$
+
+#let lien(ancre, body) = link(ancre)[#text()[#underline(body)]]
