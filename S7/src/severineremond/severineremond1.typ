@@ -1,5 +1,5 @@
 #import "../../../Template/titres.typ" : *
-#import "../frontpage.typ" : frontpage
+#import "frontpage.typ" : frontpage
 #import "../../../Template/raccourcis.typ" : *
 
 #set text(font: "Arial",size: 12pt, lang: "fr")

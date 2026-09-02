@@ -1,6 +1,6 @@
 #import "../../../Template/titres.typ" : *
 #import "../../../Template/audifamam.typ" : audifamam
-#import "../frontpage.typ" : frontpage
+#import "frontpage.typ" : frontpage
 #import "../../../Template/raccourcis.typ" : *
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
