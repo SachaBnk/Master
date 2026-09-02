@@ -304,3 +304,7 @@
 #let Nil = $"Nil"$
 
 #let lien(ancre, body) = link(ancre)[#text()[#underline(body)]]
+
+#let au = $arrow(u)$
+#let av = $arrow(v)$
+#let aw = $arrow(w)$
