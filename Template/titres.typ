@@ -200,15 +200,8 @@
 }
 #let rq = remarque
 
-#let question(..titre, body) = { 
-  let colors = (rgb("#1e118f"), rgb("#ffffff"))
-  let header = ""
-  if(titre.pos().len() > 0){
-    header = "Question "+ titre.pos().at(0)+ " : "
-  }
-  else{
-    header = "Question : "
-  }
+#let question(body) = { 
+  let colors = (rgb("#7214a5"), rgb("#fbf2ff"))
   align(center,
   block(
     width: 100%,
@@ -221,8 +214,9 @@
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(horizon, block(width: 100%, inset : 0.5em, text(2em, white, "?"))),
-      align(left, block(inset: 1em, strong(header)+body))
+      align(left, block(inset: 1em, body))
     )
+    
   )
   )
 }
