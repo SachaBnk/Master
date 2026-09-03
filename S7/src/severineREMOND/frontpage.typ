@@ -2,7 +2,7 @@
   set text(font: "Arial",size: 14pt, lang: "fr")
   align(center, text()[
   #align(horizon)[
-    #strong(text(size:30pt)[\[Module\]])
+    #strong(text(size:30pt)[Séverine RÉMOND])
     #line(length: 70%)
     #text(titre, size: 20pt)
     #v(1em)

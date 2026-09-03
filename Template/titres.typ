@@ -222,7 +222,7 @@
 }
 
 #let exercice(..titre, body) = { 
-  let colors = (rgb("#118f11"), rgb("#ffffff"))
+  let colors = (rgb("#11898f"), rgb("#ddeef2"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Exercice "+ titre.pos().at(0)+ " : "
@@ -248,6 +248,37 @@
   )
 }
 #let exo = exercice
+
+
+#let activite(..titre, body) = { 
+  let colors = (rgb("#11898f"), rgb("#fff"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Activité "+ titre.pos().at(0)+ " : "
+  }
+  else{
+    header = "Activité : "
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      columns: (10%, 90%),
+      fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(horizon+center, block(width: 100%, inset : 0.5em, text(2em, white, "🧩"))),
+      align(left, block(inset: 1em, strong(header)+body))
+    )
+  )
+  )
+}
+
+
+
 
 #let preuve(..titre, body) = { 
   let colors = (rgb("#1e118f"), rgb("#cbe0ff"))
@@ -381,3 +412,4 @@
   )
   )
 }
+#let memo = reminder
