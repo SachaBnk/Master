@@ -120,7 +120,7 @@
 }
 
 #let exemple(..titre, body) = { 
-  let colors = (rgb("#118f11"), rgb("#cae0c7"))
+  let colors = (rgb("#118f11"), rgb("#dff2dc"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Exemple "+ titre.pos().at(0)

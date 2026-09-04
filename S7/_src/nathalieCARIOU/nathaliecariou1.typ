@@ -5,7 +5,7 @@
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
-#frontpage("Changement de paradigme")
+#frontpage("Géométrie et changement de paradigme")
 
 #set page(numbering: "1 sur 1", number-align: center)
 
@@ -79,3 +79,38 @@ Accompagner le changement de paradigme en géométrie
 - redéfinition du contrat didactique
 - ETG
 ]
+
+= Symétries
+
+#activite()[Analyser le bulletin officiel (BO) du 16 et 17 avril 2025 en géométrie (sur les symétries)]
+
+*Progression* :
++ Reconnaitre les axes dans une figure
+
++ Construction du symétrique d'une figure (validation par pliage ou calque)
+  - papier quadrillé
+    - axe vertical
+    - axe horizontal
+    - axe diagonal
+  - papier blanc
+
++ Définition mathématique + propriétés
+  - Chesnais (2012), 2 aspects :
+    - aspect statique : propriétés de la figure
+    - aspect dynamique : transformations géométriques
+
+#pagebreak()
+#def()[
+Une *variable didactique* est un paramètre d'une situation d'apprentissage que l'enseignant peut modifier de manière intentionnelle et dont la modification entraine un changement qualitatif dans les procédures des élèves
+
+(Brousseau, *Théorie des situations didactiques*)
+]
+
+#ex()[
+Si dans un exo on fait multiplier des entiers par 10, 100, 1000 l'élève comprend (à tort) qu'il suffit de rajouter un zéro à la fin du nombre. Pour contrer ça on peut lui faire multiplier 10, 100, 1000 par des décimaux.
+
+Ici la variable didactique est le nombre multiplié
+]
+
+
+
