@@ -80,6 +80,7 @@ Accompagner le changement de paradigme en géométrie
 - ETG
 ]
 
+
 = Symétries
 
 #activite()[Analyser le bulletin officiel (BO) du 16 et 17 avril 2025 en géométrie (sur les symétries)]
@@ -112,5 +113,102 @@ Si dans un exo on fait multiplier des entiers par 10, 100, 1000 l'élève compre
 Ici la variable didactique est le nombre multiplié
 ]
 
+= Parallélogrammes
+
+#rappel("de programme")[
+Au cycle 3, les élèves ont découvert différents objets mathématiques qui continuent d'être rencontrés au cycle 4
+
+Les élèves valident désormais par le raisonnement et la démonstration les propriétés qu'ils conjecturent.
+]
+
+== Prérequis 
+
+- *symétrie centrale*
+  - symétrique d'une droite est une droite parallèle
+  - conservation des longueurs
+  - conservation des angles
+
+- *angles*
+  - la somme des angles des sommets d'un quadrilatère vaut 360°
+  - Si deux droites sont coupées par une sécante en formant deux angles correspondant de même mesure alors elles sont parallèles
 
 
+#pagebreak()
+
+#def[Un *parallélogramme* est un quadrilatère dont les cotés opposés sont parallèles]
+
+
+#prop[Si un quadrilatère est un parallélogramme, alors il a un centre de symétrie, c'est le point d'intersection de ses diagonales
+
+Réciproquement, si un quadrilatère non croisé a un centre de symétrie, alors ce quadrilatère est un parallélogramme
+]
+
+#demo()[
+#table(inset:2pt, columns:(1fr,1fr), stroke:none)[
+$redimp$\
+Soit un parallélogramme $A B C D$, soit $O$ le milieu de $[A C]$
+
+Le symétrique de $(A B)$ par rapport à $O$ est une droite parallèle à $(A B)$ passant par $C$, càd $(C D)$
+
+Le symétrique de $(A D)$ par rapport à $O$ est une droite parallèle à $(A D)$ passant par $C$, càd $(B C)$
+
+Le point $B$ est l'intersection de $(A B)$ et $(B C)$, donc le symétrique de $B$ par rapport à $O$ est l'intersection de $(C D)$ et $(A D)$, càd $D$
+
+Donc $A B C D$ admet un centre de symétrie en $O$
+][
+$redimprev$\
+Soit $A B C D$ un quadrilatère non-croisé qui possède un centre de symétrie
+
+Alors $A B$ est le symétrique de $C D$, et dp les propriétés de la symétrie centrale, $(A B)$ et $(C D)$ sont parallèles
+
+De même, $(A C)$ et $(B D)$ sont parallèles
+]
+]
+
+#pagebreak()
+#prop[
+Si un quadrilatère non-croisé est un parallélogramme, alors :
+- ses cotés opposés ont la même longueur
+- ses diagonales se coupent en leur milieu
+- ses angles opposés sont deux-à-deux de même mesure
+- ses angles consécutifs sont supplémentaires
+
+Les réciproques sont vraies
+]
+
+
+#preuve()[
+*1.*\
+$redimp$ ok\
+$redimprev$ On considère le quadrilatère (non-croisé) $A B C D$ tel que $A B = C D$ et $B C =  A D$
+
+#align(center)[#image("assets/preuve_parall_1.png", height:25%)]
+
+On pose $O$ le milieu du sègment $[A C]$\
+*but* : le symétrique de $B$ par rapport à $O$ est $D$
+
+On note $B'$ le symétrique de $B$ par rapport à $O$\
+
+On a vu que la symétrie conserve les longueurs, donc
+- $B'C = A B$
+- $B'A = B C$
+Ainsi $B'$ se trouve à l'intersection des deux cercles jaunes ci-dessus\ 
+( de centre $A$ de rayon $A C = A D$, et de centre $C$ de rayon $A B = C D$ )\
+Or $A B C D$ est non-croisé, donc $B' = D$
+
+$O$ est un centre de symétrie de $A B C D$\
+*Donc $A B C D$ est un parallélogramme* (prop précédente) 
+
+
+
+
+
+
+]
+
+#pagebreak()
+#memo[
+Au collège, le raisonnement ne se fait pas par équivalence, les propriétés sont donc présentées sous forme d'implication. La formulation "Si ... alors..." n'est pas obligatoire mais elle peut permettre aux élèves de distinguer la propriété de sa réciproque.
+
+Dans le cadre de l'étude des parallélogrammes, les propriétés directes correspondent à l'objectif d'apprentissage : "Connaitre les propriétés caractéristiques (des côtés opposés et des diagonales)" tandis que les propriétés réciproques correspondent à l'objectif "utiliser une propriété caractéristique sur les diagonales ou les côtés pour construire ou donner la nature du quadrilatère"
+]

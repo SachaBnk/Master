@@ -3,7 +3,7 @@
 
 
 #let definition(..titre, body) = {
-  let color_def = (rgb("#d43333"), rgb("#fff9f9"))
+  let color_def = (rgb("#d43333"), rgb("#fbd1d1"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Définition "+ titre.pos().at(0)
@@ -30,7 +30,7 @@
 
 
 #let theoreme(..titre, body) = {
-  let color_thm = (rgb("#d43333"), rgb("#fbd1d1"))
+  let color_thm = (rgb("#d43333"), rgb("#fff9f9"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Théorème "+ titre.pos().at(0)
@@ -56,7 +56,7 @@
 
 
 #let corollaire(..titre, body) = { 
-  let colors = (rgb("#d43333"), rgb("#fbd1d1"))
+  let colors = (rgb("#d43333"), rgb("#fff9f9"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Corollaire "+ titre.pos().at(0)+ " : "
@@ -84,7 +84,7 @@
 
 
 #let proposition(..titre, body) = {
-  let colors = (rgb("#d43333"), rgb("#fbd1d1"))
+  let colors = (rgb("#d43333"), rgb("#fff9f9"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Proposition "+ titre.pos().at(0)

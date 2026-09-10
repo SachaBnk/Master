@@ -79,7 +79,7 @@ Trouver un ennoncé correct du type
 avec la def 3 (odyssé) et la def 7 (VB)
 ]
 
-#table(columns:2, stroke:0.5pt)[*avec def 3* (odyssé)][*avec def 7* (VB)][
+#table(columns:2, stroke:0pt)[*avec def 3* (odyssé)][*avec def 7* (VB)][
 1. Soient $au, av, arrow(w)$ non nuls, tq $arrow(u) et av$  colinéaires et $av et arrow(w)$ sont colinéaires, alors $au$ et $arrow(w)$ sont colinéaires
 #demo()[
 - $au et av$ non nuls et colinéaires donc $exists k in RR tq au = k av$

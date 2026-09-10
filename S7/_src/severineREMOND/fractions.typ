@@ -127,7 +127,7 @@ $->$ si il essayent $2.66666$ la calculette risque d'arrondir à $8$ et il faut 
 #activite("le guide-âne")
 #demo("de la propriété du guide-âne")[
 
-*[figure]*
+#align(center)[#image("assets/schema_thales.png", height:29%)]
 
 #strike("On a supposé que") On sait que $(C B)$ et $(E D)$ sont parallèles
 - $A, C, E$ sont alignés
@@ -147,9 +147,8 @@ Donc $A D = 2 A B$
 
 *Donc $A B = B D$*
 
-#rq[La on a prouvé notre résultat pour les deux premiers triangles, devant des 4e on dirait "avec le même raisonnement" pour les autres triangles (plutôt que de faire une récurrence de bourrin)]
-
 ]
+#rq[La on a prouvé notre résultat pour les deux premiers triangles, devant des 4e on dirait "avec le même raisonnement" pour les autres triangles (plutôt que de faire une récurrence de bourrin)]
 
 
 
