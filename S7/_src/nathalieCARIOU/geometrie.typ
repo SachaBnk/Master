@@ -165,7 +165,7 @@ Le symétrique de $(A D)$ par rapport à $O$ est une droite parallèle à $(A D)
 
 Le point $B$ est l'intersection de $(A B)$ et $(B C)$, donc le symétrique de $B$ par rapport à $O$ est l'intersection de $(C D)$ et $(A D)$, càd $D$
 
-Donc $A B C D$ admet un centre de symétrie en $O$
+*Donc $A B C D$ admet un centre de symétrie en $O$*
 ][
 $redimprev$\
 Soit $A B C D$ un quadrilatère non-croisé qui possède un centre de symétrie
@@ -173,6 +173,8 @@ Soit $A B C D$ un quadrilatère non-croisé qui possède un centre de symétrie
 Alors $A B$ est le symétrique de $C D$, et dp les propriétés de la symétrie centrale, $(A B)$ et $(C D)$ sont parallèles
 
 De même, $(A C)$ et $(B D)$ sont parallèles
+
+*Donc $A B C D$ est un parallélogramme*
 ]
 ]
 
