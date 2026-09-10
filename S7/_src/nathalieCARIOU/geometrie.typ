@@ -7,7 +7,17 @@
 
 #frontpage("Géométrie et changement de paradigme")
 
+#show outline.entry.where(level: 1): it => {
+  v(12pt)
+  strong(it)
+}
+#show heading.where(level: 2): set heading(outlined: false)
+#text(1.3em)[#outline(title : "")]
+\ \
+#pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
+
+
 
 = De l'observation au raisonnement déductif
 \
