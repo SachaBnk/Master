@@ -366,7 +366,7 @@
 
 
 #let attention(body) = { 
-  let colors = (rgb("#d46633"), rgb("#ffffff"))
+  let colors = (rgb("#ff5a2c"), rgb("#ffffff"))
   align(center,
   block(
     width: 100%,
@@ -411,5 +411,6 @@
     )
   )
   )
+  "\n"
 }
 #let memo = reminder

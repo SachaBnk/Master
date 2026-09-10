@@ -8,7 +8,7 @@
     #v(1em)
     #link("https://www.instagram.com/stekachez/")[#strong("Sacha Banak")]
     #text("\n")
-    #text("Année 2026-2027", size: 14pt)
+    #text("2026-2027", size: 14pt)
     #v(1em)
     #text("Métiers de l'Éducation et de l'Enseignement")
   ]

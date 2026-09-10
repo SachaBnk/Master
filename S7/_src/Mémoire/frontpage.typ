@@ -2,7 +2,7 @@
   set text(font: "Arial",size: 14pt, lang: "fr")
   align(center, text()[
   #align(horizon)[
-    #strong(text(size:30pt)[Séverine RÉMOND])
+    #strong(text(size:30pt)[Mémoire])
     #line(length: 70%)
     #text(titre, size: 20pt)
     #v(1em)

@@ -308,3 +308,4 @@
 #let au = $arrow(u)$
 #let av = $arrow(v)$
 #let aw = $arrow(w)$
+#let a0 = $arrow(0)$

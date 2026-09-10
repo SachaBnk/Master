@@ -67,6 +67,89 @@ $->$ c'est visuel mais c'est loin de parler des nombres rationnel
 - On préfère acheter des reglettes Cuisenaire *sans graduiations* pour des élèves (les force à comparer les reglettes entre-elles)
 ]
 
+#pagebreak()
+= Preuves du cycle 4
+
+#prop[
+  $ (a b)/(a c) = b/c $
+  ]
+#demo[
+$(a b)/(a c)$ c'est le nombre qui multiplié par $a c$ donne $a b$.
+
+$ "Or" b/c times a c &= b/c times a times c\
+&= (b/c times c) times a \
+"et par définition," b/c times c = b\
+donc b/c times a c &= a times b\
+&= a b
+$
+
+Et donc 
+]
+
+#prop[$ a/c + b/c = (a+b)/c $]
+
+#demo[
+$(a+b)/c$ c'est le nombre qui multiplié par $c$ donne $a+b$
+
+$ "Or" c times(a/c + b/c) &= c times a/c + c times b/c "      (distributivité)"\
+&= a+b"                  (par définition de la fraction) "$
+
+$Donc a/c+b/c &= (a+b)/c $
+]
+#pagebreak()
+#rq[Attention à l'écriture 
+$ (cancel(2) times cancel(5) times 7)/(11 times cancel(2) times cancel(5)) = 7/11 $
+Ça fait très "trucs et astuces" et on veut que les élèves construisent les fractions comme objet mathématique et pas comme des écritures (encore)
+]
+
+#activite("- les bonbons rubans")[
+On donne aux élèves un ruban A qui mesure 3 unités et un ruban B qui en mesure 8. Le but est de déterminer combien de rubans A sont contenus dans le ruban B.
+
++ Le ruban B est long comme combien de fois le ruban A ?
++ Comment construire un ruban B avec que des rubans A ?
++ Avez-vous changé d'avis ?
+
+
+*Quels objectifs ?*\
+*À quel moment dans la séquence ?*\
+*Quel scénario ?*
+]
+
+*Le calcul qu'on veut voir posé c'est "$3 times ... = 8$"*\
+$->$ L'intérêt de l'activité est de laisser manipuler les élèves \
+$->$ Le risque si on reste en algébrique, c'est que l'élève réponde que c'est impossible
+
+*Certains élèves vont proposer des nombres décimaux comme $2.6$*\
+$->$ dans ces cas là on peut calculer $2.6 times 3$ à la calculette et voir que ça fait pas exactement $8$\
+$->$ si il essayent $2.66666$ la calculette risque d'arrondir à $8$ et il faut expliquer la limite du nombre de caractères sur l'écran
+
+#pagebreak()
+#activite("le guide-âne")
+#demo("de la propriété du guide-âne")[
+
+*[figure]*
+
+#strike("On a supposé que") On sait que $(C B)$ et $(E D)$ sont parallèles
+- $A, C, E$ sont alignés
+- $A, B, D$ sont alignés
+Thalès : 
+$ (A E)/(A C) = (A D)/(A B) $
+
+#rq[Devant des 4e on dit bien "d'après le théorème de Thalès les longueurs des cotés sont proportionnelles"]
+
+On sait que $A C = C E$\
+donc $A E = 2A C$\
+On substitue :
+$ (A D)/(A B) &= (A E)/(A C)\
+&= (2A C)/(A C)\
+&= 2 $
+Donc $A D = 2 A B$
+
+*Donc $A B = B D$*
+
+#rq[La on a prouvé notre résultat pour les deux premiers triangles, devant des 4e on dirait "avec le même raisonnement" pour les autres triangles (plutôt que de faire une récurrence de bourrin)]
+
+]
 
 
 

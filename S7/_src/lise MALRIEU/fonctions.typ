@@ -43,7 +43,7 @@ En étudiant le programme des fonctions du cycle 4, repérer quelles représenta
 ][
 #block(inset:1em)[#table(columns:3)[$x$][][][$f(x)$]]
 ][
-
+...
 ][
 #align(horizon)[- choisir un nombre
 #align(center)[$dots.v$]
@@ -58,7 +58,7 @@ En étudiant le programme des fonctions du cycle 4, repérer quelles représenta
 
 #import "@preview/autograph:0.1.0" : diagram, node, edge
 
-
+#pagebreak()
 #align(center)[#diagram(
   bezier: true,
   node(<graphiques>),
@@ -74,7 +74,9 @@ En étudiant le programme des fonctions du cycle 4, repérer quelles représenta
   edge(<programmes_de_calcul>, <forme_algébrique>),
   edge(<forme_algébrique>, <programmes_de_calcul>),
 )
-]\ \
+]\
+#align(center)[fig : cadre fonctionnel]
+ \
 
 #table(columns:5)[][*forme algébrique*][*tableaux de valeurs*][*graphiques*][*programmes de calcul*][#text(2em)[#align(horizon+center)[*+*]]][
 - exhaustif : on peut obtenir toutes les images de $Dr_f$
@@ -114,9 +116,54 @@ En étudiant le programme des fonctions du cycle 4, repérer quelles représenta
 ]
 
 
+
+#rq[
+On veut passer d'une représentation à l'autre pour que l'élève construise le concept de fonction
+]
+
+#pagebreak()
+#activite[
+  Chercher dans les manuels des exos qui permettent de travailler chaque changement de représentation
+]
+
+*Changements de représentation plus rares* :
+- *graphique $->$ algébrique* (ex : lecture graphique d'équation de droite affine)
+
+- *tableau de valeurs $->$ algébrique* (pareil avec des fonctions linéaires)
+  - exo classique : on a un tableau de valeurs simple et on cherche la fonction correspondante de zéro\ 
+    $->$ on passe presque par le programme de calcul
+
+
 #rq()[
   La représentation sous forme de programme de calcul va s'effacer pour ne laisser que les trois autres
+
+  Ici on n'a pas trouvé de "algébrique $->$ programme de calcul" dans les manuels mais c'est pas compliqué a rédiger comme exo
 ]
+
+#ex[de forme algébrique $->$ programme de calcul][
+Proposer un progremme scratch qui calcule les valeurs de la fonction $ f : x ass 2x+3 $
+]
+
+#def[
+Ces registres et les liens entre ces registres définissent un nouveau cadre : *le cadre fonctionnel*
+
+Il s'ajoute aux autres cadres déjà présents en mathématiques : 
+- le *cadre numérique-algébrique*
+- le *cadre géométrico-graphique*
+]
+
+#rq[ces cadres sont à voir comme des "lunettes" avec lesquelles les élèves voient les maths]
+
+#pagebreak()
+#exo[(3)][
+Traduire les phrases données dans les différents cadres 
+]
+
+#table(columns:(1.3fr,2fr,2fr,2fr))[
+  #align(horizon)[*Cadre numérique-algébrique*]][*Résoudre l'équation $f(x) = 0$*][$ forall x in RR, x^2 >=0 $][Soit $f$ la fonction représentée par la courbe,$ forall x in Dr_f,\ f(-x) = -f(x) $][
+  #align(horizon)[*Cadre fonctionnel*]][- Trouver les antécédents de 0 par la fonction $f$
+  - Trouver tous les réels dont l'image est *nulle*][*La fonction "carré" est positive sur $RR$*][La fonction représentée par la courbe est impaire][
+  #align(horizon)[*Cadre géométrico-graphique*]][Trouver les abscisses des points en lesquels la courbe $Cr_f$ coupe l'axe des abscisses][La *parabole* représentant la fonction "carré" ne passe pas sous l'axe des abscisses][*La courbe admet l'origine du repère comme centre de symétrie.*]
 
 
 

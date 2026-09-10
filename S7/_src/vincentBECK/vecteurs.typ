@@ -5,7 +5,7 @@
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
-#frontpage("On refait des maths")
+#frontpage("Vecteurs")
 
 #set page(numbering: "1 sur 1", number-align: center)
 
@@ -15,7 +15,8 @@
 - *Transmaths* (1) : $arrow(u), arrow(v)$ deux vecteurs du plan, $arrow(v) != arrow(0)$, 
   $arrow(u), arrow(v)$ sont colinéaires s'il existe $k. in RR$ tq $arrow(u) = k  arrow(v)$
 
-- *Odyssé* : $arrow(u)$ et $arrow(v)$ deux vecteurs non nuls sont dits colinéaires lorsqu'ils ont la même direction, c-à-d lorsqu'il existe un réel $k tq arrow(u) = k arrow(v)$
+- *Odyssé* : $arrow(u)$ et $arrow(v)$ deux vecteurs non nuls sont dits colinéaires lorsqu'ils ont la même direction, c-à-d lorsqu'il existe un réel $k tq arrow(u) = k arrow(v)$\
+  (Par convention $a0$ est colinéaire avec tout vecteur)
 
 - *TransMaths* (2) : $arrow(A B), arrow(C D)$ non nuls sont colinéaires si $arrow(A B)$ et $arrow(C D)$ ont la même direction\
   ie. si $(A B)$ et $(C D)$ sont parallèles.\
@@ -78,7 +79,7 @@ Trouver un ennoncé correct du type
 avec la def 3 (odyssé) et la def 7 (VB)
 ]
 
-#table(columns:2)[avec def 3 (odyssé)][avec def 7 (VB)][
+#table(columns:2, stroke:0.5pt)[*avec def 3* (odyssé)][*avec def 7* (VB)][
 1. Soient $au, av, arrow(w)$ non nuls, tq $arrow(u) et av$  colinéaires et $av et arrow(w)$ sont colinéaires, alors $au$ et $arrow(w)$ sont colinéaires
 #demo()[
 - $au et av$ non nuls et colinéaires donc $exists k in RR tq au = k av$
@@ -87,7 +88,19 @@ donc $au = k k' aw$, $k k' in RR$\
 donc $au et aw$ sont colinéaires
 ]
 
-2.
+2. Soient $au, av$ deux vecteurs. On dit que $au$ et $av$ son colinéaires ssi $det(au, av) = 0$ 
+\ 
+#demo()[
+$redimp$ Soient $au, av != 0$\
+$au, av$ colinéaires $imp ...$\ $imp det(au, av)=0$ ok
+
+$redimprev$ On suppose $ det(au, av) &= mat(delim:"|", x, x'; y, y')\
+&= x y' - x'y\
+&= 0\
+"donc" x y' &= x'y $
+- Si $au = arrow(0)$ ok (par convention)
+- Sinon on divise par $x$ ou $y$
+]
 ][
 + Soient $au, av, arrow(w)$, tq $arrow(u) et av$  colinéaires et $av et arrow(w)$ sont colinéaires, alors $au$ et $arrow(w)$ sont colinéaires
 
@@ -97,8 +110,29 @@ donc $au et aw$ sont colinéaires
 $au = k k' aw$ $->$ ok
 ]
 \
-2. 
+2. Soient $au$ et $av$ deux vecteurs #text(11pt)[$ (au = arrow(0) ou arrow(v) = arrow(0) ou au et av "sont colinéaires")\ ssi det(au, av) = 0 $]
+
+#demo()[
+$redimp$ ok
+
+$redimprev$ Soient $au = mat(x;y), av = mat(x';y')$ deux vecteurs tq $det(au, av) = 0$\
+donc $x y' = x'y$\
+- Si $x != 0$\
+  $ av &= mat(x'; x'/x y)\ 
+  &= x'/x mat(x; y) = lambda au avec lambda = x'/x $
+  - Si $x' = 0 alors av = a0$
+  - Si $x' != 0 alors lambda != 0$\
+    $au et av$ sont colinéaires
+
+- Si $x = 0$ : plein de sous-cas (il faut à nouveau prouver que $lambda != 0$)
 ]
+
+]
+
+
+
+
+
 
 #reminder()[
 - Questionner *les* manuels (rigueur, choix)
@@ -111,3 +145,39 @@ En maths :
 - Différentes définitions de vecteurs
 
 ]
+
+#rappel("- def d'espace vectoriel")[
+
+$(E, +, dot)$ est un ev si
+- $+ : E times E --> E$ est une lci
+  - associative 
+  - commutative
+  - $exists x in E, forall y in E, x + y = y$ (element neutre, noté "$0$")
+  - $forall x in E, exists y in E tq x+ y = 0$
+
+- $dot : RR times E --> E$ tq
+  - $forall x, y in E, lambda dot (x + y) = lambda x + lambda y$
+  - "distributive"
+  - "associative"
+
+
+]
+
+#activite[\- étude du programme de cycle 4 / seconde sur les vecteurs][
++ Que peut-on faire avec les vecteurs ?
++ Quelles notions leurs sont rattachées
+]
+
+#rq[Le programme de cycle 4 permet aux élèves d'additionner des vecteurs
+- addition de vecteurs (et relation de Chasles)
+- vecteur nul (élément neutre)
+- opposé d'un vecteur
+]
+
+
+
+
+
+
+
+
