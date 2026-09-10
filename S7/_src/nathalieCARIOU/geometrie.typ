@@ -12,6 +12,7 @@
   strong(it)
 }
 #show heading.where(level: 2): set heading(outlined: false)
+#show heading.where(level: 1): it => {text(1.3em)[#it]}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
@@ -190,7 +191,7 @@ Les réciproques sont vraies
 #preuve()[
 *1.*\
 $redimp$ ok\
-$redimprev$ On considère le quadrilatère (non-croisé) $A B C D$ tel que $A B = C D$ et $B C =  A D$
+$redimprev$ On considère le quadrilatère $A B C D$ tel que $A B = C D$ et $B C =  A D$
 
 #align(center)[#image("assets/preuve_parall_1.png", height:25%)]
 
