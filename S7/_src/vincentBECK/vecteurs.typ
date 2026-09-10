@@ -156,13 +156,14 @@ $(E, +, dot)$ est un ev si
   - $forall x in E, exists y in E tq x+ y = 0$
 
 - $dot : RR times E --> E$ tq
-  - $forall x, y in E, lambda dot (x + y) = lambda x + lambda y$
-  - "distributive"
-  - "associative"
+  - $lambda dot (x + y) = lambda x + lambda y$
+  - $(lambda + mu) dot x = lambda dot x + mu dot x$
+  - $lambda dot(mu dot x) = (lambda mu) dot x$
 
 
 ]
 
+#pagebreak()
 #activite[\- étude du programme de cycle 4 / seconde sur les vecteurs][
 + Que peut-on faire avec les vecteurs ?
 + Quelles notions leurs sont rattachées
