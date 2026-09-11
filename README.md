@@ -17,3 +17,9 @@
 dans chaque semestre : src contient les fichiers source en typst (si vous voulez pas modifier les cours vous-mêmes, vous avez pas besoin de regarder ce qu'il y a dedans)
 
 Et bien sur : Typst > LaTeX, respectueusement 
+
+**Je politise ce cours j'emmerde l'extrême droite, j'emmerde le gouvernement français, j'emmerde le gouvernement états-unien euh... j'emmerde tous les fachos, j'emmerde le RN, Éric Zemmour et tout ce qu'il y a autour !**  
+Voila bisous bonne lecture <3
+
+**Et bien sur fuck les IA génératives**
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/12659a66-56bf-4ddd-b50a-882923bd2a2c" />
