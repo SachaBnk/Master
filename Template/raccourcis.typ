@@ -309,3 +309,5 @@
 #let av = $arrow(v)$
 #let aw = $arrow(w)$
 #let a0 = $arrow(0)$
+#let ai = $arrow(i)$
+#let aj = $arrow(j)$

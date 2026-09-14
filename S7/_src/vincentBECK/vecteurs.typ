@@ -175,8 +175,72 @@ $(E, +, dot)$ est un ev si
 - opposé d'un vecteur
 ]
 
+#table(inset: 1em, columns : 2, stroke : none)[#align(center)[*troisième*]][#align(center)[*seconde*]][
+(induit avec les translations)
+- sommes de vecteurs
+- vecteur nul
+- vecteur opposé
+][
+multiplication e vecteurs par un scalaire
+][
+*$-> tilde.eq$ groupe abélien*
+][
+*action de $RR$ sur les vecteurs*
+#rappel[
+- $1dot av = av$
+- $(lambda+mu)av = lambda av + mu av$
+- $lambda(au+av) = lambda au + lambda av$
+- $lambda mu dot av = lambda dot (mu av)$
+]
+]
 
 
+#exo[
++ Montrer que l'opposé de la somme de deux vecteurs est la somme des opposés des vecteurs
+
++ Soit $E$ un ev, $av in E$, mq :
+  - $(-1)dot av = -av$
+  - $3 dot av = av + av + av$
+  - $forall n in NN, n dot av = n av$
+]
+
+#demo[
+*1.*\
+$ (au + av) + ((-au)+(-av)) &= au + (-au) + av + (-av)\
+&= a0 + a0 $
+Donc l'opposé de la somme est bien la somme des opposés
+
+*2.*\
+*a)*\
+$ av + (-1)dot av &= (1-1)dot av "    (prop des actions de gp)"\
+&= av - av\
+&= a0 $
+donc $(-1)dot av = -av$
+
+...
+]
+
+#def[
+Un *repère* défini par 3 points $O, I,J$ non-alignés est ortho-normé si le triangle $O I J$ estrectangle isoscèle en $O$. La *base* du repère est $(arrow(O I), arrow(O J))$
+
+Pour tout point $M(x,y)$, on a $arrow(O M) = x ai + y aj$. Le vecteur $arrow(O M)$ a pour *coordonnées* $mat(x;y)$
+]
+
+
+#table(inset: 1em, columns : 2, stroke : none)[#align(center)[*collège / lycée*\ (point puis vecteur)]][#align(center)[*supérieur*]][
+*mathx2nd*
+- def base
+- coordonnées vecteur dans une base
+- repère
+*collège* 
+- repère : deux droites graduées de même origine
+- repère orthogonal : deux droites perpendiculaires graduées de même origine
+][
++ base dans un ev
++ *coordonnées dans une base donnée $(arrow(u_1), ..., arrow(u_n))$*
++ espace affine
++ coordonnées de point $M$ avec $arrow(O M) = lambda_1 arrow(u_1) + ... + lambda_n arrow(u_n)$
+]
 
 
 
