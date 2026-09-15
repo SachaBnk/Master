@@ -276,7 +276,6 @@ Pour tout point $M(x,y)$, on a $arrow(O M) = x ai + y aj$. Le vecteur $arrow(O M
 *mathx 2nd*\
 ...
 
-**
 ][
 + base dans un ev
 + *coordonnées dans une base donnée $(arrow(u_1), ..., arrow(u_n))$*
