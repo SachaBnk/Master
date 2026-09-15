@@ -181,7 +181,7 @@ $(E, +, dot)$ est un ev si
 - vecteur nul
 - vecteur opposé
 ][
-multiplication e vecteurs par un scalaire
+multiplication de vecteurs par un scalaire
 ][
 *$-> tilde.eq$ groupe abélien*
 ][
@@ -217,8 +217,40 @@ $ av + (-1)dot av &= (1-1)dot av "    (prop des actions de gp)"\
 &= a0 $
 donc $(-1)dot av = -av$
 
-...
+*b)*\
+$ 3 dot av &= (1+1+1)dot av\
+&= 1dot av + 1dot av + 1dot av\
+&= av + av + av\
+&= 3 av $
+
+*c)*\
+on pose $forall n in NN, H_n :$ "$n dot av = n av$"
+
+*init* : ok (def du neutre)
+
+*hérédité* : 
+$ (n+1)dot av &= n dot av + 1 dot av\
+&= n av + 1 dot av "par HR"\
+&= n av + av "par prop des act° de gp"\
+&= (n+1)av "par def de" \"n av\" $
+
+*ccl* 
 ]
+
+#pagebreak()
+#rq[\
+*b)*\
+"$av + av+av$" est bien défini car $+_E$ est associative
+
+*c)*\
+"$n av + av = (n+1)av$" n'est pas une factorisation, c'est la définition de $n av$ :
+
+- $0 av = a0$
+- $forall n in NN, (n+1) av = n av + av$
+
+$->$ défini de la même manière que les puissances
+]
+
 
 #def[
 Un *repère* défini par 3 points $O, I,J$ non-alignés est ortho-normé si le triangle $O I J$ estrectangle isoscèle en $O$. La *base* du repère est $(arrow(O I), arrow(O J))$
@@ -228,13 +260,10 @@ Pour tout point $M(x,y)$, on a $arrow(O M) = x ai + y aj$. Le vecteur $arrow(O M
 
 
 #table(inset: 1em, columns : 2, stroke : none)[#align(center)[*collège / lycée*\ (point puis vecteur)]][#align(center)[*supérieur*]][
-*mathx2nd*
-- def base
-- coordonnées vecteur dans une base
-- repère
-*collège* 
-- repère : deux droites graduées de même origine
-- repère orthogonal : deux droites perpendiculaires graduées de même origine
+*mathx 2nd*\
+...
+
+**
 ][
 + base dans un ev
 + *coordonnées dans une base donnée $(arrow(u_1), ..., arrow(u_n))$*
@@ -242,7 +271,44 @@ Pour tout point $M(x,y)$, on a $arrow(O M) = x ai + y aj$. Le vecteur $arrow(O M
 + coordonnées de point $M$ avec $arrow(O M) = lambda_1 arrow(u_1) + ... + lambda_n arrow(u_n)$
 ]
 
+#pagebreak()
+#activite("- étude des deux manuels")[
+En étudiant le début du chapitre sur les vecteurs (du début à la proposition "les coordonnées de $arrow(A B)$ sont $mat(x_B-x_A; y_B-y_A)$" $redstar$)
++ Dans quel ordre sont présentées coordonnées de point et coordonnées de vecteur ? Quelles sont les définitions pour chacun ?
++ Commentaires sur la formulation ? Sur l'ordre ? Lien avec le programme ?
++ Donner une démo de $redstar$ avec les outils et def à disposition
+]
+
+#table(inset: 1em, columns : (1fr,1fr), stroke : none)[#align(center)[*LeLivreScolaire* (LLS)]][#align(center)[*Mathx 2nd* (MX)]][
+*1.*\
+"Dans un repère $(O;I;J)$, les *coordonnées du vecteur $au$* sont les coordonnées de l'unique point $M$ tel que $arrow(O M) = au$"
 
 
+][
+*1.*\
+[...]
+][
+*2.*\
+
+$->$ coord de point *avant* coord de vecteur (conforme à la construction du savoir chez les élèves)
+
+
+// remarques : 
+// - Ils auraient donc pu rappeler la def de coordonnées d'un point
+// - "l'*unique* point $M$" l'unicité est pas évidente
+// - définir les coordonnées d'un vecteur comme les coordonnées d'un certain point ça va créer de la confusion chez les élèves
+// - l'écriture "$arrow(A B) = au$" est mal expliquée
+][
+*2.*\
+$->$ coord de point *après* coord de vecteur 
+][
+#demo[de $(star)$ - avec LLS][
+
+]
+][
+#demo[de $(star)$ - avec MX][
+
+]
+]
 
 
