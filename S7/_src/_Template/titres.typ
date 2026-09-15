@@ -1,4 +1,4 @@
-#import "../Template/audifamam.typ" : audifamam
+#import "audifamam.typ" : audifamam
 
 
 
