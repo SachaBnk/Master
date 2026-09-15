@@ -190,7 +190,7 @@ Les réciproques sont vraies
 ]
 
 
-#preuve()[
+#preuve("perso (à vérifier en classe)")[
 *1.*\
 $redimp$ ok\
 $redimprev$ On considère le quadrilatère $A B C D$ tel que $A B = C D$ et $B C =  A D$
