@@ -8,7 +8,7 @@
 - [stekachez](https://www.instagram.com/stekachez) (pôtits dessins sur instagram)
 - [Kinks](https://www.supermajor.gg/ultimate/player/Kinks?id=S1930585)
 
-Avec l'aide de Marwane et Félix
+Avec l'aide de Élie, Marwane et Félix
 
 ## Attention, il y a des coquilles
 - Dans l'idéal, si vous savez utiliser GitHub et écrire en Typst, vous modifiez directement le fichier src, vous le compilez et vous faites une pull request
