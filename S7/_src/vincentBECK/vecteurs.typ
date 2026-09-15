@@ -7,7 +7,18 @@
 
 #frontpage("Vecteurs")
 
+#show outline.entry.where(level: 1): it => {
+  v(12pt)
+  strong(it)
+}
+#show heading.where(level: 2): set heading(outlined: false)
+#show heading.where(level: 1): it => {text(1.3em)[#it\ ]}
+#text(1.3em)[#outline(title : "")]
+\ \
+#pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
+
+= Colinéarité
 
 #rappel("(def de Terence)")[$arrow(u)$ et $arrow(v)$ sont colinéaires s'il existe $k in RR$ tq $arrow(u) = k arrow(v)$]
 
@@ -146,6 +157,7 @@ En maths :
 
 ]
 
+= Espaces vectoriels
 #rappel("- def d'espace vectoriel")[
 
 $(E, +, dot)$ est un ev si
@@ -251,6 +263,7 @@ $ (n+1)dot av &= n dot av + 1 dot av\
 $->$ défini de la même manière que les puissances
 ]
 
+= Coordonnées de vecteurs
 
 #def[
 Un *repère* défini par 3 points $O, I,J$ non-alignés est ortho-normé si le triangle $O I J$ estrectangle isoscèle en $O$. La *base* du repère est $(arrow(O I), arrow(O J))$
@@ -286,7 +299,9 @@ En étudiant le début du chapitre sur les vecteurs (du début à la proposition
 
 ][
 *1.*\
-[...]
+"Soit $(ai, aj)$ une base orthonormée.\
+Pour tout vecteur $au$ il existe un unique couple de nombres $(x,y)$ tq $au = x ai + y aj$.\ 
+On dit que $au$ a pour *coordonnées* $(x,y)$"
 ][
 *2.*\
 
@@ -307,6 +322,20 @@ $->$ coord de point *après* coord de vecteur
 ]
 ][
 #demo[de $(star)$ - avec MX][
+Soient $A(x_A,y_A)$ et $B(x_B,y_B)$ deux points du repère orthonormé $(O,ai,aj)$ 
+
+Par définition des coordonnées d'un point, $arrow(O A)mat(x_A;y_A)$ et $arrow(O B) mat(x_B;y_B)$ (dans Mathx, ils ont défini les coordonnées du point $M$ en fonction des coordonnées du vecteur $arrow(O M)$)
+
+$arrow(A B) = arrow(A O) + arrow(O B)$ (relation de Chasles)
+
+or $arrow(A O) = -arrow(O A) = -x_A ai -y_A aj$
+
+$Donc arrow(A B) &= arrow(O B) - arrow(O A)\
+&= (x_B-x_A) ai\ &"      "+ (y_B-y_A) aj$
+
+Donc $arrow(A B)mat(x_B-x_A;y_B-y_A)$
+
+
 
 ]
 ]
