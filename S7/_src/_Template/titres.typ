@@ -277,7 +277,7 @@
 
 
 #let activite(..titre, body) = { 
-  let colors = (rgb("#11898f"), rgb("#fff"))
+  let colors = (rgb("#11898f"), rgb("#ddeef2"))
   let header = ""
   if(titre.pos().len() > 0){
     header = "Activité "+ titre.pos().at(0)+ " : "
