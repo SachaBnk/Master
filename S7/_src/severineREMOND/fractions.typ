@@ -135,7 +135,7 @@ $->$ si il essayent $2.66666$ la calculette risque d'arrondir à $8$ et il faut 
 Thalès : 
 $ (A E)/(A C) = (A D)/(A B) $
 
-#rq[Devant des 4e on dit bien "d'après le théorème de Thalès les longueurs des cotés sont proportionnelles"]
+#rq[Devant des 4e on dit bien "d'après la réciproque du théorème de Thalès les longueurs des cotés sont proportionnelles"]
 
 On sait que $A C = C E$\
 donc $A E = 2A C$\

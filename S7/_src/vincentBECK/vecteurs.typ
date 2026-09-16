@@ -314,11 +314,7 @@ $->$ coord de point *avant* coord de vecteur (conforme à la construction du sav
 ][
 *2.*\
 $->$ coord de point *après* coord de vecteur 
-][
-#demo[de $(star)$ - avec LLS][
-
 ]
-][
 #demo[de $(star)$ - avec MX][
 Soient $A(x_A,y_A)$ et $B(x_B,y_B)$ deux points du repère orthonormé $(O,ai,aj)$ 
 
@@ -329,13 +325,20 @@ $arrow(A B) = arrow(A O) + arrow(O B)$ (relation de Chasles)
 or $arrow(A O) = -arrow(O A) = -x_A ai -y_A aj$
 
 $Donc arrow(A B) &= arrow(O B) - arrow(O A)\
-&= (x_B-x_A) ai\ &"      "+ (y_B-y_A) aj$
+&= (x_B-x_A) ai + (y_B-y_A) aj$
 
 Donc $arrow(A B)mat(x_B-x_A;y_B-y_A)$
 
-
-
-]
 ]
 
+
+#question[À quoi ça sert les vecteurs ?]
+- Lien avec la physique (vitesse, position)
+- Lien avec les coordonnées de point (calculs)
+- Transformations géométriques (translation, homothétie)
+- Produit scalaire (lien avec l'orthogonalité)
+- De nouveaux outils pour montrer des propriétés géométriques
+  - calculs faciles (relation de Chasles)
+  - porte beaucoup d'informations (norme, direction, sens)
+  
 
