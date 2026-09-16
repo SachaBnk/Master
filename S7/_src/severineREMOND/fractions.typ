@@ -140,9 +140,7 @@ $ (A E)/(A C) = (A D)/(A B) $
 On sait que $A C = C E$\
 donc $A E = 2A C$\
 On substitue :
-$ (A D)/(A B) &= (A E)/(A C)\
-&= (2A C)/(A C)\
-&= 2 $
+$ (A D)/(A B) &= (A E)/(A C) = (2A C)/(A C) = 2 $
 Donc $A D = 2 A B$
 
 *Donc $A B = B D$*
