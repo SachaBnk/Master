@@ -225,3 +225,42 @@ Au collège, le raisonnement ne se fait pas par équivalence, les propriétés s
 
 Dans le cadre de l'étude des parallélogrammes, les propriétés directes correspondent à l'objectif d'apprentissage : "Connaitre les propriétés caractéristiques (des côtés opposés et des diagonales)" tandis que les propriétés réciproques correspondent à l'objectif "utiliser une propriété caractéristique sur les diagonales ou les côtés pour construire ou donner la nature du quadrilatère"
 ]
+
+#def[
+Quand les deux énoncés (direct et réciproque) sont vrais, on dit que c'est une *propriété caractéristique* du quadrilatère.
+
+Cette propriété peut servir de définition ou peut se démontrer à partir d'une définition (choisie parmi les autres propriétés caractéristiques)
+]
+
+#pagebreak()
+#activite[
+- Choisir la définition du rectangle, losange, carré
+- Énoncer les propriétés, les démontrer, identifier les prérequis
+- Proposer une trace écrite telle qu'elle pourrait être proposée à des élèves de 5e
+]
+
+#def[
+Un *rectangle* est un parallélogramme avec un angle droit
+]
+
+propriétés : 
+- diagonales de meme longueur
+- exactement deux axes de symétrie
+- deux cotés consécutifs perpendiculaires
+- deux angles consecutifs de meme mesure
+- quatre angles droits
+#demo[
+Soit $A B C D$ un rectangle, il possède un angle droit (disons $hat(D A B)$)
+En particulier $A B C D$ est un parallélogramme ses cotés consécutifs, sont supplémentaires. Donc $hat(D A B) + hat(A B C) = 180°$, donc $hat(A B C) = 90°$
+
+De même $hat(A B C) + hat(B C D) = 180°$ 
+...
+]
+- trois angles droits
+
+#def[*losange* = parallélo avec deux cotes consecutifs de meme longueur]
+...
+#def[*carré* = rectangle + losange]
+...
+
+

@@ -6,11 +6,20 @@
 
 #frontpage("Fractions")
 
+#show outline.entry.where(level: 1): it => {
+  v(12pt)
+  strong(it)
+}
+#show heading.where(level: 2): set heading(outlined: false)
+#show heading.where(level: 1): it => {text(1.3em)[#it\ ]}
+#text(1.3em)[#outline(title : "")]
+\ \
+#pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
 
 = Le mot "fraction", nombre ou écriture ?
 \
-#table(columns:2)[*nombre ?*][*écriture ?*][
+#table(columns:2, stroke: none)[*nombre ?*][*écriture ?*][
 - ensemble des rationnels
 ][
 - "fraction irréductible"
@@ -24,9 +33,8 @@ Trier les manuels selon la définition qu'ils donnent de la fraction : nombre ou
 (Bonus : ils parlent de fractions ou d'écriture fractionnaire ?)
 ]
 
-#text(green)[
-Notes perso :
-#table(columns:2)[*nombre ?*][*écriture ?*][
+#text(blue)[
+#table(columns:2, stroke: none)[*nombre ?*][*écriture ?*][
 - Maths & Tiques
 - Maths 6e, éd. TAM
 ][
@@ -68,7 +76,7 @@ $->$ c'est visuel mais c'est loin de parler des nombres rationnel
 ]
 
 #pagebreak()
-= Preuves du cycle 4
+= Fractions au cycle 4
 
 #prop[
   $ (a b)/(a c) = b/c $
@@ -148,10 +156,29 @@ Donc $A D = 2 A B$
 ]
 #rq[La on a prouvé notre résultat pour les deux premiers triangles, devant des 4e on dirait "avec le même raisonnement" pour les autres triangles (plutôt que de faire une récurrence de bourrin)]
 
+= De l'écriture fractionnaire à l'écriture décimale
 
+Pour introduire les nombres décimaux, on va passer par la notion de fractions décimales
 
+#ex[Est ce que $5/8$ est un nombre décimal ?
 
+$ 5/8 &= (5 times 125)/(8times 125)\
+&= 625/1000 $
+]
 
+#activite("- dans les manuels")[
+Comment les manuels de 6e traitent-ils les nombres entiers et les nombres décimaux ?
+]
+
+#text(blue)[
+*Maths 6e, collection TAM, hatier*
+- "entiers : permettent de compter ce qui nous entoure"
+- "paquets de 10" (rq sur les paquets de 60 avec les minutes)
+- passe par les fractions décimales pour définir les nombres décimaux
+- différencie bien "nombre décimal" et "écriture décimale" 
+- écriture décimale bien expliquée
+
+]
 
 
 
