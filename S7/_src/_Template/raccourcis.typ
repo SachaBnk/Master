@@ -31,6 +31,7 @@
 #let redimp = $#text(red)[*$imp$*]$
 #let redimprev = $#text(red)[*$imprev$*]$
 
+#let Vr = $cal(V)$
 #let Dr = $cal(D)$
 #let Ar = $cal(A)$
 #let Br = $cal(B)$

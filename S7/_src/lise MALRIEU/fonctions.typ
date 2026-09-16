@@ -141,7 +141,7 @@ On veut passer d'une représentation à l'autre pour que l'élève construise le
 ]
 
 #ex[de forme algébrique $->$ programme de calcul][
-Proposer un progremme scratch qui calcule les valeurs de la fonction $ f : x ass 2x+3 $
+Proposer un programme scratch qui calcule les valeurs de la fonction $ f : x ass 2x+3 $
 ]
 
 #def[
@@ -166,6 +166,44 @@ Traduire les phrases données dans les différents cadres
   #align(horizon)[*Cadre géométrico-graphique*]][Trouver les abscisses des points en lesquels la courbe $Cr_f$ coupe l'axe des abscisses][La *parabole* représentant la fonction "carré" ne passe pas sous l'axe des abscisses][*La courbe admet l'origine du repère comme centre de symétrie.*]
 
 
+#exo("TD2 ex1")[
+#align(center, image("assets/boite.png", height:30%))
+]
+#pagebreak()
+#text(blue)[
+*1.*\
+Soit $Vr(h)$ le volume de la boite en fonction de $h$ la longueur des cotés des carrés gris (plus tard la hauteur de la boite)
+
+$Vr(h) &= h times Lr times cal(l)$ avec
+- $Lr = 29.7-2h"    "$  (la longueur de la boite)
+- $cal(l) = 21 - 2h"       "$ (la largeur de la boite)
+
+Pour $0 < h <10.5$
+
+$ Vr(h) &= h times (29.7 - 2h) times (21 - 2h)\
+&=  h times (29.7 times 21 - 59.4 h - 42h + 4h^2)\
+&= 4h^3 - 101.4h^2 + 623.7h $
+
+à la calculatrice, le volume maximal de la boite est atteint en $h = 4.040 c m$\
+(Avec nos outils on est précis au demi-millimètre près, pas plus)\
+(ou alors on s'emmerde a faire une étude de fonction pour de toute façon trouver une réponse approchée)
+
+#align(center, image("assets/calc.png", height:20%))
+]
+
+#text(blue)[
+*2.*\
+#align(center, image("assets/td2.1.2.jpg"))
+- objectif de manipuler le problème ouvert avec un exemple ($h = 3c m$)
+
+- Prérequis :
+  - notions de volumes
+
+- Dans cet exemple on se place dans un cadre numérique-algébrique
+
+- Le fait de faire construire la boîte aux élèves les encourage à communiquer entre eux et les aide à visualiser le problème. Cela rend également le problème ludique.
+
+]
 
 
 
