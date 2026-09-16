@@ -221,6 +221,32 @@
   )
 }
 
+#let methodo(..titre, body) = { 
+  let colors = (rgb("#7214a5"), rgb("#fbf2ff"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Méthode "+ titre.pos().at(0)
+  }
+  else{
+    header = "Méthode"
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    table(
+      fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
+      align(left, block(inset: 1em, body))
+    )
+  )
+  )
+}
+
 #let exercice(..titre, body) = { 
   let colors = (rgb("#11898f"), rgb("#ddeef2"))
   let header = ""

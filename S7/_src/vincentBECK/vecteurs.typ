@@ -337,8 +337,52 @@ Donc $arrow(A B)mat(x_B-x_A;y_B-y_A)$
 - Lien avec les coordonnées de point (calculs)
 - Transformations géométriques (translation, homothétie)
 - Produit scalaire (lien avec l'orthogonalité)
+
 - De nouveaux outils pour montrer des propriétés géométriques
   - calculs faciles (relation de Chasles)
-  - porte beaucoup d'informations (norme, direction, sens)
-  
+  - caractérisation de l'alignement de points, du parallélisme, du parallélogramme, du milieu
 
+- porte beaucoup d'informations (norme, direction, sens)
+
+#rappel[$A,B,C,D$ non-alignés. $arrow(A B) = arrow(C D) ssi A B C D$ parallélogramme]
+
+#pagebreak()
+#exo("- Théorème de Varignon")[
+$A B C D$ quadrilatère quelconque, soient $I,J,K,L$ les mileus respectifs de $[A B], [B C], [C D]$ et $[D A]$
+#align(center, image("assets/varignon.png", height:20%))
+
+*Que dire dire du quadrilatère $I J K L$ ?*
+]
+
+#table(columns:2, stroke:none)[#text(blue)[
+#block(width:100%)[
+$A I = I B$ donc $arrow(I A) = 1/2 arrow(B A)$
+
+de même $arrow(L D) = 1/2 arrow(A D)$
+
+$ arrow(I L) &= arrow(I A) + arrow(A L) "(Chasles)"\
+&= 1/2 arrow(B A) + 1/2 arrow(A D)\
+&= 1/2 (arrow(B A) + arrow(A D)) "(factorisation)"\
+&= 1/2 arrow(B D) $
+
+De même $arrow(J K) = 1/2 arrow(B D)$
+
+Donc $arrow(I L) = arrow(J K)$
+
+*Donc $I J K L$ est un parallélogramme*]
+]][
+#align(horizon+right,image("assets/varignon2.png", height:20%))]
+
+
+#methodo("- Apprendre à chercher")[
+$->$ observer la figure et y faire des constatations\
+$->$ faire plusieurs figures\
+*Conjecturer*
+
+Maintenant on sait ce qu'on veut démontrer,
+
+
+*Comment ?*\
+$-> arrow(I J) =^? arrow(K L)$ *ou* $arrow(I L) =^? arrow(J K)$
+
+]
