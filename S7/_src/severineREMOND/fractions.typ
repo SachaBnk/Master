@@ -11,6 +11,7 @@
   strong(it)
 }
 #show heading.where(level: 2): set heading(outlined: false)
+
 #show heading.where(level: 1): it => {text(1.3em)[#it\ ]}
 #text(1.3em)[#outline(title : "")]
 \ \
@@ -180,5 +181,29 @@ Comment les manuels de 6e traitent-ils les nombres entiers et les nombres décim
 
 ]
 
+#pagebreak()
+#rq("d'un document Eduscol")[
+"Il convient d'être vigilant dans la construction simultanée du sens (compréhension de l'aspect positionnel et décimal de notre numération) ..."
 
+*Positionnel* : comme dans les tableaux de numération
 
+*décimal* : construction du nombre décimal avec les fractions rationnelles
+
+Les deux sont au programme
+
+]
+
+#ex["450" $->$ y'a combien d'unités ?
+- positionnel : "bah y'en a 0"
+- décimal : 450 unités
+
+]
+
+#table(columns:2, stroke:none)[*rupture*][*continuité*][
+- il n'y a plus de notion de "nombre suivant" dans les décimaux
+- plus de chiffre $!=$ plus grand
+- multiplier par $x$ c'est pas ajouteer $x$ fois ce nombre
+][
+- la valeur de chaque chiffre dépend de sa position dans l'écriture 
+- les différentes unités sont liées ("paquets de 10")
+]
