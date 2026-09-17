@@ -277,6 +277,7 @@ Découvrir le parallélogramme par la propriété sur les diagonales
 - communication (débat mathématique)
 - chercher
 - peu couteux
+- peu de prérequis
 ][
 - nécessite de suivre le protocole de construction
 - organisation de la séance (quelles modalités ?)
@@ -285,6 +286,11 @@ Découvrir le parallélogramme par la propriété sur les diagonales
 - Communiquer
 - Chercher
 ]
+
+#rq[cette activité reste dans la G1, les élèves seront plus à l'aise mais iels auront peut etre plus de mal lors du passage à la G2.]
+
+
+
 #pagebreak()
 #ex("d'activité 2")[
 
@@ -329,7 +335,7 @@ Découvrir le parallélogramme par sa définition et la démonstration des prorp
 ]
 
 #pagebreak()
-#ex("d'activité 3")[mettre deux bandes de papier calque l'une sur l'autre, un quadrilatère apparait, le reporter sur sa feuille.
+#ex("d'activité 3")[Mettre deux bandes rectangulaies de papier calque l'une sur l'autre, un quadrilatère apparait, le reporter sur sa feuille.
 - que peut-on dire des quadrilatères obtenus ?
 - quels quadrilatères particuliers peut-on obtenir ?
 #table(columns:2, stroke:none)[
