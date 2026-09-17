@@ -13,6 +13,7 @@
 }
 #show heading.where(level: 2): set heading(outlined: false)
 #show heading.where(level: 1): it => {text(1.3em)[#it]}
+#show heading.where(level: 2): it => {text(1.3em)[#it]}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
@@ -239,9 +240,9 @@ Cette propriété peut servir de définition ou peut se démontrer à partir d'u
 - Proposer une trace écrite telle qu'elle pourrait être proposée à des élèves de 5e
 ]
 
-#def[
-Un *rectangle* est un parallélogramme avec un angle droit
-]
+
+def : Un *rectangle* est un parallélogramme avec un angle droit
+
 
 propriétés : 
 - diagonales de meme longueur
@@ -258,9 +259,103 @@ De même $hat(A B C) + hat(B C D) = 180°$
 ]
 - trois angles droits
 
-#def[*losange* = parallélo avec deux cotes consecutifs de meme longueur]
-...
-#def[*carré* = rectangle + losange]
-...
+*def* : *losange* = parallélo avec deux cotes consecutifs de meme longueur
 
+
+*def* : *carré* = rectangle + losange
+
+#pagebreak()
+== Exemples d'activités d'intro pour les parallélogrammes
+
+#ex("d'activité 1")[Marquer le milieu de deux spaghettis, superposer les milieux, marquer les extremités, que dire sur le quadrilatère obtenu ?]
+
+#table(columns:(1fr, 1fr,1fr, 1fr), stroke: none)[*objectifs*][*avantages*][*inconvénients / obstacles*][*Compétences développées*][
+Découvrir le parallélogramme par la propriété sur les diagonales
+][
+- plein de parallélogrammes obtenus (dont des particuliers)
+- facile et rapide a réaliser
+- communication (débat mathématique)
+- chercher
+- peu couteux
+][
+- nécessite de suivre le protocole de construction
+- organisation de la séance (quelles modalités ?)
+- manque de notation mathématiques
+][
+- Communiquer
+- Chercher
+]
+#pagebreak()
+#ex("d'activité 2")[
+
+
+#table(columns:2, stroke:none,inset:1em)[
+- construire $A B C D$ à partir de $A,B$ et $C$
+- prouver que $hat(E B C) = hat(B A D)$
+- prouver que $hat(B C D) = hat(B A C)$
+
+][
+  #image("assets/intro_parallelogramme.png", height:15%)]
+]
+
+#text(blue)[
+*2*\
+$(A D)$ et $(B C)$ sont parallèles, $(A B)$ coupe $(A D)$ et $(B C)$\
+Donc $hat(B A C) = hat(E B C)$
+
+*3*\
+$hat(E B C)$ et $hat(B C D)$ sont alternes-internes car $(A B)$ et $(D C)$ sont parallèles\
+Donc $hat(E B C) = hat(B C D)$
+
+
+]
+
+#table(columns:(1fr, 1fr,1fr, 1fr), stroke: none)[*objectifs*][*avantages*][*inconvénients / obstacles*][*compétences*][
+Découvrir le parallélogramme par sa définition et la démonstration des prorpiétés
+
+][
+- mobilise els connaissances de géométrie
+- point de départ : définition attendue dans les programmes
+][
+- bcp de prérequis
+- pas de manipulation
+- travail abstrait / théorique
+- trop guidée
+- autonomie relative (place du prof ?)
+- illusion de G2 mais bcp de G1
+][
+- Raisonner
+- Représenter
+]
+
+#pagebreak()
+#ex("d'activité 3")[mettre deux bandes de papier calque l'une sur l'autre, un quadrilatère apparait, le reporter sur sa feuille.
+- que peut-on dire des quadrilatères obtenus ?
+- quels quadrilatères particuliers peut-on obtenir ?
+#table(columns:2, stroke:none)[
+- tracer les $(d'_1)$ et $(d'_2)$ les symétriques de $(d_1)$ et $(d_2)$ par rapport à $O$, le quadrilatère obtenu est noté $A B C D$.
+  - que dire des droites $(A B)$ et $(C D)$ ?
+  - en déduire que $A B C D$ est un parallélogramme
+][
+  #align(horizon+center, image("assets/17_09_2026.png"))
+]
+]
+
+#table(columns:(1fr, 1fr,1fr, 1fr), stroke: none)[*objectifs*][*avantages*][*inconvénients / obstacles*][*compétences*][
+Découvrir le parallélogramme par la propriété de ses côtés parallèles et par la propriété du centre de symétrie
+][
+- Prise d'initiative
+- Chercher
+- observation puis démonstrtion 
+- connaissances symétrie centrale remobilisées
+- variété de parallélogrammes obtenus
+][
+- prérequis
+- ne traite pas l'ensemble des propriétés du parallélogramme
+- centre de symétrie un peu forcé
+][
+- Représenter
+- Chercher
+- Raisonner
+]
 
