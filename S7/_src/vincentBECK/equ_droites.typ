@@ -17,15 +17,7 @@
 #pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
 
-
-#question[
-- c'est quoi une droite ?
-- comment on caractérise une droite ?
-- c'est quoi une équation de droite ?
-- quelles sont les formes d'équations de droites?
-]
-
-= 1. C'est quoi une droite ?
+= C'est quoi une droite ?
 #text(blue)[
 - représentation d'une fonction affine $->$ pb des droites verticales
 - "un trait qui passe par deux points" (CE1) $->$ marche aussi pour un segment
@@ -44,13 +36,13 @@ dire qu'une droite c'est un trait qui passe par deux points ça a l'avantage de 
 ]
 
 #def("chouette de Vincent Beck")[
-La *droite* $(A B)$ est l'ensemble des points du plan qui sont alignés avec $A$ et $B$
+La *droite* $(A B)$ est l'ensemble des points du plan qui sont alignés avec $A$ et $B$.
 
 *En particulier, une droite est un ensemble de points du plan*
 ]
 
 #pagebreak()
-= 2. Comment on caractérise une droite ?
+= Comment on caractérise une droite ?
 
 
 
@@ -101,7 +93,7 @@ Ainsi $au mat(y_B-y_A;x_B-x_A)$ est un vecteur directeur de $(d)$
 
 ]
 
-#ex[pt + vecteur directeur $ssi$ équation de droite][
+#ex[avec le déterminant][
 (rattraper)
 ]
 
@@ -143,17 +135,62 @@ $ y_B-y_A &= a x_B + cancel(b) - a x_A - cancel(b)\
 $y_B-y_A = a(x_B-x_A)$
 ]
 
-#text(blue)[
-*3.*\
-Relation sur les coordonnées des points du plan vérifiée uniquement par les points appartenant a cette droite, sous la forme $y = f(x)$ avec $f$ une fonction affine, *si la droite $(d)$ n'est pas parallèle à l'axe des ordonnées*
+#pagebreak()
+#ex[pt + vect normal $imp$ eq droite][
+Soit $(d)$ une droite (non-verticale) caractérisée par un pt $A(x_A,y_A)$ et un vecteur directeur $an mat(alpha;beta)$
 
-Un pt $M(x_M, y_M)$ appartient à $(d)$ ssi $y_M = f(x_M)$
+$ M in d &ssi arrow(A M) "orthogonal à" an\
+&ssi scal(arrow(A M), an) = 0\
+&ssi scal(mat(x-x_A;y-y_A), mat(alpha;beta)) = 0\
+&ssi alpha(x-x_A) + beta(y-y_A) = 0 $
+
+]
+
+#rq("importante")[Le produit scalaire traduit par le calcul la notion d'orthogonalité]
+
+
+= C'est quoi une équation de droite ?
+
+#def("chouette de Vincent Beck")[
+Une *équation de droite* est une *égalité* qui permet de savoir si un point dont on connait les coordonnées $(x;y)$ *appartient ou non* à la droite
+]
+
+#rq[Cette définition s'adapte directement pour les définitions d'équations de cercle, et de courbe représentative d'une fonctinon]
+
+<eqcartesienne>
+#thm[
+La forme d'une équation de droite est $a x + b y + c = 0$, avec $(a,b) != (0,0)$
+]
+
+#pagebreak()
+#rq[si $a=b=0$][
+- cas $c != 0$, alors l'équation "$c=0$" déctrit l'ensemble vide
+- cas $c = 0$, alors l'équation "$c = 0$" décrit le plan tout entier
 ]
 
 
 
-#text(blue)[*4.*\
-- éq cartésienne : $a x + b y + c = 0$
-- éq réduite : $y = m x + l$
+= Quelles sont les formes des équations de droite ?
+*$->$ équations cartésiennes et réduites*
+
+*progression :*
+- fonctions (affines)
+- courbes représentatives d'une fonction et équation associée
+- lien avec les équations réduites d'une droite par les fonctions affines
+- pb des droites verticales $->$ équations cartésiennes
+\ \
+#memo[
+- Le déterminant permet d'obtenir l'équation d'une droite (si on connaît le vecteur directeur ou deux points $A != B$)
+
+- Le produit scalaire permet d'obtenir l'équation d'une droite (si on connaît le vecteur normal)
+
+- Deux formes d'équations de droites : *équations cartésiennes* (⚠️ $(a,b)!=(0,0)$) et *équations réduites*
+
+- Pas de def d'équation de droite dans les manuels (une équation de droite est une égalité)
+
+- La forme d'une équation de droite est un thm et pas une définition (#lien(<eqcartesienne>, "ici"))
+
+
+
 
 ]

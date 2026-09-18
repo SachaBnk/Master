@@ -312,3 +312,4 @@
 #let a0 = $arrow(0)$
 #let ai = $arrow(i)$
 #let aj = $arrow(j)$
+#let an = $arrow(n)$
