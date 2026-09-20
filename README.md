@@ -24,7 +24,7 @@ dans chaque semestre : src contient les fichiers source en typst (si vous voulez
 
 **Et bien sur fuck les IA génératives**
 
-<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/12659a66-56bf-4ddd-b50a-882923bd2a2c" /> <img width="3840" height="2439" alt="image" src="https://github.com/user-attachments/assets/d8308267-9813-459b-9d37-93f8bd7e0674" />
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/12659a66-56bf-4ddd-b50a-882923bd2a2c" /> <img width="384" height="243.9" alt="image" src="https://github.com/user-attachments/assets/d8308267-9813-459b-9d37-93f8bd7e0674" />
 
 
 Voila bisous bonne lecture <3
