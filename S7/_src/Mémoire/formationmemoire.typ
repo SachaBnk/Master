@@ -1,12 +1,21 @@
 #import "../_Template/titres.typ" : *
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
-#show heading: it => {it.body+"\n"}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
-#frontpage("Formation Mémoire")
+#frontpage("Formation mémoire")
 
+#show outline.entry.where(level: 1): it => {
+  v(12pt)
+  strong(it)
+}
+#show heading.where(level: 3): set heading(outlined: false)
+
+#show heading.where(level: 1): it => {text(1.3em)[#it\ ]}
+#text(1.3em)[#outline(title : "")]
+\ \
+#pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
 
 = Objectifs du mémoire
@@ -52,7 +61,6 @@ trois séances de découverte : theme imposé + restitution à la fin de l'heure
 
 #pagebreak()
 = 04/09
-
 *Thèmes :*
 - Nombres relatifs
 - Fonctions
@@ -60,7 +68,7 @@ trois séances de découverte : theme imposé + restitution à la fin de l'heure
 - Probabilités
 - Puissances $<-$
 
-= Nb premiers
+== Nb premiers
 
 === pk c'est important ?
 - apparait très tot jusqu'à la terminale
@@ -78,7 +86,7 @@ trois séances de découverte : theme imposé + restitution à la fin de l'heure
 
 $->$ pas de grosse "marche" la progression est fluide 
 
-= Fonctions
+== Fonctions
 
 === pk c'est important ?
 - vie de tous les jours (graphiques / tableaux)
@@ -110,7 +118,7 @@ $->$ pas de grosse "marche" la progression est fluide
 - confusion entre $f(x)$ et $f$
 
 
-= nb relatifs
+== nb relatifs
 
 === Objectifs
 - definition en 5e
@@ -133,7 +141,7 @@ $->$ pas de grosse "marche" la progression est fluide
 - varier les contextes
 
 
-= Probas
+== Probas
 
 === Objectifs
 - lycée : distinction modèle / réalité
@@ -147,6 +155,37 @@ $->$ pas de grosse "marche" la progression est fluide
 
 - compris entre 0 et 1
 - confusion arbres pondérés et arbres d'issues
+
+#pagebreak()
+= 18/09
+#rq("- qu'est ce qu'on veut voir pendant les présentations")[
+#table(columns:2, stroke: none)[*Contenu*][*Forme*][
+- Progression sur les cycles et pourquoi on le fait à ce moment la, et mise en avant des difficultés au fur et a mesure de la progression
+
+- Recommandations sur la façon de présenter certains points du programme
+
+- (Lien avec l'histoire des maths)
+
+- Lien avec les autres notions mathématiques et autres matières
+
+- Commentaires perso
+
+- Différence avec les anciens programmes
+
+- Exemples de difficultés illustrées
+][
+- Frise chronologique
+
+- Trace écrite au tableau (éventuellement diapo)
+]
+]
+
+Thèmes :
+- Calcul littéral
+- grandeur et mesures
+- géométrie dans l'espace
+- géométrie plane
+- Traitement de données
 
 
 

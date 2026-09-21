@@ -101,7 +101,7 @@ Ainsi $au mat(y_B-y_A;x_B-x_A)$ est un vecteur directeur de $(d)$
 #rq("- parenthèses ou pas parenthèses ?")[
 Avec des points, on est obligés de mettre des parenthèses pour signifier la droite $(A B)$
 
-Mais si notre droite s'appelle $d$, on est pas obligé de mettre des parenthèses. Les deux existent, pour se décider on peut regarder 
+Mais si notre droite s'appelle $d$, on est pas obligé de mettre des parenthèses. Les deux existent, pour se décider on peut regarder ce qui est préconisé dans les programmes/ressources.
 ]
 
 #rq("2")[Bien penser à annoncer comment on articule son raisonnement ("On veut trouver un autre point de $(d)$")]
