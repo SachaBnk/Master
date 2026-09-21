@@ -20,10 +20,12 @@ dans chaque semestre : src contient les fichiers source en typst (si vous voulez
 
 ## Pour conclure
 
-**Je politise ce cours j'emmerde l'extrême droite, j'emmerde le gouvernement français, j'emmerde le gouvernement états-unien euh... j'emmerde tous les fachos, j'emmerde le RN, Éric Zemmour et tout ce qu'il y a autour !**  
+🌸 **Je politise ce cours j'emmerde l'extrême droite, j'emmerde le gouvernement français, j'emmerde le gouvernement états-unien euh... j'emmerde tous les fachos, j'emmerde le RN, Éric Zemmour et tout ce qu'il y a autour !** 🌸
 
 **Et bien sur fuck les IA génératives**
 
-<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/12659a66-56bf-4ddd-b50a-882923bd2a2c" />
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/12659a66-56bf-4ddd-b50a-882923bd2a2c" /> 
 
 Voila bisous bonne lecture <3
+
+<img width="384" height="243.9" alt="image" src="https://github.com/user-attachments/assets/d8308267-9813-459b-9d37-93f8bd7e0674" />
