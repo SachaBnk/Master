@@ -198,6 +198,7 @@ $redimprev$ On considère le quadrilatère $A B C D$ tel que $A B = C D$ et $B C
 
 #align(center)[#image("assets/preuve_parall_1.png", height:25%)]
 
+
 On pose $O$ le milieu du sègment $[A C]$\
 *but* : le symétrique de $B$ par rapport à $O$ est $D$
 
@@ -367,6 +368,44 @@ Découvrir le parallélogramme par la propriété de ses côtés parallèles et 
 
 
 
+#pagebreak()
+= Translations
+
+
+
+#exo("1 : activité d'introduction : translation et vocabulaire (repère IREM n°134) - TD3")[
+#align(center, image("assets/td3_1.png", height: 40%))
+]
+
+
+
+*Objectif* : Caractériser par le *geste* puis *la prise de mots* (nécéssité d'avoir un vocabulaire commun et précis) un déplacement (connu ou non)
+
+*Obstacles* :
+- passer du geste au "bon" mot
+- absence de certains prérequis (la connaissance des transformations)
+- Position non prototypique de l'illustration 5
+- comrpéhension "procédé géométrique"
+
+
+*Réponses des élèves*
+
+- "téléporter", "cloner", "décaler" pour décrire la translation $->$ le terme "translation" n'est pas utilisé avant la 3e
+
+- "parallèle"
+
+- "pivoter", "tourner", "mouvement circulaire", "incliner" $->$ rotation
+
+- "symétrie axiale" est beaucoup revenu $->$ concept vu en 6e, rassurant
+
+#rq[Pour décrire une translation, les mots "téléporter" et "cloner" traduisent cette notion d'instantanéité
+
+À l'inverse, les mots "glisser", "descendre"... donnent l'image mentale d'une image intérmédiaire entre les positions avant et après la transformation
+
+Cette conception erronée de la transiation peut représenter un *obstacle épistémologique*
+
+]
+
 #def[
 Un *obstacle épistémologique* est une conception (une idée) qui fonctionnait très bien jusque la, mais qui devuent un mur empêchant l'apprentissage d'un concept plus complexe.
 
@@ -376,18 +415,69 @@ L'élève doit désapprendre une ancienne "vérité" pour en construire une nouv
 #ex[
 Multiplier par $10, 100, 1000$
 
-*règle élève* : ajout d'un, deux, trois... zéros à la fin du nombre \
+_règle élève_ : ajout d'un, deux, trois... zéros à la fin du nombre \
 $->$ obstacle avec les décimaux
 ]
 
-#exo("- TD3")[
-#align(center, image("assets/td3_1.png", height: 40%))
+#pagebreak()
+#exo("2 : activité (IREM pays de la loire \"Des pavages aux transformations\" cycle 4)")[\
+Consigne : propose une trace écrite permettant de comprendre quelle est la translation qui permet de transformer la fig 1 en la fig 2
+#align(center, image("assets/td3_2.png", height: 40%))
+]
+*Objectif* : Caractériser une translation par le codage
+
+*"classement"* (du plus au moins abouti mathématiquement) :
+#text(blue)[
+- H : les droites ne sont pas notées comme parallèles, mais la conservation des distances est codée
+- G : notion de vecteurs
+- B : "A'" et "B'", notion de transformation
+- C
+- A / D / F 
+- E : oui bon hein
 ]
 
-#text(blue)[
-*Objectif* :
-- Introduire les différentes transformations du plan (rotations, symétries, translation)
-- Faire en sorte que les élèves expriment ce qu'ils observent à l'écrit avec leurs propres mots (ou réemployer le vocabulaire vu précédemment selon le niveau)
 
-
+#table(columns: (1fr, 2fr, 2fr))[*classement*][#align(center+horizon)[*+*]][#align(center+horizon)[*-*]][
+*A*][
+- identification d'un point et son image
+][
+- sens pas indiqué
+- pas d'indication du déplacement
+][*B*][
+- identification d'un point et son image + notation conventionnelle ("$A$" et "$A'$")
+][
+- sens pas indiqué
+- pas d'indication du déplacement
+- pas de codage
+- ne s'appuie que sur les droites tracées
+][*C*][
+- identification d'un point et son image
+- droites parallèles $->$ direction
+][
+- sens pas indiqué
+][*D*][
+- direction
+][
+- ne s'appuie que sur les droites tracées
+- sens pas indiqué
+][*E*\ (vision globale de la figure)][
+- sens + direction
+][
+- mauvaise identification de l'image d'un point
+][*F*][
+- identification d'un point et son image
+- direction
+][
+- sens pas indiqué
+][*G*][
+- sens indiqué
+- identification d'un point et son image
+][
+- ne s'appuie que sur les droites tracées
+][*H*][
+- direction
+- identification d'un point et son image
+- longueur indiquée (codée)
+][
+- sens pas indiqué
 ]
