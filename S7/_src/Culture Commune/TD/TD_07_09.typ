@@ -1,6 +1,6 @@
-#import "../_Template/titres.typ" : *
-#import "frontpage.typ" : frontpage
-#import "../_Template/raccourcis.typ" : *
+#import "../../_Template/titres.typ" : *
+#import "../frontpage.typ" : frontpage
+#import "../../_Template/raccourcis.typ" : *
 #show heading: it => {it.body+"\n"}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
