@@ -226,6 +226,7 @@ Les deux sont au programme
 ]
 
 #text(blue)[
+Notes perso :
 - *tache 2*
   - ok (juste besoin de comparer les unités)
   - chance

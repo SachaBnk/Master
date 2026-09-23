@@ -1,6 +1,9 @@
 #import "../_Template/titres.typ" : *
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
+
+#import "@preview/vartable:0.2.4": tabvar
+
 #show heading: it => {it.body+"\n"}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
@@ -276,4 +279,73 @@ La fonction peut se représenter par un graphique.
 
 ]
 
+#pagebreak()
+#exo("1 - TD3")[
++ Énnoncer la définition d'une fonction croissante (ou décroissante)
 
++ Analyser les définitions suivantes trouvées dans le cahier de cours d'élèves de 2de
+
+#table(inset: 1em, stroke:1pt, columns:(1fr))[
+    *Définition 1 :*\ Une fonction est croissante si : quand $x$ augmente, son image, $f(x)$, augmente aussi.\
+    Une fonction est croissante si : quand $x$ augmente, son image, $f(x)$, diminue
+  ][
+    *Définition 2* : \
+    Soit $f$ une fonction définie sur un intervalle $I$ et deux réels $a<b$\
+    - Si $f(a) < f(b)$ alors la fonction est strictement croissante sur $I$. On dit que la fonction conserve l'ordre
+    - Si $f(a) > f(b)$ alors la fonction est strictement décroissante sur $I$. On dit que la fonction change l'ordre
+    - Si $f(a) = f(b)$, alors $f$ est constante sur $I$
+  ]
+]
+
+#text(blue)[
+*1.*\
+Soit $f : I --> RR$ définie sur un intervalle $I$\
+$f$ est croissante sur $I$ si $forall a,b in I, a<=b imp f(a) <= f(b)$
+
+*2.*\
+a) mal dit, objets pas définis
+
+b)\
+- $a$ et $b$ définis dans $I$ ?
+- #strike[Soit a < b] $->$ Pour tout $(a, b) in I$
+]
+
+#pagebreak()
+#exo("2 - TD3")[
++ Quelles sont les fonctions de référence dont il faut étudier les variations en classe de 2de ?
+
++ Pour chaque fonction de référence, rédiger les démonstrations des variations comme cela pourrait être fait dans un cahier de cours de 2de
+]
+
+#text(blue)[
+== Affines
+
+Soit $f$ une fonction affine définie pour tout $x in RR$ par $f(x) = m x + p$ \
+Soient $a, b in RR$, 
+$ f(b) - f(a) &= m b + cancel(p) - m a - cancel(p)\
+&= m (b-a) $
+Or $b-a > 0$, donc $f(b)-f(a) > 0$ ssi $m > 0$
+
+
+
+// #align(center, tabvar(
+//   variable: $x$,
+//   label: (
+//     ([sign of cos’], "s"),
+//     ([variation of cos], "v"),
+//   ),
+
+//   domain: ($0$, $ pi / 2 $, $ pi $, $ (2pi) / 3 $, $ 2 pi $),
+//   contents: (
+//     ($-$, (), ($+$), ()),
+//     (
+//       (top, $1$),
+//       (),
+//       (bottom, $-1$),
+//       (),
+//       (top, $1$),
+//     ),
+//   )
+// ))
+
+]

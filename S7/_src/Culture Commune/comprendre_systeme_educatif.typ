@@ -272,9 +272,11 @@ $->$ accompagnant d'élèves en situation de handicap
 - protection : repérage de situations préocupantes et travaille avec les partenaires compétents
 
 \ \
-*L'assistant$dot$e scolaire*
+*L'assistant$dot$e de service social*
 
-#rq[rattraper marc]
+- Rôle : accompagner les élèves confrontés à des difficultés scolaires, familiales ou économiques
+- Missions : écoute, accès aux droits, aide aux familles, prévention du décrochage
+- Protection : contribue au repérage et au traitement des situations de danger ou de vulnérabilité
 
 \ \
 *Lae PsyEN*
