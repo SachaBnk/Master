@@ -1,6 +1,8 @@
 #import "../_Template/titres.typ" : *
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
+// #set table.cell(breakable : false) 
+#show heading: it => {it.body+"\n"}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
@@ -12,7 +14,7 @@
 }
 #show heading.where(level: 2): set heading(outlined: false)
 
-#show heading.where(level: 1): it => {text(1.3em)[#it\ ]}
+#show heading.where(level: 1): it => {text(1.3em)[#it]}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
@@ -155,6 +157,7 @@ Donc $A D = 2 A B$
 *Donc $A B = B D$*
 
 ]
+
 #rq[La on a prouvé notre résultat pour les deux premiers triangles, devant des 4e on dirait "avec le même raisonnement" pour les autres triangles (plutôt que de faire une récurrence de bourrin)]
 
 = De l'écriture fractionnaire à l'écriture décimale
@@ -206,4 +209,50 @@ Les deux sont au programme
 ][
 - la valeur de chaque chiffre dépend de sa position dans l'écriture 
 - les différentes unités sont liées ("paquets de 10")
+]
+
+#activite("- jeu de rôle")[
++ Préparer les rôles de l'enseignant et de l'élève
+  - analyser les tâches et l'origine des erreurs des élèves
+  - proposer une aide en choisissant le matériel adapté
+
++ mise en scène
+
+*Matos à disposition :*
+- bandes / quadrillages
+- monnaie
+- droite graduée
+- tableau de numération
+]
+
+#text(blue)[
+- *tache 2*
+  - ok (juste besoin de comparer les unités)
+  - chance
+  - "comme 3 < 28, alors 7.3 < 7.28"
+  - "6.4 a moins de chiffres que 6.04 donc 6.4 < 6.04" (ou alors "6.4 a moins de chiffres 6.04")
+
+- *tache 4*
+  - confusion dixièmes / centièmes
+  - ($08 =^? 8$)
+  - calculer la distance des deux cotés (et placer sur une droite gradué éventuellement)
+  - aide : tableau de numération
+
+- *tache 6*
+  - "0.4 + 0.8 = 0.12" $->$ utiliser les euros pour illustrer l'erreur (ou les bandes pour l'addition)
+  - revenir aux fractions pour l'aider
+
+]
+
+
+#memo[
+- Importance des *supports matériels*
+Il doit illustrer ce que l'élève doit faire et doit comprendre\
+$->$ changement de point de vue
+
+- Importance des *stratégies d'aide*
+
+comprendre la logique de l'élève, l'orrigine de son d'erreur, évider de trop guider, laisser certaines choses à la charge de l'élève, ne pas se contenter de l'aider à réussir la tâche (aide productive vs aide constructive)
+
+(Zone proximale de développement, Vygotski, 1997)
 ]

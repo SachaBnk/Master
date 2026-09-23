@@ -66,7 +66,7 @@ L'ETG met en tension trois composantes :
 
 #exo()[Identifier les difficultés dans les réponses suivantes. Proposer des pistes de remédiation.\
 (Voir TD1 géométrie)]
-#text(green)[
+#text(blue)[
 *1. "$A B C D$ est un rectangle car j'ai mesuré les angles, et on voit sur la figure que les cotés opposés sont parallèles"*\
 Confond les géométries 1 et 2, mesure sur la figure et n'est pas encore en mesure de réemployer les propriétés du cours\
 On peut lui proposer de reconstruire le dessin sur son cahier
@@ -234,7 +234,7 @@ Quand les deux énoncés (direct et réciproque) sont vrais, on dit que c'est un
 Cette propriété peut servir de définition ou peut se démontrer à partir d'une définition (choisie parmi les autres propriétés caractéristiques)
 ]
 
-#pagebreak()
+
 #activite[
 - Choisir la définition du rectangle, losange, carré
 - Énoncer les propriétés, les démontrer, identifier les prérequis
@@ -251,6 +251,8 @@ propriétés :
 - deux cotés consécutifs perpendiculaires
 - deux angles consecutifs de meme mesure
 - quatre angles droits
+
+#pagebreak()
 #demo[
 Soit $A B C D$ un rectangle, il possède un angle droit (disons $hat(D A B)$)
 En particulier $A B C D$ est un parallélogramme ses cotés consécutifs, sont supplémentaires. Donc $hat(D A B) + hat(A B C) = 180°$, donc $hat(A B C) = 90°$
@@ -265,7 +267,7 @@ De même $hat(A B C) + hat(B C D) = 180°$
 
 *def* : *carré* = rectangle + losange
 
-#pagebreak()
+
 == Exemples d'activités d'intro pour les parallélogrammes
 
 #ex("d'activité 1")[Marquer le milieu de deux spaghettis, superposer les milieux, marquer les extremités, que dire sur le quadrilatère obtenu ?]
@@ -406,6 +408,7 @@ Cette conception erronée de la transiation peut représenter un *obstacle épis
 
 ]
 
+
 #def[
 Un *obstacle épistémologique* est une conception (une idée) qui fonctionnait très bien jusque la, mais qui devuent un mur empêchant l'apprentissage d'un concept plus complexe.
 
@@ -432,17 +435,22 @@ Consigne : propose une trace écrite permettant de comprendre quelle est la tran
 - G : notion de vecteurs
 - B : "A'" et "B'", notion de transformation
 - C
+- E : sens + direction
 - A / D / F 
-- E : oui bon hein
 ]
 
 
-#table(columns: (1fr, 2fr, 2fr))[*classement*][#align(center+horizon)[*+*]][#align(center+horizon)[*-*]][
-*A*][
+#table(columns: (1fr, 2fr, 2fr), table.header([*classement*],[#align(center+horizon)[*+*]],[#align(center+horizon)[*-*]]))[*H*][
+- direction
 - identification d'un point et son image
+- longueur indiquée (codée)
 ][
 - sens pas indiqué
-- pas d'indication du déplacement
+][*G*][
+- sens indiqué
+- identification d'un point et son image
+][
+- ne s'appuie que sur les droites tracées
 ][*B*][
 - identification d'un point et son image + notation conventionnelle ("$A$" et "$A'$")
 ][
@@ -469,15 +477,39 @@ Consigne : propose une trace écrite permettant de comprendre quelle est la tran
 - direction
 ][
 - sens pas indiqué
-][*G*][
-- sens indiqué
-- identification d'un point et son image
 ][
-- ne s'appuie que sur les droites tracées
-][*H*][
-- direction
+*A*][
 - identification d'un point et son image
-- longueur indiquée (codée)
 ][
 - sens pas indiqué
+- pas d'indication du déplacement
 ]
+
+#ex("de synthèse")[
+*Une translation est caractérisée par :*
+- une *direction*
+- un *sens*
+- une *longueur*
+
+#align(center, image("assets/TD3_2_synthese.png", width:80%))
+rq : $(A A') \/\/ (B B')$ et $A A' = B B'$, donc $A A' B' B$ est un parallélogramme
+]
+
+#def[On appelle *translation* qui transforme $A$ en $A'$ la transformation qui à tout point $B$ associe $B'$ tel que $A A' B' B$ est un parallélogramme (éventuellement applati)]
+
+#activite("- TD4")[
+- Sur ce pavage, coloriez un motif de base (le motif $M$).
+- Coloriez d'une autre couleur tous les motifs qui sont exactement dans la même position (même orientation, ni tournés, ni retournés).
+#block(stroke: 1pt, inset : 1em)[À faire collectivement :
+- Noter les motifs coloriés $M_1$, $M_2$, $M_3$, $M_4$, etc. de sorte qu'ils soient images l'un de l'autre par les translations les plus courtes.
+- Placer deux points $A$ et $B$ sur deux détails très précis du motif de base $M$ (par exemple, un sommet). Placez les points correspondants $A_1$, $A_2$, $A_3$, $A_4$, ... et $B_1, B_2, B_3 , B_4$, ... sur les motifs $M_1, M_2, M_3, M_4$,..]
+- Quelle est l'image du motif $M$ par la translation qui transforme :
+#align(center, table(stroke: none, columns: (1fr,1fr,1fr))[a) $A$ en $A_1$][b) $B$ en $B_1$][c) $A_1$ en $A_2$])
+]
+
+- Pavage 1, 2 et 4 : pas un polygone réguliers + axes de symétrie gênent l'identification de la translation
+- Pavage 5 : Figures difficilement différentiables
+
+$->$ On conserve le pavage 3 :
+
+#align(center, image("assets/TD4.png", width: 50%));
