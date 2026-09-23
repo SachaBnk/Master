@@ -27,7 +27,29 @@
 }
 #let def = definition
 
-
+#let article(..titre, body) = {
+  let color_def = (rgb("#d43333"), rgb("#fbd1d1"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Article "+ titre.pos().at(0)
+  }
+  else{
+    header = "Article"
+  }
+  align(center,
+  block(
+    radius: 1em,
+    stroke: (paint: color_def.at(0), thickness: 2pt),
+    clip: true,
+    table(
+      fill: (_, y)=>(if (y==0){color_def.at(0)} else {color_def.at(1)}),
+      stroke: (paint: color_def.at(0), thickness: 2pt),
+      align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
+      align(left, block(inset: 1em, body))
+    )
+  )
+  )
+}
 
 #let theoreme(..titre, body) = {
   let color_thm = (rgb("#d43333"), rgb("#fff9f9"))

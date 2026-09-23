@@ -365,3 +365,29 @@ Découvrir le parallélogramme par la propriété de ses côtés parallèles et 
 - Raisonner
 ]
 
+
+
+#def[
+Un *obstacle épistémologique* est une conception (une idée) qui fonctionnait très bien jusque la, mais qui devuent un mur empêchant l'apprentissage d'un concept plus complexe.
+
+L'élève doit désapprendre une ancienne "vérité" pour en construire une nouvelle.
+]
+
+#ex[
+Multiplier par $10, 100, 1000$
+
+*règle élève* : ajout d'un, deux, trois... zéros à la fin du nombre \
+$->$ obstacle avec les décimaux
+]
+
+#exo("- TD3")[
+#align(center, image("assets/td3_1.png", height: 40%))
+]
+
+#text(blue)[
+*Objectif* :
+- Introduire les différentes transformations du plan (rotations, symétries, translation)
+- Faire en sorte que les élèves expriment ce qu'ils observent à l'écrit avec leurs propres mots (ou réemployer le vocabulaire vu précédemment selon le niveau)
+
+
+]
