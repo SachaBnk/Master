@@ -1,6 +1,7 @@
 #import "../_Template/titres.typ" : *
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
+#show heading: it => {it.body+"\n"}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
@@ -11,24 +12,49 @@
   strong(it)
 }
 #show heading.where(level: 2): set heading(outlined: false)
-#show heading.where(level: 1): it => {text(1.3em)[#it\ ]}
+#show heading.where(level: 1): it => {text(1.3em)[#it]}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
 
+= Grands principes
 
-= Rattraper cours marwanne
-
-*Partie 2*
-
-+ Connaitre l'organisation du système éducatif
-
-+ Connaitre le fonctionnement d'un EPLE, le rôle et les missions des différents acteurs qui le composent
-
-#article("L211-1 du Code de l'éducation")[
-*L'éducation est un service public national, dont l'organisation et le fonctionnement sont assurés par l'état*
+#def[L'*éducation* est une *priorité nationale* (article L111-1), un *devoir de l'État* (préambule constitution 1946), un *droit pour tous*, et une formation à la *citoyenneté*
 ]
+
+Le système éducatif est fondé sur :
+- l'*obligation scolaire* (sauf régime d'autorisation pour l'école à la maison)
+- la *gratuité* (loi Ferry 1881)
+- la *laïcité*
+- Dispose du *DGEIP* (DGESCO pour études sup) / *IGÉSR* (études, sport, recherche)
+- *régions d'académie*
+  - Mise en cohérence de l'insertion pro et apprentissage, distribution des postes et fonds européens
+  - Académies (25 en tout)
+    - Recteur d'Orléans-Tours : M. Agresti
+    - Représentant du ministre, stratégie d'application du projet académique sur le territoire, autorité sur gestion du personnels
+
+  - DSDEN
+    - représenté par les DASEN
+    - organisation locale
+
+- *Liberté de l'enseignement*
+  - Mode de scolarisation au choix (public / privé)
+  - Respect total de liberté de conscience dans le privé (loi Debré 1959)
+  - École privée associée à l'État, soumise à des inspections et adopte le programme d'enseignement public
+
+#pagebreak()
+= Rôle du ministre de l'Éducation nationale
+
+$->$ Organisation hiérarchique du système :
+- Administration centrale
+- Régions académiques
+- Académiques
+- DSDEN
+
+Ministre de l'éducation nationale (Édouard Geffray)
+- Accès au cabinet du ministre
+- Autorité sur le secrétariat général / la DGESCO
 
 *La répartition des compétences entre les collectivités territoriales et l'état* 
 - écoles : communes
@@ -46,7 +72,7 @@
 #pagebreak()
 = L'équipe de direction
 - *chef d'établissement*
-  - Représentant de l'étta dans l'EPLE
+  - Représentant de l'état dans l'EPLE
   - Organe exécutif de l'EPLE
   - Pilotage des instance
 
@@ -158,13 +184,12 @@
   - Suivi de la scolarité de l'élève
 
 
-#pagebreak()
 = L'équipe spécialisée
 
 ==  Les enseignant$dot$es de dispositifs spécialisés
 
-- *Les unités pédagogiques pour les élèves allophones arrivants (UPE2A)*
-#rq()[
+*Les unités pédagogiques pour les élèves allophones arrivants (UPE2A)*
+
 - Public : élèves allophones nouvellement arrivés (EANA)
 
 - Besoin principal : apprendre le français comme langue de communication et de scolarisation
@@ -174,26 +199,26 @@
 - Acteurs : enseignants UPE2A, équipes pédagogiques, direction, CASNAV, famille
 
 ⚠️ l'UPE2A n'est pas une filière spécialisée : l'inclusion dans la classe de référence reste centrale
-]
+\ \ \
 
-- *Les unités localisées pour l'inclusivité scolaire (ULIS)*
-#rq()[
+*Les unités localisées pour l'inclusivité scolaire (ULIS)*
+
 - *Statut* : dispositif ouvert, pas une classe fermée
 - *Public* : élèves orientés par la CDAPH dans le cadre d'un PPS (plan personnalisé de scolarisation)
 
 - *Organisation* : classe de référence + temps de regroupement avec le coordonateur ULIS
 
 - *Coordinateur* : enseigne, coordonne le dispositif et conseille la communauté éducative
-]
 
-- *Les sections d'enseignement général et professionnel adapté (SEGPA)*
-#rq[- Élèves présentant des difficultés scolaires graves et persistantes
+\ \ \
+*Les sections d'enseignement général et professionnel adapté (SEGPA)*
+- Élèves présentant des difficultés scolaires graves et persistantes
 
 - Section intégrée au collège, avec enseignants adaptés
 
 - Suivi individualisé, acquiqsition du socle, découverte progressive des champs professionnels
 
-- *Orientation* : procédure spécifique associant famille, équipe éducative et commission départementale]
+- *Orientation* : procédure spécifique associant famille, équipe éducative et commission départementale
 
 
 
@@ -212,66 +237,59 @@ $->$ accompagnant d'élèves en situation de handicap
 - favoriser l'autonomie, l'accès aux apprentissages, la vie sociale et relationnelle
 - sous la responsabilité pédagogique des enseignants, en lien avec l'équipe éducative
 
-
+#pagebreak()
 = L'équipe de vie scolaire
+*Lae CPE*
 
-- *Lae CPE*
 
-#rq[
 - Participe à l'élaboration et à la mise en oeuvre du projet éducatif de l'EPLE
 - Suivi ces élèves : assiduité, comportement, climat, écoute, relation avec les familles
 - Animes l'éauipe des AED et organis le service de vie scolaire
 - Citoyenneté : formation des délégués, CVC/CVL, engagement et participation des élèves
-]
 
-#pagebreak()
-- *Les AED*
+\ \
+*Les AED*
 
-#rq[
 - surveillance, sécurité, accueil, études, internat, gestion des absences et retards
 - aide aux devoirs, soutien, animation d'activités éducatives ou culturelles
-]
 
 
 = Le pôle médico-social
 
-- *Lae médecin de l'éducation nationnale*
+*Lae médecin de l'éducation nationale*
 
-#rq[
 - Rôle : expertise médicale au service de la scolarité et de la prévention
 - Situations : santé, handicap, troubles des apprentissages, protection de l'enfence
 - Dispositifs : participe à l'analyse médicale des besoins et aux aménagements adaptés
-]
 
 
-- *L'infirmier$dot$e scolaire*
+\ \
+*L'infirmier$dot$e scolaire*
 
-#rq[
 - reçoit, écoute, évalue les situations et dispense les soins relevant de ses compétences
 - participe aux dispositifs de santé et à la mise en oeuvre de certains PAI
 - prévention : actions collectives (santé, sexualité, etc)
 - protection : repérage de situations préocupantes et travaille avec les partenaires compétents
 
-]
-
-- *L'assistant$dot$e scolaire*
+\ \
+*L'assistant$dot$e scolaire*
 
 #rq[rattraper marc]
 
-- *Lae PsyEN*
+\ \
+*Lae PsyEN*
 
-#rq[
+
   - Spécialité : en collège et lycée (éducation, développement et conseil en orientation)
   - Missions : accompagnement psy, aide au parcours, orientation, pfévention du décrochage
   - Travail : entretiens avec élèves et familles, appui aux équipes, actions collectives
-]
 
 
 
 #pagebreak()
 = TD 21/09
 
-== Partie 1 : jeu de roles
+== Partie 1 : jeu de rôle
 
 #activite[Vous participez à un jeu de rôle dans lequel vous incarnez un acteur de la situation. Vous disposez seulement de certaines informations.
 Situation :
@@ -290,7 +308,6 @@ Vous avez à votre disposition une fiche personnage comprenant plusieurs actions
 Certaines sont pertinentes, d'autres sont discutables ou ne relèvent pas de votre champ de compétence. Vous ne pouvez en retenir que trois : choisissez les trois actions que vous estimez prioritaires et préparez leur justification. Vous disposez également de la fiche « Quelles sont les punitions ou sanctions applicables au collège ou au lycée ? » (Service-Public.fr).
 ]
 
-#pagebreak()
 #text(blue)[
 Notes perso : (chef d'établissement)
 
@@ -305,6 +322,7 @@ Prof
 - respecte pas les consignes
 - exclu de cours
 
+#pagebreak()
 Inifmiere
 - élève suivi 
 - symptomes observés
@@ -336,7 +354,6 @@ couloir.
   - pronote ou appeler le secrétarait
 - Trouver une salle avec la vie sco
 
-#pagebreak()
 #activite("2")[Un élève est absent de votre cours. Plus tard, en allant faire des photocopies, vous le croisez dans
 les couloirs de l’établissement.]
 
@@ -344,6 +361,7 @@ les couloirs de l’établissement.]
 - vérifier si l'élève a justifié son absence au cours suivant
 - (si la situation arrive pendant l'heure, on accompagne l'élève a la vie sco / en perm)
 
+#pagebreak()
 #activite("3")[
 Pendant l’un de vos cours, un élève se sent mal. Il vous demande s’il peut prendre un médicament
 qu’il a dans son sac.
