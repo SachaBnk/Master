@@ -21,7 +21,7 @@
 
 Les billets générés avec chat GPT ça casse les couilles
 
-#table(columns: (1fr, 4fr))[#align(center+horizon)[*Catégorie A*]][
+#table(columns: (1fr, 4fr))[#align(center+horizon)[*Entendu des catégories A*]][
 - catégorie A esquive la case prison avec la gare (deux fois)
   - réponse d'un$dot$e catégorie B : "eh t'es une pourriture en fait" (_note de l'observateur$dot$ice : oui un peu_)
 - catégorie A : "flemme de rester en taule je paye"
@@ -51,7 +51,7 @@ Les billets générés avec chat GPT ça casse les couilles
 - catégorie A hérite : c'est un catégorie A iel choisit un terrain à prendre
   - réponse d'un$dot$e catégorie B : "eh c'est n'importe quoi"
 - rejoue parce que c'est un homme : "ah c'est un peu dégueulasse"
-][#align(center+horizon)[*autres*]][
+][#align(center+horizon)[*Autres*]][
 - banque : "je suis hyper neutre moi"
 - "... sept... huit... neu- j'achète !" (catégorie B)
 - pas asssez de monnaie pour redistribuer les richesses
