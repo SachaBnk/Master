@@ -513,3 +513,21 @@ rq : $(A A') \/\/ (B B')$ et $A A' = B B'$, donc $A A' B' B$ est un parallélogr
 $->$ On conserve le pavage 3 :
 
 #align(center, image("assets/TD4.png", width: 50%));
+
+
+= Rotations
+
+#def[
+On appelle *rotation* de centre $O$, d'angle $alpha$ dans le sens direct, la transformation qui à tout $A$ associe le point $A'$ tel que
+- $hat(A O A') = alpha$ (sens direct)
+- $A O = O A'$
+]
+
+#methodo("- trouver le centre de rotation")[...]
+
+#exo("2 - TD4")[...]
+
+
+
+
+

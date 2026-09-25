@@ -386,3 +386,38 @@ Maintenant on sait ce qu'on veut démontrer,
 $-> arrow(I J) =^? arrow(K L)$ *ou* $arrow(I L) =^? arrow(J K)$
 
 ]
+
+
+
+= Exos pour illustrer l'utilité des vecteurs
+
+#exo("Terrence")[
+Dans un repère orthonormé on a placé 5 points : 
+#table(stroke: none, columns: (1fr,1fr,1fr,1fr,1fr))[
+$A(9,5)$][$B(7,2)$][$C(14,3)$][$D(13,11)$][$E(2,8)$]
+On a ensuite tracé les droites $(A B), (A C), (B,C)$ et $(E D)$\
+*Les droites $(B C)$ et $(E D)$ sont-elles parallèles ?*
+]
+
+Au collège, la contraposée de Thalès est utilisée pour prouver le non-parallélisme, pas forcément pour calculer des longueurs
+
+#exo("Liam")[\
+$A B C D$ est un losange tel que $A B = 4 c m$\
+$C D E F$ est un parallélogramme tel que $D E = 6 c m$
++ Faire une figure
++ Que dire des droites $(A B)$ et $(D E)$ ?
++ Prouver que $A B = E F$
++ *Démontrer que $A E F B$ est un parallélogramme*
+]
+
+Possible en 5e, mais instantané avec des vecteurs
+
+
+#exo("Lucie")[$A B C D$ est un parallélogramme avec $A(1,2), B(5,4)$ et $D(3,6)$\
+*Trouver les coordonnées de $C$*]
+
+Milieu des diagonales $->$ difficile pour les élèves\
+Un peu moins ouvert (exo d'application)
+
+
+

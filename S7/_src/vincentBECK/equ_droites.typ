@@ -189,8 +189,5 @@ La forme d'une équation de droite est $a x + b y + c = 0$, avec $(a,b) != (0,0)
 - Pas de def d'équation de droite dans les manuels (une équation de droite est une égalité)
 
 - La forme d'une équation de droite est un thm et pas une définition (#lien(<eqcartesienne>, "ici"))
-
-
-
-
 ]
+

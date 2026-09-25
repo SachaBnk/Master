@@ -15,7 +15,7 @@
   strong(it)
 }
 #show heading.where(level: 2): set heading(outlined: false)
-#show heading.where(level: 1): it => {text(1.3em)[#it\ ]}
+#show heading.where(level: 1): it => {text(1.3em, it+"\n")}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
@@ -30,7 +30,7 @@ Moments charnières des fonctions :
 ]
 
 #exo()[Comment on définit une fonction en 3e ?]
-#text(green)[
+#text(blue)[
 
 - Un programme de calcul ?
   - notion image / antécédent
@@ -156,6 +156,8 @@ On veut passer d'une représentation à l'autre pour que l'élève construise le
 Proposer un programme scratch qui calcule les valeurs de la fonction $ f : x ass 2x+3 $
 ]
 
+= Cadres
+
 #def[
 Ces registres et les liens entre ces registres définissent un nouveau cadre : *le cadre fonctionnel*
 
@@ -166,7 +168,7 @@ Il s'ajoute aux autres cadres déjà présents en mathématiques :
 
 #rq[ces cadres sont à voir comme des "lunettes" avec lesquelles les élèves voient les maths]
 
-#pagebreak()
+
 #ex[
 - $f(3) = 2$ $->$ cadre fonctionnel
 - $f$ est décroissante sur l'intervalle $[-5,-1]$ $->$ cadre fonctionnel
@@ -280,10 +282,9 @@ La fonction peut se représenter par un graphique.
 ]
 
 #pagebreak()
+= Variations
 #exo("1 - TD3")[
-+ Énnoncer la définition d'une fonction croissante (ou décroissante)
-
-+ Analyser les définitions suivantes trouvées dans le cahier de cours d'élèves de 2de
+Analyser les définitions suivantes trouvées dans le cahier de cours d'élèves de 2de
 
 #table(inset: 1em, stroke:1pt, columns:(1fr))[
     *Définition 1 :*\ Une fonction est croissante si : quand $x$ augmente, son image, $f(x)$, augmente aussi.\
@@ -297,20 +298,44 @@ La fonction peut se représenter par un graphique.
   ]
 ]
 
+
+
 #text(blue)[
-*1.*\
-Soit $f : I --> RR$ définie sur un intervalle $I$\
-$f$ est croissante sur $I$ si $forall a,b in I, a<=b imp f(a) <= f(b)$
 
-*2.*\
-a) mal dit, objets pas définis
+#table(stroke: none, columns: (1fr,1fr))[*def 1*][*def 2*][
+- pas de mention d'intervalle
+- peu de rigueur mathématique
+- dépendance de $f(x)$ par rapport à $x$ mise en avant
+- registre graphique $->$ c'est un registre plus simple qui permet d'illustrer le concept de croissance dans un premier temps
 
-b)\
-- $a$ et $b$ définis dans $I$ ?
+C'est une définition provisoire de début de séquence
+][
+- intervalle $I$ bien défini
+- $a$ et $b$ définis dans $I$ ? 
 - #strike[Soit a < b] $->$ Pour tout $(a, b) in I$
 ]
+]
+#pagebreak()
+#def[Soit $f$ une fonction définie sur un *intervalle $I$* de $RR$. On dit que $f$ est croissante sur $I$ si *pour tous* éléments $x_1$ et $x_2$ de $I$ avec $x_1 < x_2$, *alors* $f(x_1) <= f(x_2)$
+]
+
+#activite("- Étude du programme de 2de")[Quelle progression sur la notion de variations ?]
+
+
+*Étape 1 :* Introduire la notion en donnant du sens : à partir du registre graphique, en variant bcp les types de courbes (affines ? courbe pas forcément représentative de fonction de référence ?)\
+$->$ déf "informelle" (def 1 exo précédent)
+
+*Étape 2 :* Travailler le sens + introduire le tableau de variations (outil de représentation qui est synthétique et qui met uniquement l'accent sur les variations)
+
+*Étape 3 :* comparer des images à partir des tableau de variations $->$ def "formelle" (def 2 exo précédent)
+
+*Étape 4 :* entraînement à partir de cette définition + démonstration des variations des fonctions de référence : affines, carré, (valeur absolue), inverse
+
+
+
 
 #pagebreak()
+
 #exo("2 - TD3")[
 + Quelles sont les fonctions de référence dont il faut étudier les variations en classe de 2de ?
 
@@ -330,6 +355,7 @@ Or $b-a > 0$, donc $f(b)-f(a) > 0$ ssi $m > 0$
 
 // #align(center, tabvar(
 //   variable: $x$,
+//   first-line-height: 40pt,
 //   label: (
 //     ([sign of cos’], "s"),
 //     ([variation of cos], "v"),
