@@ -487,7 +487,7 @@ Consigne : propose une trace écrite permettant de comprendre quelle est la tran
 rq : $(A A') \/\/ (B B')$ et $A A' = B B'$, donc $A A' B' B$ est un parallélogramme
 ]
 
-#def[On appelle *translation* qui transforme $A$ en $A'$ la transformation qui à tout point $B$ associe $B'$ tel que $A A' B' B$ est un parallélogramme (éventuellement applati)]
+#def[On appelle *translation* qui transforme $A$ en $A'$ la transformation qui à tout point $B$ associe $B'$ tel que $A A' B' B$ est un parallélogramme (éventuellement aplati)]
 
 #activite("- TD4")[
 - Sur ce pavage, coloriez un motif de base (le motif $M$).
