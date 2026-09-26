@@ -1,6 +1,9 @@
 #import "../_Template/titres.typ" : *
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
+
+
+
 #show heading: it => {it.body+"\n"}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
@@ -72,7 +75,7 @@ Confond les géométries 1 et 2, mesure sur la figure et n'est pas encore en mes
 On peut lui proposer de reconstruire le dessin sur son cahier
 
 *2. "J'ai refait le triangle sur ma feuille avec les mêmes longueurs, j'ai mesuré avec mon équerre, le triangle $R S T$ est bien rectangle en S"*\
-Proposer à l'élève de reporter le triangle (construire le triangle $R'S T$ avec $R'$ le symetrique de $R$ par rapport à $(S T)$) pour que l'élève se rende compte que le triangle n'est probablement pas rectangle
+Proposer à l'élève de reporter le triangle (construire le triangle $R'S T$ avec $R'$ le symetrique de $Rr$ par rapport à $(S T)$) pour que l'élève se rende compte que le triangle n'est probablement pas rectangle
 
 *3. "réciproque de pythagore [...] 80 et 81 c'est quasiment pareil donc $R S T$ est rectangle en $S$"*\
 L'élève a été induit en erreur par la représentation prototypique du triangle\
@@ -393,13 +396,11 @@ Découvrir le parallélogramme par la propriété de ses côtés parallèles et 
 *Réponses des élèves*
 
 - "téléporter", "cloner", "décaler" pour décrire la translation $->$ le terme "translation" n'est pas utilisé avant la 3e
-
 - "parallèle"
-
 - "pivoter", "tourner", "mouvement circulaire", "incliner" $->$ rotation
-
 - "symétrie axiale" est beaucoup revenu $->$ concept vu en 6e, rassurant
 
+#pagebreak()
 #rq[Pour décrire une translation, les mots "téléporter" et "cloner" traduisent cette notion d'instantanéité
 
 À l'inverse, les mots "glisser", "descendre"... donnent l'image mentale d'une image intérmédiaire entre les positions avant et après la transformation
@@ -430,17 +431,8 @@ Consigne : propose une trace écrite permettant de comprendre quelle est la tran
 *Objectif* : Caractériser une translation par le codage
 
 *"classement"* (du plus au moins abouti mathématiquement) :
-#text(blue)[
-- H : les droites ne sont pas notées comme parallèles, mais la conservation des distances est codée
-- G : notion de vecteurs
-- B : "A'" et "B'", notion de transformation
-- C
-- E : sens + direction
-- A / D / F 
-]
 
-
-#table(columns: (1fr, 2fr, 2fr), table.header([*classement*],[#align(center+horizon)[*+*]],[#align(center+horizon)[*-*]]))[*H*][
+#table(columns: (1fr, 2fr, 2fr), table.header([],[#align(center+horizon)[*+*]],[#align(center+horizon)[*-*]]))[*H*][
 - direction
 - identification d'un point et son image
 - longueur indiquée (codée)
@@ -512,9 +504,9 @@ rq : $(A A') \/\/ (B B')$ et $A A' = B B'$, donc $A A' B' B$ est un parallélogr
 
 $->$ On conserve le pavage 3 :
 
-#align(center, image("assets/TD4.png", width: 50%));
+#align(center, image("assets/TD4.png", width: 50%))
 
-
+#pagebreak()
 = Rotations
 
 #def[
@@ -523,11 +515,64 @@ On appelle *rotation* de centre $O$, d'angle $alpha$ dans le sens direct, la tra
 - $A O = O A'$
 ]
 
-#methodo("- trouver le centre de rotation")[...]
+#methodo[\- trouver le centre de la rotation $Rr$][
 
-#exo("2 - TD4")[...]
+#table(columns: (1fr, 1fr), stroke:none)[
+  \
+  - On choisit deux couples distincts de points $(M;M')$ tels que $M'$ est l'image du point $M$ par la rotation $Rr$
+- Pour ces deux couples $(M_1, M'_1), (M_2, M'_2)$, on trace les médiatrices des segments $[M_1 M'_1]$ et $[M_2 M'_2]$
+- Ces deux médiatrices se croisent en un unique point : le centre de rotation de $Rr$
+][#image("assets/methodo_rotation.png", width: 100%)]
+]
+#demo[
+On note $(d_1)$ la médiatrice du segment $[M_1 M'_1]$\
+$(d_1)$ est l'ensemble des points $O$ tels que $O M_1 = O M'_1$, le centre de rotation de $Rr$ se trouve sur cette droite\
+(cf définition précédente)
+
+On note $(d_2)$ la médiatrice du segment $[M_2 M'_2]$, de même le centre de rotation de $Rr$ se trouve sur cette droite
+
+Ainsi le centre de la rotation $Rr$ se trouve bien à l'intersection des droites $(d_1)$ et $(d_2)$
+];
+
+#exo("2 - TD4")[Marc, sur son ordinateur, dessine un carré, puis un deuxième, de même grandeur, avec un sommet au centre du premier carré. Il fait tourner le second carré autour de ce centre et obtient ainsi plusieurs figures. En voici quelques-unes :
+
+#align(center, image("assets/TD4_21.png", width: 70%))
+
+Marc et son frère Paul discutent de l'aire de la figure qui est l'intersection des deux carrés, marquée en gris.
+Marc soutient que cette aire est toujours la même, quelle que soit la position du second carré.
+Paul, en revanche, pense que l'aire change lorsqu'on fait tourner le second carré.
+
+*Dites si l'aire de l'intersection est toujours la même ou si elle change lorsque le second carré tourne.
+Justifiez votre réponse.*
+]
 
 
 
+
+
+#table(stroke:none, inset: 0pt, columns:(1fr, 1fr))[
+
+*Remarque 1 :* $O B <= O E$\
+$->$ donc $I$ existe, quelque soit la disposition des deux carrés
+
+*Remarque 2 :* $Ar_(I B J O) = Ar_(I B O) + Ar_(B J O)$
+
+*But : On veut prouver que les triangles $I B O$ et $O J C$ sont isomorphes* ("superposables")*, et donc ont la même aire.*
+\ \ 
+On pose la rotation $Rr$ d'angle $90°$ et de centre $O$, dans le sens indirect (horaire)
+
+][
+#align(center, image("assets/TD4_22.png", width:100%))
+]
+On remarque que les points $A, B, C$ et $D$ sont invariants par $Rr$, en particulier l'image de $[A B]$ par $Rr$ est $[B C]$\
+D'autre part l'image de $[O R]$ par $Rr$ est $[O F]$
+
+Le point $I$ est à l'intersection de $[A B]$ et $[O E]$, donc son image par $Rr$ est à l'intersection de $[B C]$ et $[O F]$, donc l'image de $I$ par $Rr$ est $J$, donc $O I B$ et $O J C$ sont isomorphes, en particulier : $Ar_(I B O) = Ar_(O J C)$
+$ Ar_(I B J O) &= Ar_(I B O) + Ar_(O B J)\
+&= Ar_(O J C) + Ar_(O B J)\
+&= Ar_(O B C)\
+Ar_(I B J O) &= 1/4 A B^2 $
+
+*L'aire du quadrilatère $I B J O$ est constante, et vaut le quart de l'aire du carré $A B C D$ : Marc a raison*
 
 

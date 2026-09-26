@@ -1,14 +1,22 @@
 #import "../_Template/titres.typ" : *
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
+#show heading: it => {it.body+"\n"}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
-#set table.cell(breakable: false)
 
-#frontpage("Monopoly des inégalités")
+#frontpage("Géométrie et changement de paradigme")
 
+#show outline.entry.where(level: 1): it => {
+  v(12pt)
+  strong(it)
+}
 #show heading.where(level: 2): set heading(outlined: false)
-#show heading.where(level: 1): it => {text(1.3em, it)}
+#show heading.where(level: 1): it => {text(1.3em)[#it]}
+#show heading.where(level: 2): it => {text(1.3em)[#it]}
+#text(1.3em)[#outline(title : "")]
+\ \
+#pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
 
 
@@ -17,7 +25,7 @@
 (Observatoire des inégalités)
 ]
 
-= Observations
+== Observations
 
 Les billets générés avec chat GPT ça casse les couilles
 
@@ -60,7 +68,7 @@ Les billets générés avec chat GPT ça casse les couilles
 ]
 
 
-= Résultat de la partie
+== Résultat de la partie
 #table(columns: 4)[][*catégorie A*][*catégorie B*][*catégorie C*][
   *hommes*
 ][732€ ; 4 propriétés][- 778€ ; 5 propriétés
@@ -69,6 +77,36 @@ Les billets générés avec chat GPT ça casse les couilles
 ][1297€ ; 4 propriétés][][]
 
 Femme, transfuge de classe (C vers B) : 458€ ; 4 propriétés (transfuge de C à B)
+
+
+= État des lieux des inégalités socio-éducatives
+
+Population active :
+- Ouvriers
+- Employés
+- Professions intermédiaires
+- Cadres
+
+France dans les pires positions des classments Pisa en termes d'inégalités à l'école
+
+#pagebreak()
+= L'impact des ressources économiques et sociales
+
+#activite[visionnage de reportages sur les familles favorisées / défavorisées]
+
+*Accès aux services*
+- Cours particuliers
+- Écoles privées
+- Stages linguistiques
+
+*Logement et équipement*
+- Chambre personnelle, bureau, ordinateur personnel
+- Vivre ou déménager dans une commune ou dans un quartier favorisé et donc fréquenter des établissements qui le sont aussi
+- Bénéficier d'une aide financière parentale pour son logement étudiant et ses différents besoins d'étudiant
+
+*Emploi*
+- Conditions de travail de certains emplois peu rémunérés (parents qui travaillent de nuit)
+- Transmission d'une ambition professionnelle / représentation du travail ?
 
 
 

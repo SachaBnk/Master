@@ -334,22 +334,22 @@ $->$ déf "informelle" (def 1 exo précédent)
 
 
 
-#pagebreak()
+// #pagebreak()
 
-#exo("2 - TD3")[
-+ Quelles sont les fonctions de référence dont il faut étudier les variations en classe de 2de ?
+// #exo("2 - TD3")[
+// + Quelles sont les fonctions de référence dont il faut étudier les variations en classe de 2de ?
 
-+ Pour chaque fonction de référence, rédiger les démonstrations des variations comme cela pourrait être fait dans un cahier de cours de 2de
-]
+// + Pour chaque fonction de référence, rédiger les démonstrations des variations comme cela pourrait être fait dans un cahier de cours de 2de
+// ]
 
-#text(blue)[
-== Affines
+// #text(blue)[
+// == Affines
 
-Soit $f$ une fonction affine définie pour tout $x in RR$ par $f(x) = m x + p$ \
-Soient $a, b in RR$, 
-$ f(b) - f(a) &= m b + cancel(p) - m a - cancel(p)\
-&= m (b-a) $
-Or $b-a > 0$, donc $f(b)-f(a) > 0$ ssi $m > 0$
+// Soit $f$ une fonction affine définie pour tout $x in RR$ par $f(x) = m x + p$ \
+// Soient $a, b in RR$, 
+// $ f(b) - f(a) &= m b + cancel(p) - m a - cancel(p)\
+// &= m (b-a) $
+// Or $b-a > 0$, donc $f(b)-f(a) > 0$ ssi $m > 0$
 
 
 
@@ -374,4 +374,4 @@ Or $b-a > 0$, donc $f(b)-f(a) > 0$ ssi $m > 0$
 //   )
 // ))
 
-]
+// ]
