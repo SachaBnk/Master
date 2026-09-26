@@ -557,7 +557,7 @@ $->$ donc $I$ existe, quelque soit la disposition des deux carrés
 
 *Remarque 2 :* $Ar_(I B J O) = Ar_(I B O) + Ar_(B J O)$
 
-*But : On veut prouver que les triangles $I B O$ et $O J C$ sont isomorphes* ("superposables")*, et donc ont la même aire.*
+*But : On veut prouver que les triangles $I B O$ et $O J C$ sont isométriques* ("superposables")*, et donc ont la même aire.*
 \ \ 
 On pose la rotation $Rr$ d'angle $90°$ et de centre $O$, dans le sens indirect (horaire)
 
@@ -569,7 +569,7 @@ D'autre part l'image de $[O E]$ par $Rr$ est $[O F]$
 
 Le point $I$ est à l'intersection de $[A B]$ et $[O E]$, donc son image par $Rr$ est à l'intersection de $[B C]$ et $[O F]$, donc l'image de $I$ par $Rr$ est $J$
 
-Donc $O I B$ et $O J C$ sont isomorphes, en particulier : $Ar_(I B O) = Ar_(O J C)$
+Donc $O I B$ et $O J C$ sont isométriques, en particulier : $Ar_(I B O) = Ar_(O J C)$
 $ Ar_(I B J O) &= Ar_(I B O) + Ar_(O B J)\
 &= Ar_(O J C) + Ar_(O B J)\
 &= Ar_(O B C)\
