@@ -565,9 +565,11 @@ On pose la rotation $Rr$ d'angle $90°$ et de centre $O$, dans le sens indirect 
 #align(center, image("assets/TD4_22.png", width:100%))
 ]
 On remarque que les points $A, B, C$ et $D$ sont invariants par $Rr$, en particulier l'image de $[A B]$ par $Rr$ est $[B C]$\
-D'autre part l'image de $[O R]$ par $Rr$ est $[O F]$
+D'autre part l'image de $[O E]$ par $Rr$ est $[O F]$
 
-Le point $I$ est à l'intersection de $[A B]$ et $[O E]$, donc son image par $Rr$ est à l'intersection de $[B C]$ et $[O F]$, donc l'image de $I$ par $Rr$ est $J$, donc $O I B$ et $O J C$ sont isomorphes, en particulier : $Ar_(I B O) = Ar_(O J C)$
+Le point $I$ est à l'intersection de $[A B]$ et $[O E]$, donc son image par $Rr$ est à l'intersection de $[B C]$ et $[O F]$, donc l'image de $I$ par $Rr$ est $J$
+
+Donc $O I B$ et $O J C$ sont isomorphes, en particulier : $Ar_(I B O) = Ar_(O J C)$
 $ Ar_(I B J O) &= Ar_(I B O) + Ar_(O B J)\
 &= Ar_(O J C) + Ar_(O B J)\
 &= Ar_(O B C)\
