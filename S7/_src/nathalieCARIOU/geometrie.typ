@@ -574,7 +574,7 @@ D'autre part l'image de $[O E]$ par $Rr$ est $[O F]$
 
 Le point $I$ est à l'intersection de $[A B]$ et $[O E]$, donc son image par $Rr$ est à l'intersection de $[B C]$ et $[O F]$, donc l'image de $I$ par $Rr$ est $J$
 
-Donc $O I B$ et $O J C$ sont isométriques, en particulier : $Ar_(I B O) = Ar_(O J C)$
+*Donc $O I B$ et $O J C$ sont isométriques*, en particulier : $Ar_(I B O) = Ar_(O J C)$
 $ Ar_(I B J O) &= Ar_(I B O) + Ar_(O B J)\
 &= Ar_(O J C) + Ar_(O B J)\
 &= Ar_(O B C)\
