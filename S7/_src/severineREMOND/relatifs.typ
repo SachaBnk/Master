@@ -11,7 +11,7 @@
   strong(it)
 }
 #show heading.where(level: 2): set heading(outlined: false)
-#show heading.where(level: 1): it => {text(1.3em, it+"\n")}
+#show heading.where(level: 1): it => {text(1.3em, it)+v(1em)}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
