@@ -119,7 +119,7 @@ Accompagner le changement de paradigme en géométrie
 #def()[
 Une *variable didactique* est un paramètre d'une situation d'apprentissage que l'enseignant peut modifier de manière intentionnelle et dont la modification entraine un changement qualitatif dans les procédures des élèves
 
-(Brousseau, *Théorie des situations didactiques*)
+(Brousseau, _Théorie des situations didactiques_)
 ]
 
 #ex()[
@@ -544,6 +544,8 @@ Paul, en revanche, pense que l'aire change lorsqu'on fait tourner le second carr
 
 *Dites si l'aire de l'intersection est toujours la même ou si elle change lorsque le second carré tourne.
 Justifiez votre réponse.*
+
+(Source : Rallye mathématique transalpin)
 ]
 
 
@@ -564,12 +566,15 @@ On pose la rotation $Rr$ d'angle $90°$ et de centre $O$, dans le sens indirect 
 ][
 #align(center, image("assets/TD4_22.png", width:100%))
 ]
+
+
+
 On remarque que les points $A, B, C$ et $D$ sont invariants par $Rr$, en particulier l'image de $[A B]$ par $Rr$ est $[B C]$\
 D'autre part l'image de $[O E]$ par $Rr$ est $[O F]$
 
 Le point $I$ est à l'intersection de $[A B]$ et $[O E]$, donc son image par $Rr$ est à l'intersection de $[B C]$ et $[O F]$, donc l'image de $I$ par $Rr$ est $J$
 
-Donc $O I B$ et $O J C$ sont isomorphes, en particulier : $Ar_(I B O) = Ar_(O J C)$
+*Donc $O I B$ et $O J C$ sont isomorphes*, en particulier : $Ar_(I B O) = Ar_(O J C)$
 $ Ar_(I B J O) &= Ar_(I B O) + Ar_(O B J)\
 &= Ar_(O J C) + Ar_(O B J)\
 &= Ar_(O B C)\
