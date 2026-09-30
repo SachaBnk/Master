@@ -2,7 +2,7 @@
 
 ## Notes de cours de Sacha
 
-(Vous pouvez partager ce repo à qui vous voulez en me créditant)
+Vous pouvez partager ce repo à qui vous voulez en me créditant
 
 **Contact :**
 
