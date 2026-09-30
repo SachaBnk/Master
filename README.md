@@ -2,8 +2,9 @@
 
 ## Notes de cours de Sacha
 
+Vous pouvez partager ce repo à qui vous voulez en me créditant
+
 **Contact :**
-(Vous pouvez partager ce repo à qui vous voulez en me créditant)
 
 - [stekachez](https://www.instagram.com/stekachez) (pôtits dessins sur instagram)
 - [Kinks](https://www.supermajor.gg/ultimate/player/Kinks?id=S1930585)
