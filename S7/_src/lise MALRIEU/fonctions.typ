@@ -4,7 +4,7 @@
 
 #import "@preview/vartable:0.2.4": tabvar
 
-#show heading: it => {it.body+"\n"}
+#show heading.where(level: 1): it => {text(1.3em, it)+v(1em)}
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
@@ -15,7 +15,6 @@
   strong(it)
 }
 #show heading.where(level: 2): set heading(outlined: false)
-#show heading.where(level: 1): it => {text(1.3em, it+"\n")}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
@@ -329,49 +328,164 @@ $->$ déf "informelle" (def 1 exo précédent)
 
 *Étape 3 :* comparer des images à partir des tableau de variations $->$ def "formelle" (def 2 exo précédent)
 
-*Étape 4 :* entraînement à partir de cette définition + démonstration des variations des fonctions de référence : affines, carré, (valeur absolue), inverse
+*Étape 4 :* entraînement à partir de cette définition + démonstration des variations des fonctions de référence : affines, carré, valeur absolue, (inverse)
 
 
 
 
-// #pagebreak()
 
-// #exo("2 - TD3")[
-// + Quelles sont les fonctions de référence dont il faut étudier les variations en classe de 2de ?
+#import "@preview/functable:0.2.0" : fun-table, sign-table
 
-// + Pour chaque fonction de référence, rédiger les démonstrations des variations comme cela pourrait être fait dans un cahier de cours de 2de
-// ]
+#exo("2 - TD3")[
++ Quelles sont les fonctions de référence dont il faut étudier les variations en classe de 2de ?
 
-// #text(blue)[
-// == Affines
++ Pour chaque fonction de référence, rédiger les démonstrations des variations comme cela pourrait être fait dans un cahier de cours de 2de
+]
 
-// Soit $f$ une fonction affine définie pour tout $x in RR$ par $f(x) = m x + p$ \
-// Soient $a, b in RR$, 
-// $ f(b) - f(a) &= m b + cancel(p) - m a - cancel(p)\
-// &= m (b-a) $
-// Or $b-a > 0$, donc $f(b)-f(a) > 0$ ssi $m > 0$
+#pagebreak()
+#demo("- variations de la fonction carré")[
+Soit $f : x ass x^2$ définie sur $RR$
+ - Soient $x,y in ]minf ; 0]$ tq $x < y$
+  $ f(y)-f(x) &= y^2-x^2\ 
+  &= (y-x)(y+x) "   (identité remarquable)" $
+or $y-x > 0$ et $y+x < 0$ donc $f(y)-f(x) < 0$
+
+*$f$ est décroissante sur $]minf ; 0]$*
+
+(pareil pour $[0 ; pinf[$)
+
+]
+
+#demo("- variations de la fonction inverse")[
+Soient $f : x ass 1/x$ définie sur $]minf ; 0[$, et $x_1, x_2 in ]minf ; 0[$ tq $x_1 < x_2$
+$ f(x_2)-f(x_1) &= 1/x_2-1/x_1\
+&= (x_1-x_2)/(x_1 x_2) $
+$x_1-x_2 < 0$ et $x_1 x_2 > 0$ donc $f(x_2)-f(x_1) < 0$
+
+*$f$ est strictement décroissante sur $]minf ; 0[$*
+
+(pareil pour $]0 ; pinf[$)
+]
+
+#pagebreak()
+
+= Quels exercices possibles ? 
 
 
+#exo("- corrections d'exercices de seconde")[
+#image("assets/TD3_3.pdf")
+]
 
-// #align(center, tabvar(
-//   variable: $x$,
-//   first-line-height: 40pt,
-//   label: (
-//     ([sign of cos’], "s"),
-//     ([variation of cos], "v"),
-//   ),
+*Exercice 1 :* (étape 4)
 
-//   domain: ($0$, $ pi / 2 $, $ pi $, $ (2pi) / 3 $, $ 2 pi $),
-//   contents: (
-//     ($-$, (), ($+$), ()),
-//     (
-//       (top, $1$),
-//       (),
-//       (bottom, $-1$),
-//       (),
-//       (top, $1$),
-//     ),
-//   )
-// ))
+*a)*\
+contre-exemple : pour $a = -2, b = 1, f(b) <= f(a)$
 
-// ]
+*b)*\
+On sait que $f$ est décroissante sur $]minf ; 0]$\
+Pour $a, b in ]minf ; 0]$ tq $a<b$,
+
+$f(a) &> f(b)\
+ f(a)-f(b) &> f(b)-f(b)\
+ f(a)-f(b) &> 0$
+
+...
+
+
+*Exercice 2 :* (étape 4)
+
+Soient $a,b in RR$ tq $2<a<b$
+
+#table(columns:(1fr, 1fr), stroke : none)[
+*A et B*\
+$0 < a-2 < b-2$\
+Or la fonction inverse est strictement décroissante sur $]0 ; pinf[$
+
+Donc $1/(a-2) > 1/(b-2)$
+][
+*C et D*\
+$2 < a < b$\
+$-2 > -a > -b$\
+$0 > 2-a > 2-b$\
+Donc $0 > (2-a)^2 > (2-b)^2$
+]
+
+#rq[Bien justifier les étapes dans les calculs d'inégalités]
+
+*Exercice 3 : * (racine carré plus au programme de seconde)
+
+*1.* ok
+
+*2.*\
+" Si $f^2$ est str croissante sur $I$, alors $f$ est str croissante sur $I$"
+
+*3.*\
+Soient $a,b in I$
+$ f^2(a) &< f^2(b)\
+sqrt(f^2(a)) &< sqrt(f^2(b)) "   car" sqrt(" ") "est croissante sur" RRP$
+
+Or pour tout $a in RRP, f(a) >= 0$\
+donc $sqrt(f^2(a)) = f(a)$
+
+donc $f(b) < f(a)$
+
+
+*Exercice 4 : * (fin étape 2)
+
+...
+
+Deux familles de problèmes : 
+- du type "$f(x) = k$"
+
+#ex[Soit $f$ la fonction qui au temps $t$ associe le volume d'un glacier, *quand est-ce que le volume du glacier atteindra 40m$""^3$ ?*]
+
+- problèmes d'optimisartion, du type "$f(x) > k$"
+
+#pagebreak()
+#exo("- problème d'optimisation (TD4)")[
+Le long d'une rivière dont les bords sont rectilignes, il a été décidé de délimiter des champs destinés à l'agriculture. Ces champs seront tous de forme rectangulaire, l'un des côtés du rectangle etant le bord de la rvière, ce qui permettra facilement l'arrosage des cultures.
+
+Pour délimiter son champ, chaque famille d'agriculteurs reçoit une clôture de longueur égale à 750 mètres, ainsi que tout le matériel pour installer solidement la clôture. Chaque famille peut donc choisir les dimensions de son champ, pourvu qu'il respecte les contraintes indiquées et soit entouré par les 750 mètres de clôture.
+
+*Les champs ainsi délimités auront-ils tous la même surface ?*
+
+*Si la réponse à la question précédente est négative, existe-t-il une façon d'installer la clôture qui délimite un champ de surface maximale ?*
+]
+$->$ Problème d'*optimisation* 
+#ex("de pb d'optimisation")[
+Recherche du prix d'une boule de glace, si je vends cher j'ai pas bcp de ventes, si je vends pas cher j'ai bcp de ventes
+]
+
+*Compétences mobilisées par cet exercice :*
+
+- *Modéliser* : contexte géométrique puis registre fonctionnel
+- *Représenter*
+- *Chercher* : problème ouvert
+
+
+#attention[Les compétences *modéliser* et *représenter* ne sont pas les mêmes mais elles sont très proches (les didacticiens sont pas ultra d'accord sur qui est inclus dans quoi)
+
+ex d'exo qui demande de représenter mais pas de modéliser : un élève qui dessine des sacs de billes mais pas un diagramme en barres]
+
+#rq[
+le contexte est ambiguë : est ce qu'on met une cloture contre la rivière ? (ici on a dit que non)
+
+*c'est un temps a prendre en classe pour que tout le monde parte dans la même direction*
+]
+
+#demo("- résolution de l'exo")[
+(schéma)
+
+$L = 750 - 2x$
+
+$A(x) &= x times L\
+&= x times (750 - 2x)\
+&= -2x^2 + 750x$
+
+Résolution a la calculette : $x_max tilde.eq 187.5m$, $A(x_max) tilde.eq 70312.5 m^2$
+]
+
+*Études des réponses des élèves* (voir feuille) :
+
+...
+
