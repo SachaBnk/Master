@@ -257,3 +257,5 @@ comprendre la logique de l'élève, l'orrigine de son d'erreur, évider de trop 
 
 (Zone proximale de développement, Vygotski, 1997)
 ]
+
+#rq("- problème des pièces de monnaie")[pour écrire "un euro cinq", l'élève va vouloir écrire "$1.5€$" (les centimes sont comptés en base cent)]

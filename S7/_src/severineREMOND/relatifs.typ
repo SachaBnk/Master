@@ -52,6 +52,18 @@ et "$-3+6$" c'est une addition
 #rq[On veut que "$+$" garde le statut d'opération, les élèves savent deja additionner des entiers naturels]
 #ex("de l'activité 2")[$(+5)+(+2) = +7$ $->$ écriture compliquée pour une opération facile]
 
+#activite[Extrait de _Promenade dans dix symboles de base des mathématiques_, Jean Toromanoff]
+
+*Les statuts du signe "$-$"*
+- l'opposé
+
+- la soustraction
+
+- le signe prédicatoire ("$-x$ c'est un nombre négatif" alors que pas forcément)\ 
+  $->$ induit en erreur donc on le gardera pas forcément
+
+
+#pagebreak()
 = Un peu de didactique, les trois dimensions des nombres
 
 
@@ -72,14 +84,8 @@ et "$-3+6$" c'est une addition
 
 #rq[La multiplication n'intervient qu'à partir de la 4e]
 
-#pagebreak()
-#activite[Extrait de _Promenade dans dix symboles de base des mathématiques_, Jean Toromanoff]
+#activite[
+synthèse de _Des équations pour introduire les nombres relatifs_, IREM d'Aquitaine
+]
 
-*Les statuts du signe "$-$"*
-- l'opposé
-
-- la soustraction
-
-- le signe prédicatoire ("$-x$ c'est un nombre négatif" alors que pas forcément)\ 
-  $->$ induit en erreur
-
+(voir synthese.pdf)
