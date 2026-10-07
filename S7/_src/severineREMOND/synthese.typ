@@ -38,9 +38,9 @@
 #ex[
 $redstar : 9 + ... = 7$ $->$ $7-9$ est un relatif
 
-avec l'étape 0 on peut vérifier que 7-9 est une solution de $redstar$
+avec l'étape 0 on peut vérifier que $7-9$ est une solution de $redstar$
 
-et on remarquera que 8-10 est aussi une solution de $redstar$
+et on remarquera que $8-10$ est aussi une solution de $redstar$
 
 *Le but est d'arriver au résultat "$0-2$" pour introduire la notation "$-2$"*
 ]

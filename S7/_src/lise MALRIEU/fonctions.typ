@@ -474,7 +474,7 @@ le contexte est ambiguë : est ce qu'on met une cloture contre la rivière ? (ic
 ]
 
 #demo("- résolution de l'exo")[
-(schéma)
+#align(center, image("assets/Riviere.png", width:50%))
 
 $L = 750 - 2x$
 

@@ -4,7 +4,7 @@
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
-#frontpage("Produit scalaire")
+#frontpage("Prépa stage")
 
 #show outline.entry.where(level: 1): it => {
   v(12pt)
@@ -35,6 +35,44 @@
 - temps libre perso
 
 #rq[4h de maths dans la semaine pour les élèves en seconde]
+
+
+= Prise de contact
+
+Prendre contact avec lae tuteur$dot$trice dès que possible
+
+Demander
+- emploi du temps
+- sa (ses) progression(s)
+- le titre de la (ou les) séquences observées
+- Le manuel
+
+Soigner la qualité orthographique et syntaxique des mails, utiliser le mail pro
+
+- Tenue correcte
+- Ponctualité
+
+S'intéresser à l'établissement en général
+
+
+Importance des "rituels" ? (enlever son blouson, rester debout avant en entrant en classe, etc)
+
+
+
+#pagebreak()
+= Autorité, une question de charisme ?
+
+*Principes d'action*
+
+- Interpréter avec justesse
+
+- Différer dans le temps
+  - Si l'élève défie l'autorité et risque de manquer de respect au point de le regretter, c'est à l'adulte de faire redescendre la tension, si l'ado est trop remonté lui proposer un autre moment pour parler
+
+  - proposer un moment précis pour ne pas créer de la frustration, de préférence dans la journée
+
+- *Accepter ses propres erreurs*
+
 
 
 

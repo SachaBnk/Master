@@ -89,3 +89,14 @@ synthèse de _Des équations pour introduire les nombres relatifs_, IREM d'Aquit
 ]
 
 (voir synthese.pdf)
+
+*Trois approches possibles :*
+- Programmes de calcul
+- Droites graduées
+- Calculs à trous
+
+#activite("étude des définitions des manuels")
+"Un nombre relatif est formé d'un signe et d'un nombre appelé valeur absolue" $->$ confond écriture et nombre
+
+"Un nombre positif est supérieur à $0$, un nombre négatif est inférieur à $0$" $->$ droite graduée (mieux)
+
