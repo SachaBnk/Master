@@ -487,5 +487,65 @@ Résolution a la calculette : $x_max tilde.eq 187.5m$, $A(x_max) tilde.eq 70312.
 
 *Études des réponses des élèves* (voir feuille) :
 
-...
+#table(columns:(1fr,2fr,2fr), table.header([],[*bien*], [*pas bien*]))[
+*élève A*
+][
+- bonne compréhension du problème
+- utilisation pertinente du tableur (pas régulier)
+][
+- pas pas assez fin
+- recherche pas exhaustive
+][
+*élève B*
+][
+
+][
+- confond périmètre et aire
+- pense que l'aire dépend du périmètre
+][
+*élève C*
+][
+- bonne idée de modéliser sur geogebra
+][
+
+]
+
+
+
+
+#pagebreak()
+#rq("- on est techniques sur geogebra")[
+#image("assets/TD4_1.png", width:40%)
+]
+
+
+
+#exo("3 - TD4")[
+On considère l'exercice ci-contre, extrait du manuel Hyperbole 2nde 2014 : 
+#block(inset:1em, stroke: 1pt, width:100%)[
+Dans un repère d'origine $O$, $Cr$ est le quart de cercle $arc(A B)$ de centre $O$ et de rayon 2 construit ci-des-sous. Un point $M$ décrit $Cr$ en allant de $A$ vers $B$.
+
+#align(center, image("assets/TD3_31.png", width:40%))
+
+On note $x$ la longueur de l'arc $arc(A M)$ et on pose 
+$ f(x)= M m, g (x) = M m' $
+*Dresser intuitivement le tableau de variation de chacune des fonctions $f$ et $g$.*
+]
+
++ Résoudre cet exercice intuitivement, comme demandé dans l'énoncé. Dans quel cadre se place-t-on?
++ Identifier l'objectif de cet exercice et le situer dans la progression sur la notion de « variations ».
++ Étudier les variations des fonctions f et g sur l'intervalle adéquat, qu'on explicitera.
+]
+
+#pagebreak()
+*1.*\
+#align(left, image("assets/TD3_32.png", width:40%))
+
+*2. objectif :* introduire le tableau de variation (étape 2)
+
+*3.*\
+Avec $r$ le rayon du cercle (ici $r=2$)\
+$f(alpha) = r sin(alpha)$ avec $alpha$ l'angle $hat(A O M)$, $alpha = x / r$, *donc $f(x) = 2sin(x/2)$*
+
+
 

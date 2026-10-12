@@ -83,6 +83,7 @@
 #let ou = $"ou"$
 #let tq = $"tq"$
 #let pgcd = $"pgcd"$
+#let PGCD(a,b) = $a and b$
 #let ppcm = $"ppcm"$
 #let soit = $"soit"$
 #let soient = $"soient"$
@@ -313,3 +314,5 @@
 #let ai = $arrow(i)$
 #let aj = $arrow(j)$
 #let an = $arrow(n)$
+
+#let arc(body) = $accent(body, \u{23DC})$
