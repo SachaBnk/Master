@@ -27,7 +27,7 @@
 
 
 #def("- produit scalaire au lycée")[
-#align(left, image("assets/def_scal.png", width: 45%))
+#align(left, image("assets/def_scal.png", width: 40%))
 
 $arrow(O A) dot arrow(O B) = cases(O H dot O B &si arrow(O H) et arrow(O B) "ont le même sens",
 - O H dot O B "  "&sinon)$
@@ -91,7 +91,7 @@ $ A C^2 = A B^2 + B C^2 - 2 A B dot B C cos(hat(A B C)) $
 - Si je connais les trois longueurs, alors je connais les trois angles
 ]
 
-#pagebreak()
+
 #activite[\- Une relation d'équivalence][\
 On considère l'ensemble $X = Z times (Z\\ {0})$.
 Dans tout cet exercice, le seul ensemble de nombres connus est $ZZ$. Ainsi les seules opérations connues sont

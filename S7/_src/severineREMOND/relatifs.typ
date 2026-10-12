@@ -3,6 +3,8 @@
 #import "../_Template/raccourcis.typ" : *
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
+
+// On embrasse Jean Toromanoff
 #let opp = $"opp"$
 
 #frontpage("L'enseignement des nombres relatifs au collège")
