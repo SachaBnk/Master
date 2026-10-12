@@ -234,7 +234,7 @@ Michel$dot$le fête son anniversaire, iel peut verser 600 mL de jus d'ananas dan
 - nombres non-premiers entre eux ($4-->6$) : oriente vers multiplicatif en 2 étapes
 ]
 
-= Au cycle 4
+= Au collège
 
 #activite[
 #lien("https://bibnum.publimath.fr/IRN/IRN97001.pdf")[_La proportionnalité au collège_], IREM de Rennes (1997)
