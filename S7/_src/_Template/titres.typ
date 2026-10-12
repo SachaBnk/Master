@@ -1,7 +1,6 @@
 #import "audifamam.typ" : audifamam
 
 
-
 #let definition(..titre, body) = {
   let color_def = (rgb("#d43333"), rgb("#fbd1d1"))
   let header = ""
@@ -16,7 +15,8 @@
     radius: 1em,
     stroke: (paint: color_def.at(0), thickness: 2pt),
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){color_def.at(0)} else {color_def.at(1)}),
       stroke: (paint: color_def.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -41,7 +41,8 @@
     radius: 1em,
     stroke: (paint: color_def.at(0), thickness: 2pt),
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){color_def.at(0)} else {color_def.at(1)}),
       stroke: (paint: color_def.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -65,7 +66,8 @@
     radius: 1em,
     stroke: (paint: color_thm.at(0), thickness: 2pt),
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){color_thm.at(0)} else {color_thm.at(1)}),
       stroke: (paint: color_thm.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -93,7 +95,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -120,7 +123,8 @@
     radius: 1em,
     stroke: (paint: colors.at(0), thickness: 2pt),
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -157,7 +161,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -184,7 +189,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -210,7 +216,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -231,7 +238,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -259,7 +267,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -285,7 +294,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -314,7 +324,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -344,7 +355,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
@@ -373,7 +385,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -401,7 +414,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -422,7 +436,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       columns: (10%, 90%),
       fill: (x, _)=>(if (x==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
@@ -451,7 +466,8 @@
     stroke: (paint: colors.at(0), thickness: 2pt),
     
     clip: true,
-    table(
+    grid(
+      inset:0.5em,
       fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),

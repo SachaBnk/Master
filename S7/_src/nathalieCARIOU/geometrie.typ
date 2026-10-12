@@ -3,6 +3,7 @@
 #import "../_Template/raccourcis.typ" : *
 
 
+#set table.cell(breakable: false)
 
 #show heading: it => {it.body+"\n"}
 
@@ -297,7 +298,6 @@ Découvrir le parallélogramme par la propriété sur les diagonales
 
 
 
-#pagebreak()
 #ex("d'activité 2")[
 
 
