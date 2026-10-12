@@ -2,6 +2,9 @@
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
 
+
+#set table.cell(breakable: false)
+
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
 #frontpage("Proportionalité")
@@ -119,7 +122,7 @@ Le compte-rendu de vos recherches sera présenté sous la forme d'une affiche »
 ]
 )
 ]
-(mémo : débugger le template typst)
+
 
 
 #table(columns:(auto, 1fr,1fr,1fr), table.header([],[*bien*],[*pas bien*],[*procédure*]))[
@@ -230,6 +233,8 @@ Michel$dot$le fête son anniversaire, iel peut verser 600 mL de jus d'ananas dan
 - nombres premiers entre eux ($4 --> 7$) : oriente veres le retour à l'unité
 - nombres non-premiers entre eux ($4-->6$) : oriente vers multiplicatif en 2 étapes
 ]
+
+= Au cycle 4
 
 #activite[
 #lien("https://bibnum.publimath.fr/IRN/IRN97001.pdf")[_La proportionnalité au collège_], IREM de Rennes (1997)
