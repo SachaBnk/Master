@@ -2,9 +2,14 @@
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
 
-#import "@preview/vartable:0.2.4": tabvar
+#import "@preview/zebraw:0.6.3": *
+#show: zebraw
 
-#show heading.where(level: 1): it => {text(1.3em, it)+v(1em)}
+#show heading.where(level: 1): it => {text(1.5em, it)+v(1em)}
+#show heading.where(level: 2): it => {text(1.3em, it)+v(0.5em)}
+
+#set table.cell(breakable:false)
+
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
@@ -61,6 +66,7 @@ En étudiant le programme des fonctions du cycle 4, repérer quelles représenta
 - afficher le résultat]
 ]
 
+#pagebreak()
 #rq()[
   Dans les quatre représentations des fonction, les notions d'*image* et d'*antécédent* sont présentes
 
@@ -69,7 +75,6 @@ En étudiant le programme des fonctions du cycle 4, repérer quelles représenta
 
 #import "@preview/autograph:0.1.0" : diagram, node, edge
 
-#pagebreak()
 #align(center)[#diagram(
   bezier: true,
   node(<graphiques>),
@@ -132,7 +137,6 @@ En étudiant le programme des fonctions du cycle 4, repérer quelles représenta
 On veut passer d'une représentation à l'autre pour que l'élève construise le concept de fonction
 ]
 
-#pagebreak()
 #activite[
   Chercher dans les manuels des exos qui permettent de travailler chaque changement de représentation
 ]
@@ -155,6 +159,7 @@ On veut passer d'une représentation à l'autre pour que l'élève construise le
 Proposer un programme scratch qui calcule les valeurs de la fonction $ f : x ass 2x+3 $
 ]
 
+#pagebreak()
 = Cadres
 
 #def[
@@ -186,7 +191,7 @@ Traduire les phrases données dans les différents cadres
   #align(horizon)[*Cadre géométrico-graphique*]][Trouver les abscisses des points en lesquels la courbe $Cr_f$ coupe l'axe des abscisses][La *parabole* représentant la fonction "carré" ne passe pas sous l'axe des abscisses][*La courbe admet l'origine du repère comme centre de symétrie.*]
 
 
-#pagebreak()
+
 #activite("- TD2")[ Introduction à la notion de fonction en 3e
 #align(center, image("assets/boite.png", height:30%))
 ]
@@ -251,7 +256,7 @@ Dans un premier temps, pour trouver le volume maximal du pavé, on s'est rapproc
 
 ]
 
-#pagebreak()
+
 #def[La *synthèse* d'une activité est un écrit mathématique permettant de passer du contextualisé (situation de l'activité) au décontextualisé (concepts qui seront définis dans la trace de cours)
 
 Cette partie du cours se fait avec les élèves (on leur demande ce qu'on retient de l'activité)
@@ -269,6 +274,7 @@ Pour chaque valeur de $x$, on peut calculer le volume $Vr(x)$ correspondant. Ce 
 La fonction peut se représenter par un graphique.
 ]
 
+#pagebreak()
 #rq[
 *à faire apparaitre dans la synthèse :*
 - dépendance
@@ -280,7 +286,7 @@ La fonction peut se représenter par un graphique.
 
 ]
 
-#pagebreak()
+
 = Variations
 #exo("1 - TD3")[
 Analyser les définitions suivantes trouvées dans le cahier de cours d'élèves de 2de
@@ -299,6 +305,7 @@ Analyser les définitions suivantes trouvées dans le cahier de cours d'élèves
 
 
 
+#pagebreak()
 #text(blue)[
 
 #table(stroke: none, columns: (1fr,1fr))[*def 1*][*def 2*][
@@ -314,7 +321,7 @@ C'est une définition provisoire de début de séquence
 - #strike[Soit a < b] $->$ Pour tout $(a, b) in I$
 ]
 ]
-#pagebreak()
+
 #def[Soit $f$ une fonction définie sur un *intervalle $I$* de $RR$. On dit que $f$ est croissante sur $I$ si *pour tous* éléments $x_1$ et $x_2$ de $I$ avec $x_1 < x_2$, *alors* $f(x_1) <= f(x_2)$
 ]
 
@@ -334,7 +341,7 @@ $->$ déf "informelle" (def 1 exo précédent)
 
 
 
-#import "@preview/functable:0.2.0" : fun-table, sign-table
+#pagebreak()
 
 #exo("2 - TD3")[
 + Quelles sont les fonctions de référence dont il faut étudier les variations en classe de 2de ?
@@ -342,7 +349,7 @@ $->$ déf "informelle" (def 1 exo précédent)
 + Pour chaque fonction de référence, rédiger les démonstrations des variations comme cela pourrait être fait dans un cahier de cours de 2de
 ]
 
-#pagebreak()
+
 #demo("- variations de la fonction carré")[
 Soit $f : x ass x^2$ définie sur $RR$
  - Soient $x,y in ]minf ; 0]$ tq $x < y$
@@ -399,8 +406,7 @@ Soient $a,b in RR$ tq $2<a<b$
 #table(columns:(1fr, 1fr), stroke : none)[
 *A et B*\
 $0 < a-2 < b-2$\
-Or la fonction inverse est strictement décroissante sur $]0 ; pinf[$
-
+Or la fonction inverse est strictement décroissante sur $]0 ; pinf[$\
 Donc $1/(a-2) > 1/(b-2)$
 ][
 *C et D*\
@@ -547,8 +553,6 @@ $ f(x)= M m, g (x) = M m' $
 Avec $r$ le rayon du cercle (ici $r=2$)\
 $f(alpha) = r sin(alpha)$ avec $alpha$ l'angle $hat(A O M)$, $alpha = x / r$, *donc $f(x) = 2sin(x/2)$*
 
-#import "@preview/zebraw:0.6.3": *
-#show: zebraw
 
 #exo("2 - TD4")[
 #grid(columns:(2fr,1.5fr))[Soit $Cr$ un cercle de centre $O$ et de rayon $R$. On cherche à inscrire dans ce cercle un rectangle d'aire maximale.
@@ -622,4 +626,72 @@ d) aire_max(5, 1000000) $tilde.eq 49.999c m^2$
 - python
 ][
 *Remarque :* On aurait pu utiliser excel pour visualiser les variations de la fonction, python permet néanmoins d'affiner la recherche très facilement (on augmente $N$)
+]
+
+#exo("1 - TD5")[
+Le jeu du « plus ou moins » est un jeu de hasard qui consiste à deviner un nombre entre 1 et 100, préziablement choisi par l'ordinateur. À chaque proposition faite, l'ordinateur répond par « plus » ou « moins ». Le joueur gagne quand il trouve le nombre.
+
+*1. Programmer le jeu*\
+*2. Expliquer en quoi ce jeu peut constituer une situation d'introduction au concept de dichotomie.*\
+*3. Programmer l'algorithme de dichotomie sur Scratch et/ou sur Python.*
+]
+*1. jeu du plus-moins :*
+#table(columns:(1fr,1.1fr), stroke:none)[
+#align(horizon)[```python
+from random import randint
+n = randint(1,100)
+rep = 0
+print("Je pense à un chiffre entre 1 et 100...")
+while rep != n:
+    rep = int(input())
+    if rep > n:
+        print("plus bas !")
+    if rep < n:
+        print("plus haut !")
+print("gagné !")
+```]
+][
+`Je pense à un chiffre entre 1 et 100...
+50
+plus haut !
+75
+plus bas !
+65
+plus bas !
+60
+plus bas !
+55
+plus bas !
+53
+gagné !
+`
+]
+
+*2.* car l'algo de dichotomie est la manière optimale de gagner à ce jeu (en $O(log n)$) 
+
+
+*3. algo dichotomie :*
+#table(columns:(2fr,1fr), stroke:none)[
+#align(center)[```python
+print("pense à un nombre sans me le dire...")
+inf = 0
+sup = 101
+rep = ""
+while (rep != "="):
+    rep = input(str(int((inf+sup)/2))+" ? (+/-/=) : ")
+    if rep == "+":
+        inf = int((inf+sup)/2)
+    if rep == "-":
+        sup = int((inf+sup)/2)
+print("J'ai gagné !")
+```]
+][`pense à un nombre sans me le dire...
+50 ? (+/-/=) : +
+75 ? (+/-/=) : -
+62 ? (+/-/=) : +
+68 ? (+/-/=) : -
+65 ? (+/-/=) : +
+66 ? (+/-/=) : +
+67 ? (+/-/=) : =
+J'ai gagné !`
 ]
