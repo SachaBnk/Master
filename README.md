@@ -1,6 +1,6 @@
 # Master M2E Année 2026-2027
 
-## Notes de cours de Sacha
+## Notes de cours de Sacha 🏳️‍⚧️🏳️‍🌈
 
 Vous pouvez partager ce repo à qui vous voulez en me créditant
 
