@@ -621,5 +621,5 @@ d) aire_max(5, 1000000) $tilde.eq 49.999c m^2$
 - calculer (q1)
 - python
 ][
-*Remarque :* On aurait pu utiliser excel pour visualiser plus facilement les variations de la fonction, python permet néanmoins d'affiner la recherche très facilement (on augmente $N$)
+*Remarque :* On aurait pu utiliser excel pour visualiser les variations de la fonction, python permet néanmoins d'affiner la recherche très facilement (on augmente $N$)
 ]
