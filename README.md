@@ -16,7 +16,7 @@ Avec l'aide de Marc, Élie, Marwane et Félix
 - Si vous savez utiliser GitHub, signalez l'erreur dans "issues"
 - Sinon, si vous pensez que c'est une erreur importante (un resultat faux, ou une variable qui apparait de nulle part), vous pouvez me mp (si possible)
 
-dans chaque semestre : src contient les fichiers source en typst (si vous voulez pas modifier les cours vous-mêmes, vous avez pas besoin de regarder ce qu'il y a dedans)
+dans chaque semestre : _src contient les fichiers source en typst (si vous voulez pas modifier les cours vous-mêmes, vous avez pas besoin de regarder ce qu'il y a dedans)
 
 
 ## Pour conclure
