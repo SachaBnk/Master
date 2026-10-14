@@ -479,7 +479,7 @@ le contexte est ambiguë : est ce qu'on met une cloture contre la rivière ? (ic
 *c'est un temps a prendre en classe pour que tout le monde parte dans la même direction*
 ]
 
-#demo("- résolution de l'exo")[
+#correction[
 #align(center, image("assets/Riviere.png", width:50%))
 
 $L = 750 - 2x$
