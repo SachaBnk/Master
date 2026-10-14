@@ -314,14 +314,17 @@ le graphique ci-contre. Sans aucun calcul, ce dernier déclare que ce n'est pas 
   #align(horizon+center, image("assets/ppt_td4_11.png"))
 ])
 ][
-#block(inset:1em, stroke:1pt)[#grid(columns:(1fr, 1fr))[
-On veut représenter graphiquement une situation de proportionnalité 
+#block(inset:1em, stroke:1pt)[
+
+#grid(columns:(1fr, 1fr))[
+On veut représenter graphiquement une situation de
 ][
-  #align(horizon+center, image("assets/ppt_td4_12.png"))
+  #align(center, image("assets/ppt_td4_12.png", width:100%))
 ]
-dans le repère ci-contre. On sait que le point A de coordonnées (8 ; 20) appartient à cette représentation graphique.
+proportionnalité dans le repère ci-contre. On sait que le point A de coordonnées (8 ; 20) appartient à cette représentation graphique.
 1. *Déterminer l'ordonnée du point B appartenant à la courbe et d'abscisse 2.*
 2. *Déterminer l'abscisse du point C appartenant à la courbe et d'ordonnée 22,5.*]
+
 ]
 
 #pagebreak()
