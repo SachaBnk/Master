@@ -2,19 +2,21 @@
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
 
-
-#set table.cell(breakable: false)
-
 #set text(font: "Arial",size: 12pt, lang: "fr")
+#set table.cell(breakable:false)
 
-#frontpage("Proportionalité")
+// On embrasse Jean Toromanoff
+#let opp = $"opp"$
+
+#frontpage("Proportionnalité")
 
 #show outline.entry.where(level: 1): it => {
   v(12pt)
   strong(it)
 }
-#show heading.where(level: 2): set heading(outlined: false)
-#show heading.where(level: 1): it => {text(1.3em, it)+v(1em)}
+// #show heading.where(level: 2): set heading(outlined: false)
+#show heading.where(level: 1): it => {text(1.5em, it)+v(1em)}
+#show heading.where(level: 2): it => {text(1.3em, it)+v(0.5em)}
 #text(1.3em)[#outline(title : "")]
 \ \
 #pagebreak()
@@ -236,6 +238,8 @@ Michel$dot$le fête son anniversaire, iel peut verser 600 mL de jus d'ananas dan
 
 = Au collège
 
+== Variables didactiques (TD3)
+
 #activite[
 #lien("https://bibnum.publimath.fr/IRN/IRN97001.pdf")[_La proportionnalité au collège_], IREM de Rennes (1997)
 ]
@@ -244,3 +248,123 @@ Michel$dot$le fête son anniversaire, iel peut verser 600 mL de jus d'ananas dan
 - Relation entre grandeur 1 $-->$ grandeur 2, le quotient est-il dans une unité connue ? (€/kg, km/h, g/L) 
 - nature du nombre (entier, décimal avec $pm$ de chiffres après la virgule, fractions, etc)
 - le coefficient permet-il de passer de la grandeur 1 vers la grandeur 2 ou le contraire ?
+
+
+#activite[Classer les exercices suivants selon leur difficulté
+
+#table(columns:(1fr,1fr))[*Exercice 1 : *\
+Avec 15 kg de blé, on obtient 12 kg de farine. On suppose qu'il y a proportionnalité entre la quantité de blé et la quantité de farine obtenue.\
+*Quelle masse de farine obtient-on à partir de 25 kg de blé ?*
+][
+*Exercice 2 :*\
+On fait un agrandissement d'un carré de 4 cm de côté en un carré de 6 cm de côté.\
+*Quelle est l'échelle utilisée ?*
+][
+*Exercice 3 :*\
+Les cahiers sont vendus à l'unité. 4 cahiers coûtent 10 €.\
+*Combien coûtent 5 cahiers ?*
+][
+*Exercice 4 : *\
+La quantité d'eau versée dans un aquarium est proportionnelle à la hauteur d'eau dans l'aquarium.
+Avec 56 L d'eau, on obtient une hauteur de 7 cm.\
+*Quelle quantité d'eau faut-il pour avoir 60 cm
+d'eau dans l'aquarium ?*
+][
+*Exercice 5 :*\
+Pour une recette de gâteau, il faut 25 g de beurre pour 75 g de farine.\
+*Quelle masse de farine faut-il mettre pour 30 g de beurre ?*
+][
+*Exercice 6 :*\
+On sait que 1,5 kg de tomates coûte 6 €.\
+*Combien coûtent 7 kg de ces mêmes tomates ?*
+]
+
+
+]
+
+#table(columns:(1fr,1fr,1fr), stroke:none)[*Facile*][*Moyen*][*Difficile*][
+- Ex 5
+- Ex 6
+(coef entier)
+][
+- Ex 2 $->$ notion d'échelle
+- Ex 3
+(coef décimal)
+][
+- Ex 4 $->$ recherche de la grandeur 2
+- Ex 1 
+  - coef inférieur à 1
+  - compréhension difficile du coef
+]
+
+
+== Vers les fonctions linéaires (TD4)
+
+#activite("- etude des programmes du cycle 4")[
+Trouver des exos chouettes pour illustrer les différents registres des fonctions linéaires
+]
+
+(voir photos sur tel)
+
+#pagebreak()
+#prop[
+  Toute situation de proportionnalité est représentée par des points alignés avec l'origine du repère.
+
+  Réciproquement, des points alignés avec l'origine du repère caractérisent une situation de proportionnalité.
+]
+
+#demo[
+#grid(columns:(1fr, 1fr))[
+$redimp$
+Soient $A(x_1, y_1), B(x_2, y_2)$ deux points dont les coordonnées suivent une relation de proportionnalité : on note $k = y_1/x_1 = y_2/x_2$\
+Sur la droite $(O A)$, on place un point $M(x_M, y_M)$ tel que son abscisse est celle du point $B$ : $x_M= x_2$\
+On appelle $A'$ le pied de la perpendiculaire à l'axe des abscisses passant par $A$, et $M'$ le pied de la perpendiculaire à l'axe des abscisses passant par $M$
+
+$O, A, M$ sont alignés, $O, A', M'$ sont alignés et $(A A') \/\/(M M')$, on peut appliquer le *théorème de Thalès* qui donne :
+$ (A A')/(M M') = (O A')/(O M') $
+Donc $A A' times O M' = O A' times M M'$\ 
+donc $(O M')/(M M') = (O A')/(A A')$
+
+$ y_1/x_1 &= y_M/x_M\
+ &= y_M/x_B = k $
+donc $y_M = k times x_B$, donc $M = B$,\ 
+*$O, A$ et $B$ sont alignés*
+
+
+][
+$redimprev$\
+(photo tel)
+
+]
+]
+
+#exercice("2 - TD4")[\
+*1.* Laquelle des deux situations ci-dessous proposeriez-vous pour introduire les fonctions linéaires en troisième ? Justifiez votre choix en vous appuyant sur le texte précédent.
+
+#table(columns:(1fr,1fr))[
+*Situation 1 :* Collées sur une vitrine, de grandes affiches annoncent une réduction de 30 % sur toute la boutique.
+][
+*Situation 2 :*
+Le professeur a préparé une bande de papier de $3c m$ de large, enroulée, qu'il déroule lentement devant les élèves, comme indiqué sur la figure ci-dessous, le cylindre de papier face à lui.
+
+(figure)
+
+Il pose aux élèves la question : « Que voyez-vous lorsque je déroule la bande ? » Puis dans un deuxième temps, il demande : « Qu'est ce qui reste fixe ? Qu'est ce qui varie ? »
+]
+*2.* À partir de l'activité choisie, proposez un scénario pédagogique dont l'objectif est d'introduire la notion de fonction linéaire.
+]
+
+#grid(inset : 0.5em, columns:(1fr, 1fr), grid.header([*Situation 1*], [*Situation 2*]))[
+- modèle discret
+- présence de $%$ (prérequis)
+- modélisation dans un contexte précis
+- possibilité de calculer pour quelques valeurs pour généraliser
+- proportionnalité *visible*
+][
+- modèle continu
+- situation de proportionnalité : aire ou périmètre en fonction de la largeur déroulée
+- dépendance des grandeurs *très visible* par l'aspect manipulatoire
+
+
+
+]
