@@ -369,6 +369,36 @@
 #let demo = preuve
 
 
+#let correction(..titre, body) = { 
+  let colors = (rgb("#2f9a6f"), rgb("#c4f2e0"))
+  let header = ""
+  if(titre.pos().len() > 0){
+    header = "Correction "+ titre.pos().at(0)
+  }
+  else{
+    header = "Correction"
+  }
+  align(center,
+  block(
+    width: 100%,
+    radius: 1em,
+    stroke: (paint: colors.at(0), thickness: 2pt),
+    
+    clip: true,
+    grid(
+      inset:0.5em,
+      fill: (_, y)=>(if (y==0){colors.at(0)} else {colors.at(1)}),
+      stroke: (paint: colors.at(0), thickness: 2pt),
+      align(left, block(width: 100%, inset : 0.5em, strong(text(white, header)))),
+      align(left, block(inset: 1em, body))
+    )
+  )
+  )
+}
+
+
+
+
 #let rappel(..titre, body) = { 
   let colors = (rgb("#e73886"), rgb("#ffe9f7"))
   let header = ""

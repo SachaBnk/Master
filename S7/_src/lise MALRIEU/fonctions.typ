@@ -547,5 +547,79 @@ $ f(x)= M m, g (x) = M m' $
 Avec $r$ le rayon du cercle (ici $r=2$)\
 $f(alpha) = r sin(alpha)$ avec $alpha$ l'angle $hat(A O M)$, $alpha = x / r$, *donc $f(x) = 2sin(x/2)$*
 
+#import "@preview/zebraw:0.6.3": *
+#show: zebraw
+
+#exo("2 - TD4")[
+#grid(columns:(2fr,1.5fr))[Soit $Cr$ un cercle de centre $O$ et de rayon $R$. On cherche à inscrire dans ce cercle un rectangle d'aire maximale.
+
+*1.* Justifier que la largeur $l$ du rectangle vaut $2sqrt(R^2 - x^2)$][
+#align(center, image("assets/td4_21.png", width:70%))
+]
 
 
+
+
+*2.* On considère le programme python ci-dessous
+#align(center)[
+  ```python
+  from math import sqrt
+  def aire_max(R, N):
+    x = 0
+    pas = R/N
+    max = 0
+    for i in range(N):
+      x = x+pas
+      y = 4*x*sqrt(R**2-x**2)
+      if y > max: 
+        max = y
+    return max
+  ```]
+a) Que représentent les variables $R$ et $N$, arguments de cette fonction ?\
+b) Quel est le rôle de la variable pas de la ligne 4 ?\
+c) Que permet de déterminer la fonction aire_max ?\
+d) Recopier ou ouvrir ce programme dans un éditeur python et déterminer l'aire maximale d'un rectangle inscrit dans un cercle de rayon $5 c m$.
+]
+
+#pagebreak()
+#correction[
+*1.*\
+#grid(columns:(2fr,1.5fr))[
+On considère le triangle $O A B$ ci-contre, en particulier $A in Cr$ donc $O A = R$
+
+$O A B$ est rectangle en $B$, d'après le *théorème de Pythagore* :
+$ O A^2 &= O B^2 + B A^2\
+R^2 &= x^2 + (l/2)^2\
+(l/2)^2 &= R^2-x^2\
+l/2 &= sqrt(R^2 - x^2) $
+*On a bien $l = 2 sqrt(R^2-x^2)$*
+][
+
+#align(center, image("assets/td4_22.png", width:100%))
+]
+
+#attention[$x < R$, donc $R^2-x^2 > 0$, donc on peut appliquer $sqrt(" ")$]
+
+*2.*\
+a) $R$ est le rayon de notre cercle, $N$ est le nombre de valeurs que $x$ va prendre successivement
+
+b) le pas, c'est la distance entre deux valeurs de $x$, ici ```python pas = R/N``` car on veut que nos $x$ soient répartis uniformément entre $0$ et $R$
+
+c) aire_max permet d'approximer l'aire maximum du rectangle circonscrit\ 
+(en effet "```python y = 4*x*sqrt(R^2-x^2)```" calcule $(2sqrt(R^2-x^2)) times 2x$ soit largeur $times$ longueur)
+
+d) aire_max(5, 1000000) $tilde.eq 49.999c m^2$
+]
+#table(columns:(1fr,1fr,1fr), stroke:none)[
+*difficultés :*
+- espace de def de la fonction racine dans q1
+- calcul de la variable `y` (ligne 8) jamais expliqué
+- python en général
+][
+*Objectifs en seconde :*
+- modéliser : exhiber la fonction à optimiser
+- calculer (q1)
+- python
+][
+*Remarque :* On aurait pu utiliser excel pour visualiser plus facilement les variations de la fonction, python permet néanmoins d'affiner la recherche très facilement (on augmente $N$)
+]
