@@ -304,7 +304,25 @@ On sait que 1,5 kg de tomates coûte 6 €.\
 Trouver des exos chouettes pour illustrer les différents registres des fonctions linéaires
 ]
 
-(voir photos sur tel)
+#grid(columns:(1fr, 1fr), inset:1em)[
+
+#block(inset:1em, stroke:1pt, grid(columns:(1fr, 0.7fr))[
+  Peter montre à Louis
+le graphique ci-contre. Sans aucun calcul, ce dernier déclare que ce n'est pas une situation de proportionnalité.\
+*Expliquer son raisonnement.*
+][
+  #align(horizon+center, image("assets/ppt_td4_11.png"))
+])
+][
+#block(inset:1em, stroke:1pt)[#grid(columns:(1fr, 1fr))[
+On veut représenter graphiquement une situation de proportionnalité 
+][
+  #align(horizon+center, image("assets/ppt_td4_12.png"))
+]
+dans le repère ci-contre. On sait que le point A de coordonnées (8 ; 20) appartient à cette représentation graphique.
+1. *Déterminer l'ordonnée du point B appartenant à la courbe et d'abscisse 2.*
+2. *Déterminer l'abscisse du point C appartenant à la courbe et d'ordonnée 22,5.*]
+]
 
 #pagebreak()
 #prop[
@@ -314,8 +332,9 @@ Trouver des exos chouettes pour illustrer les différents registres des fonction
 ]
 
 #demo[
-#grid(columns:(1fr, 1fr))[
-$redimp$
+#grid(columns:(1fr, 1fr), gutter:1em)[
+$redimp$ *but :* mq toute situation de proportionnalité est représentée par des points alignés avec l'origine du repère.
+
 Soient $A(x_1, y_1), B(x_2, y_2)$ deux points dont les coordonnées suivent une relation de proportionnalité : on note $k = y_1/x_1 = y_2/x_2$\
 Sur la droite $(O A)$, on place un point $M(x_M, y_M)$ tel que son abscisse est celle du point $B$ : $x_M= x_2$\
 On appelle $A'$ le pied de la perpendiculaire à l'axe des abscisses passant par $A$, et $M'$ le pied de la perpendiculaire à l'axe des abscisses passant par $M$
@@ -332,24 +351,29 @@ donc $y_M = k times x_B$, donc $M = B$,\
 
 
 ][
-$redimprev$\
-(photo tel)
+$redimprev$ *but :* mq des points alignés avec l'origine du repère caractérisent une situation de proportionnalité.
 
+Considérons les points $A'$ et $B'$ les pieds des perpendiculaires à l'axe des abscisses passant respectivement par $A$ et par $B$.
+
+#align(center, image("assets/ppt_thales_demo.png", width:50%))
+
+Les points $O, A', B'$ sont alignés (sur l'axe des abscisses) et les points $O, A, B$ sont alignés (par hypothèse). Comme les droites $(A A')$ et $(B B')$ sont parallèles (car toutes les deux perpendiculaires à l'axe des abscisses), on peut appliquer le *théorème de Thalès* qui donne l'égalité suivante : $(A A')/(B B') = (O A')/(O B')$\ 
+
+On a donc $y_A/y_B = x_A/x_B$,\
+ce qui revient à $y_A/x_A = y_B/x_B$
+
+Le rapport entre l'ordonnée et l'abscisse est constant pour n'importe quel point de la droite. Ce rapport constant est le coefficient de proportionnalité. *Donc, un alignement avec l'origine caractérise bien une situation de proportionnalité.*
 ]
 ]
 
 #exercice("2 - TD4")[\
 *1.* Laquelle des deux situations ci-dessous proposeriez-vous pour introduire les fonctions linéaires en troisième ? Justifiez votre choix en vous appuyant sur le texte précédent.
 
-#table(columns:(1fr,1fr))[
+#table(columns:(1fr,1fr), inset: 1em)[
 *Situation 1 :* Collées sur une vitrine, de grandes affiches annoncent une réduction de 30 % sur toute la boutique.
 ][
 *Situation 2 :*
-Le professeur a préparé une bande de papier de $3c m$ de large, enroulée, qu'il déroule lentement devant les élèves, comme indiqué sur la figure ci-dessous, le cylindre de papier face à lui.
-
-(figure)
-
-Il pose aux élèves la question : « Que voyez-vous lorsque je déroule la bande ? » Puis dans un deuxième temps, il demande : « Qu'est ce qui reste fixe ? Qu'est ce qui varie ? »
+Le professeur a préparé une bande de papier de $3c m$ de large, enroulée, qu'il déroule lentement devant les élèves, comme indiqué sur la figure ci-dessous, le cylindre de papier face à lui. Il pose aux élèves la question : *« Que voyez-vous lorsque je déroule la bande ? » Puis dans un deuxième temps, il demande : « Qu'est ce qui reste fixe ? Qu'est ce qui varie ? »*
 ]
 *2.* À partir de l'activité choisie, proposez un scénario pédagogique dont l'objectif est d'introduire la notion de fonction linéaire.
 ]
