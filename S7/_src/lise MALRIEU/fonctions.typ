@@ -735,7 +735,7 @@ J'ai gagné !`
 
 #rq[La fonction ```python input()``` permet de demander à l'utilisateur de rentrer une phrase]
 
-#pagebreak()
+
 #exo("2 - TD5")[
 Bubulle et Didier ont grandi. Ils se sentent maintenant à l'étroit dans leur aquarium de 15 L.
 
