@@ -376,7 +376,7 @@ $x_1-x_2 < 0$ et $x_1 x_2 > 0$ donc $f(x_2)-f(x_1) < 0$
 
 #pagebreak()
 
-= Quels exercices possibles ? 
+== Quels exercices possibles ? 
 
 
 #exo("- corrections d'exercices de seconde")[
@@ -595,19 +595,21 @@ $O A B$ est rectangle en $B$, d'après le *théorème de Pythagore* :
 $ O A^2 &= O B^2 + B A^2\
 R^2 &= x^2 + (l/2)^2\
 (l/2)^2 &= R^2-x^2\
-l/2 &= sqrt(R^2 - x^2) $
-*On a bien $l = 2 sqrt(R^2-x^2)$*
+l/2 &= sqrt(R^2 - x^2) ou l/2 = -sqrt(R^2-x^2) $
+*On a bien $l = 2 sqrt(R^2-x^2)$* (car $l$ est une longueur positive)
 ][
 
 #align(center, image("assets/td4_22.png", width:100%))
 ]
+
+#rq[$A B = l/2$ car la droite $(O B)$ est un axe de symétrie du rectangle]
 
 #attention[$x < R$, donc $R^2-x^2 > 0$, donc on peut appliquer $sqrt(" ")$]
 
 *2.*\
 a) $R$ est le rayon de notre cercle, $N$ est le nombre de valeurs que $x$ va prendre successivement
 
-b) le pas, c'est la distance entre deux valeurs de $x$, ici ```python pas = R/N``` car on veut que nos $x$ soient répartis uniformément entre $0$ et $R$
+b) le pas, c'est la différence entre deux valeurs de $x$, ici ```python pas = R/N``` car on veut que nos $x$ soient répartis uniformément entre $0$ et $R$
 
 c) aire_max permet d'approximer l'aire maximum du rectangle circonscrit\ 
 (en effet "```python y = 4*x*sqrt(R^2-x^2)```" calcule $(2sqrt(R^2-x^2)) times 2x$ soit largeur $times$ longueur)
@@ -625,23 +627,57 @@ d) aire_max(5, 1000000) $tilde.eq 49.999c m^2$
 - calculer (q1)
 - python
 ][
-*Remarque :* On aurait pu utiliser excel pour visualiser les variations de la fonction, python permet néanmoins d'affiner la recherche très facilement (on augmente $N$)
+*Remarque :* On aurait pu utiliser excel pour visualiser les variations de la fonction, python permet néanmoins d'affiner la recherche très facilement (on augmente $N$), ou géogebra (registre graphique)
 ]
 
+#def[Cette méthode s'appelle une méthode de *balayage*, elle permet de proposer une conjecture.]
+
+
 #exo("1 - TD5")[
-Le jeu du « plus ou moins » est un jeu de hasard qui consiste à deviner un nombre entre 1 et 100, préziablement choisi par l'ordinateur. À chaque proposition faite, l'ordinateur répond par « plus » ou « moins ». Le joueur gagne quand il trouve le nombre.
+Le jeu du « plus ou moins » est un jeu qui consiste à deviner un nombre entre 1 et 100, préziablement choisi par l'ordinateur. À chaque proposition faite, l'ordinateur répond par « plus » ou « moins ». Le joueur gagne quand il trouve le nombre.
 
 *1. Programmer le jeu*\
 *2. Expliquer en quoi ce jeu peut constituer une situation d'introduction au concept de dichotomie.*\
 *3. Programmer l'algorithme de dichotomie sur Scratch et/ou sur Python.*
 ]
-*1. jeu du plus-moins :*
+
+
+#align(center, block(inset:1em, stroke:1pt)[
+#align(left)[
+*Variables :* n, rep\
+*Entrée :* \
+n $<-$ nombre aléatoire entre $1$ et $100$\
+rep $<-$ 0
+
+*Traitement :*\
+Tant que rep $!=$ n :\
+#h(2em) rep $<-$ demander un nombre\
+#h(2em) si rep > n :\
+#h(4em) afficher "plus bas !"\
+#h(2em) si rep < n :\
+#h(4em) afficher "plus haut !"\
+
+*Sortie :* afficher "gagné !"]
+])
+
+
+#rq[sur le pseudo code (ou langage nanturel)][
+- afficher les différentes parties : *variables, entrées, traitement* et *sorties*
+  - Variables : liste des variables utilisées
+  - Entrées $tilde.eq$ initialisation de toutes les variables
+  - traitement : l'algo en lui-même
+  - sortie : la (les) sortie(s)
+
+- Bien afficher l'indentation (avec des barres verticales sur papier)
+]
+
+*1.*
 #table(columns:(1fr,1.1fr), stroke:none)[
 #align(horizon)[```python
 from random import randint
 n = randint(1,100)
 rep = 0
-print("Je pense à un chiffre entre 1 et 100...")
+print("Je pense à un nombre entre 1 et 100...")
 while rep != n:
     rep = int(input())
     if rep > n:
@@ -678,11 +714,12 @@ inf = 0
 sup = 101
 rep = ""
 while (rep != "="):
-    rep = input(str(int((inf+sup)/2))+" ? (+/-/=) : ")
+    moyenne = int((inf+sup)/2)
+    rep = input(str(moyenne)+" ? (+/-/=) : ")
     if rep == "+":
-        inf = int((inf+sup)/2)
+        inf = moyenne
     if rep == "-":
-        sup = int((inf+sup)/2)
+        sup = moyenne
 print("J'ai gagné !")
 ```]
 ][`pense à un nombre sans me le dire...
@@ -695,3 +732,56 @@ print("J'ai gagné !")
 67 ? (+/-/=) : =
 J'ai gagné !`
 ]
+
+#rq[La fonction ```python input()``` permet de demander à l'utilisateur de rentrer une phrase]
+
+#pagebreak()
+#exo("2 - TD5")[
+Bubulle et Didier ont grandi. Ils se sentent maintenant à l'étroit dans leur aquarium de 15 L.
+
+Aïcha l'a compris et souhaite leur en construire un nouveau d'une capacité de 25 L (soit 25 dm'). Comme ses étagères sont étroites. la base de l'aquarium doit être un rectangle de 20 cm de large. Aïcha voudrait aussi qu'il fasse 30 cm de plus en longueur qu'en hauteur.
+
+*Quelle doit être la hauteur de l'aquarium ?*
+
+]
+
+#correction[
+On travaille en décimètres :
+
+#align(center, image("assets/td5_21.png", width:40%))
+
+$ Ar = x times (x+3) times 2 = 25\
+ssi 2x^2+6x -25 = 0 $
+
+$x tilde.eq 2.34 d m$
+]
+
+*Méthodes de résolution en seconde GT :*
+- Géogebra
+- Tableur
+
+#pagebreak()
+= La dérivation de fonctions en classe de première
+
+#def[
+Une fonction $f$ est dite *dérivable en $a$* si le taux d'accroissement $(f(a+h)-f(a))/h$ admet une limite quand $h$ tend vers $0$. Cette limite s'appelle *nombre dérivé* de $f$ en $a$ et se note $f'(a)$
+]
+
+#rq["taux d'accroissement" ou "taux de variation", les deux sont a connaitre
+
+*Prérequis :*
+- taux d'accroissement (registre graphique)
+- limite (d'un quotient)
+- fonction : registre algébrique
+
+*Difficultés / points de vigilance :*
+- introduire le taux d'accroissement ($tilde.eq$ 3 semaines avant)
+- faire "sentir" la notion de limite : comment ?
+- beaucoup de lettres qui ont toutes des statuts différents
+]
+
+#attention[Peu de fonctions de référence : 
+- affines
+- carré
+- inverse]
+
