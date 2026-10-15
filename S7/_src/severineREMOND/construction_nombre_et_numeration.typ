@@ -3,6 +3,7 @@
 #import "../_Template/raccourcis.typ" : *
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
+#import "@preview/longops:0.2.0": addition, soustraction, multiplication, division, racine
 
 // On embrasse Jean Toromanoff
 #let opp = $"opp"$
@@ -104,3 +105,55 @@ Réponse :
 - 2 POUM
 
 $->$ en effet, dans 249 il y a : 249 unités, 24 dizaines et 2 centaines
+
+#ex("d'activité")[
+// #block(inset:1em, stroke:1pt, width:100%)[
+2 milliers + 15 centaines + 3 dizaines + 7 unités = .....\
+24 centaines + 5 dizaines + 7 milliers + 3 unités = .....\
+1 milliers + 21 centaines + 13 dizaines + 4 unités = .....
+
+2675 = ..... centaines + ..... unités\
+1052 = ..... centaines + ..... unités\
+5 milliers = ..... unités\
+200 dizaines = ..... milliers
+]
+
+#ex("du glisse-nombre")[
+#align(center, image("assets/glissenombres.png", width: 38%))
+
+Outil recommandé par ÉduScol pour introduire les nombres à l'école, et notamment la multiplication par 10,  100, 1000... D'après Séverine Rémond ça marche plutôt bien (ici on "déplace" pas la virgule)
+]
+
+#exo[On pose des opérations]
+
+#multiplication(2.4, 1.3) 
+#soustraction(7534, 4857)
+#soustraction(4003, 1897)
+
+#rq[\- à quoi ça sert de poser des opérations ?][
+Ça sert à évaluer si les élèves ont compris la numération 
+]
+
+#ex("- technique à la russe")[
+On ajoute à gauche et à droite pour arriver à un multiple de 10 :
+$ 7534 - 4857 &=^(+3) 7537-4860\
+&=^(+40) 7577 - 4900\
+&=^(+100) 7677 - 5000\
+&= 2677 $
+]
+
+#division(17.39, 5, extradigits:1)
+
+#attention[#grid(columns:(1fr, 2fr), division(17.39, 5))[Les élèves peuvent écrire $17.39 = 3.47 times 8 + 4$]]
+
+#pagebreak()
+#activite("- Je souhaite répartir équitablement 6 kg de compote dans 15 pots. Quelle sera la masse en kilogrammes de compote dans chaque pot ?")[\
+Rédaction d'élève :
+
+#block(width:100%, stroke:1pt, inset:1em)[
+  schéma
+
+  il y a 2.5 kg par pot...
+]
+
+]
