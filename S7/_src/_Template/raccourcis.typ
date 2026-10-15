@@ -148,6 +148,7 @@
 #let KE = $K^*$
 
 #let ZZX = $ZZ[X]$
+#let ZZE = $ZZ^*$
 #let NNE = $NN^*$
 
 #let ED = $E^*$

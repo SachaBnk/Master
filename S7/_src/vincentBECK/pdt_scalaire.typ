@@ -20,7 +20,7 @@
 
 
 
-#question[Qu'est ce que ça veut dire $au dot av = 5$ ?]
+= Qu'est ce que ça veut dire $au dot av = 5$ ?
 - $au$ et $av$ non-othogonaux
 - l'angle de $au$ et $av$ est aigu
 - $norm(au) > 1 ou norm(av) > 1$
@@ -63,7 +63,7 @@ Soit E un espace vectoriel réel. Un *produit scalaire* est...
 - mq si $(ai, aj)$ est une base orthonormée, $au mat(x; y), av mat(x';y')$ dans la base $(ai, aj)$, alors $au dot av = x x' + y y'$]
 
 
-(correction)
+(rattraper :3)
 
 
 #memo[
@@ -90,34 +90,4 @@ $ A C^2 = A B^2 + B C^2 - 2 A B dot B C cos(hat(A B C)) $
   - Si je connais les longueurs de deux côtés et l'angle entre les deux, alors je connais la longueur du dernier côté
 - Si je connais les trois longueurs, alors je connais les trois angles
 ]
-
-
-#activite[\- Une relation d'équivalence][\
-On considère l'ensemble $X = Z times (Z\\ {0})$.
-Dans tout cet exercice, le seul ensemble de nombres connus est $ZZ$. Ainsi les seules opérations connues sont
-l'addition et la multiplication dans Z.
-
-*Partie 1 : *
-+ Mq la relation "$(a, b)Rr(c, d)$ ssi $a d = b c$" est une relation d'équivalence
-+ Déterminer $ol((0, 1))$
-+ Représenter $ol((0, 1))$ dans le plan
-+ Montrer que pour tout $k in Z \\ {0}$ et pour tout $(a,b) in X$, on a $(k a, k b) in X$ et $(a, b)Rr(k a, k b)$. En déduire que toute classe d'équivalence admet un unique représentant de la forme $(a, b)$ avec $b in NNE$ et pgcd (a, b) = 1.\
-  Le représentant (a, b) d'une classe d'équivalence vérifiant ces deux propriétés ($b in NNE$ et $pgcd(a, b) = 1$) est appelé représentant irréductible.
-]
-
-*4.*\
-*Preuve de l'unicité :*
-Soit $(a, b), (c,d)$ deux représentants irréductibles de $ol((a, b))$
-
-$redstar : a d = b c$ donc $d divides b c$ et $b divides a d$
-
-- $d divides b c$ et $PGCD(d, c) = 1$ donc $d divides b$
-
-- $b divides a d$ et $PGCD(a, b) = 1$ donc $b divides d$
-
-donc $d = b$ ou $d=-b$
-
-or $d,b in NNE$ donc *$d = b$*
-
-On remplace dans $redstar$ : *$a = c$*
 

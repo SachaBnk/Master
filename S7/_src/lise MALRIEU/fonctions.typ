@@ -703,7 +703,7 @@ gagné !
 `
 ]
 
-*2.* car l'algo de dichotomie est la manière optimale de gagner à ce jeu (en $O(log n)$) 
+*2.* car l'algo de dichotomie est la manière optimale de gagner à ce jeu (en maximum $log_2 n$ essais)
 
 
 *3. algo dichotomie :*
@@ -739,21 +739,27 @@ J'ai gagné !`
 #exo("2 - TD5")[
 Bubulle et Didier ont grandi. Ils se sentent maintenant à l'étroit dans leur aquarium de 15 L.
 
-Aïcha l'a compris et souhaite leur en construire un nouveau d'une capacité de 25 L (soit 25 dm'). Comme ses étagères sont étroites. la base de l'aquarium doit être un rectangle de 20 cm de large. Aïcha voudrait aussi qu'il fasse 30 cm de plus en longueur qu'en hauteur.
+Aïcha l'a compris et souhaite leur en construire un nouveau d'une capacité de 25 L (soit 25 dm$""^3$). Comme ses étagères sont étroites, la base de l'aquarium doit être un rectangle de 20 cm de large. Aïcha voudrait aussi qu'il fasse 30 cm de plus en longueur qu'en hauteur.
 
 *Quelle doit être la hauteur de l'aquarium ?*
 
 ]
 
 #correction[
-On travaille en décimètres :
 
-#align(center, image("assets/td5_21.png", width:40%))
+
+#grid(columns:(1fr,2fr), gutter:1em)[
+On travaille en décimètres :
 
 $ Ar = x times (x+3) times 2 = 25\
 ssi 2x^2+6x -25 = 0 $
 
-$x tilde.eq 2.34 d m$
+*$x tilde.eq 2.34 d m$*
+][
+#align(horizon+center, image("assets/td5_21.png", width:70%))
+]
+
+
 ]
 
 *Méthodes de résolution en seconde GT :*
@@ -767,7 +773,7 @@ $x tilde.eq 2.34 d m$
 Une fonction $f$ est dite *dérivable en $a$* si le taux d'accroissement $(f(a+h)-f(a))/h$ admet une limite quand $h$ tend vers $0$. Cette limite s'appelle *nombre dérivé* de $f$ en $a$ et se note $f'(a)$
 ]
 
-#rq["taux d'accroissement" ou "taux de variation", les deux sont a connaitre
+#rq["taux d'accroissement" ou "taux de variation", les deux sont à connaître
 
 *Prérequis :*
 - taux d'accroissement (registre graphique)

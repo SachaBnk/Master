@@ -144,16 +144,19 @@ $ 7534 - 4857 &=^(+3) 7537-4860\
 
 #division(17.39, 5, extradigits:1)
 
-#attention[#grid(columns:(1fr, 2fr), division(17.39, 5))[Les élèves peuvent écrire $17.39 = 3.47 times 8 + 4$]]
+#attention[#grid(columns:(1fr, 3fr), division(17.39, 5))[
+#align(horizon)[$->$ Les élèves peuvent écrire $17.39 = 3.47 times 8 + 4$]]]
 
 #pagebreak()
 #activite("- Je souhaite répartir équitablement 6 kg de compote dans 15 pots. Quelle sera la masse en kilogrammes de compote dans chaque pot ?")[\
 Rédaction d'élève :
 
-#block(width:100%, stroke:1pt, inset:1em)[
-  schéma
+#block(stroke:1pt, inset:1em)[
+  
+  #image("assets/compote.png", width:30%)
 
-  il y a 2.5 kg par pot...
+  #h(4em)$-->$ il y a 2.5 kg par pot.
+]
 ]
 
-]
+
