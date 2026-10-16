@@ -136,13 +136,14 @@
 #let prop = proposition
 
 #let lemme(..titre, body) = {
-  if(titre.pos().len() > 0){
-    [ #text(rgb(red))[#underline("Lemme "+ str(titre.pos().at(0)) +" :")]]
+  block(width:100%, inset:0.5em)[
+  #if(titre.pos().len() > 0){
+    [ #text(rgb(red))[#strong("Lemme "+ str(titre.pos().at(0)) +" :")]]
+  }else{
+    [ #text(rgb(red))[#strong("Lemme :")]]
   }
-  else{
-    [ #text(rgb(red))[#underline("Lemme :")]]
-  }
-  " "+body
+  #body
+  ]
 }
 
 #let exemple(..titre, body) = { 

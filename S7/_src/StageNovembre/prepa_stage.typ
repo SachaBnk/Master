@@ -164,4 +164,8 @@ Mise en commun :
 
 *Piste :* aller voir une classe dans d'autres matières ?
 
+Vouvoiement ? Tutoiement ? (vis-à-vis des élèves et des collègues)\
+$->$ Élie avait bien aimé au lycée quand on l'a vouvoyé
+
 #text(red)[*voir fiche d'observation en annexe*]
+

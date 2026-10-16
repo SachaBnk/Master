@@ -4,7 +4,7 @@
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
-#frontpage("Maths et genre 1")
+#frontpage("Maths et genre")
 
 #show outline.entry.where(level: 1): it => {
   v(12pt)
@@ -59,5 +59,15 @@ Selon leur étude, l'enseignant$dot$e se comporterait de "manière plus agréabl
 
 #ex[Groupes de travail stigmatisants]
 
+
+
+#pagebreak()
+= Que dit notre institution ?
+
+#align(center, grid(columns:(1fr,1fr))[
+  #image("assets/julien.jpg", width:70%)
+][
+  #image("assets/laura.jpg", width:70%)
+])
 
 

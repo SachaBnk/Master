@@ -19,7 +19,7 @@
 
 #set page(numbering: "1 sur 1", number-align: center)
 
-
+= $QQ$
 
 #activite[\- Une relation d'équivalence (TD Beck)][\
 On considère l'ensemble $X = Z times (Z\\ {0})$.
@@ -163,4 +163,65 @@ $->$ À l'école on définit les choses à l'envert, on manipule les objets avan
 ]
 
 
-#rq[On peut définir la même chose pour les relatifs avec $forall a,b,c,d in NN, (a, b)Rr(c,d) ssi a+d=c+d$]
+
+
+
+#rq[On peut définir la même chose pour les relatifs avec $forall a,b,c,d in NN, (a, b)Rr(c,d) ssi a+d=c+d$
+]
+#pagebreak()
+
+= $ZZ ?$
+
+
+#def[de la relation $Rr$][Soit $X = NN^2, forall (a,b), (c,d) in X, (a,b)Rr(c,d) ssi a+d = b+c$]
+
+
+#prop[
+  $forall (a,b) in X, forall n in NN, (a,b)Rr(a+n,b+n)$
+]
+
+#demo[
+$(a,b)Rr(a+n,b+n) &ssi a + b+ cancel(n) = b+a+ cancel(n)"    ok"$
+]
+
+#def[
+  On note $ol((a,b))$ la classe d'équivalence de $(a,b)$ par rapport à $Rr$
+]
+
+#prop[
+Les opérations suivantes sont définies correctement :
+- ...
+- ...
+]
+#demo[
+
+
+#lemme("1")[
+
+  $forall (a,b),(c,d),(a',b'),(c',d') in X,\
+  (a,b)Rr(a',b') et (c,d)Rr(c',d') imp (a+c, b+d)Rr(a'+c',b'+d')$
+
+  *Démo Lemme 1 :*\
+  On suppose $(a,b)Rr(a',b')$ et $(c,d)Rr(c',d')$
+  $ (a+c, b+d)Rr(a'+c',b'+d') &ssi a+c +b'+d' = b+d+a'+c'\
+  &ssi (a+b') + (c+d') = (b+a')+(d+c') "ok" $
+]
+
+#lemme("2")[
+
+  $forall (a,b),(c,d),(a',b'),(c',d') in X,\
+  (a,b)Rr(a',b') et (c,d)Rr(c',d') imp (a c + b d, a d + b c)Rr(a'c'+b'd', a' d'+b' c')$
+
+  *Démo Lemme 2 :*\
+  On suppose $(a,b)Rr(a',b')$ et $(c,d)Rr(c',d')$
+
+  $ &(a c + b d, a d + b c)Rr(a'c'+b'd', a' d'+b' c')\ 
+  &ssi a c + b d + a' d' + b' c' = a d + b c + a'c'+b'd'\
+  &ssi ... $
+
+
+]
+
+
+]
+
