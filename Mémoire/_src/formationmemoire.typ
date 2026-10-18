@@ -1,6 +1,6 @@
-#import "../_Template/titres.typ" : *
+#import "_Template/titres.typ" : *
 #import "frontpage.typ" : frontpage
-#import "../_Template/raccourcis.typ" : *
+#import "_Template/raccourcis.typ" : *
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 
@@ -194,3 +194,6 @@ Thèmes :
 
 
 
+
+
+= Thème retenu : Raisonner

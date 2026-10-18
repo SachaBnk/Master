@@ -190,8 +190,8 @@ $(a,b)Rr(a+n,b+n) &ssi a + b+ cancel(n) = b+a+ cancel(n)"    ok"$
 
 #prop[
 Les opérations suivantes sont définies correctement :
-- ...
-- ...
+- $ol((a,b)) plus.o ol((c,d)) = ol((a+c, b+d))$
+- $ol((a,b))times.o ol((c,d)) = ol((a c + b d, a d + b c))$
 ]
 #demo[
 
@@ -213,12 +213,12 @@ Les opérations suivantes sont définies correctement :
   (a,b)Rr(a',b') et (c,d)Rr(c',d') imp (a c + b d, a d + b c)Rr(a'c'+b'd', a' d'+b' c')$
 
   *Démo Lemme 2 :*\
-  On suppose $(a,b)Rr(a',b')$ et $(c,d)Rr(c',d')$
+  On suppose $(a,b)Rr(a',b')$ et $(c,d)Rr(c',d')$\
+  C'est à dire : $a + b' = a'+b$ et $c + d' = c'+d$
 
   $ &(a c + b d, a d + b c)Rr(a'c'+b'd', a' d'+b' c')\ 
-  &ssi a c + b d + a' d' + b' c' = a d + b c + a'c'+b'd'\
-  &ssi ... $
-
+  &ssi a c + b d + a' d' + b' c' =  a'c'+b'd' + a d + b c\
+  &imp $
 
 ]
 
