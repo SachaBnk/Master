@@ -64,9 +64,29 @@ Dans un triangle :
 ]
 
 - Pythagore, réciproque, contraposée
+
+#thm("de Pythagore")[
+  Si un triangle $A B C$ est rectangle en $C$, alors $A B^2 = A C2 + B C^2$
+]
+
 - Mener un travail logique sur la réciproque et la contraposée
-- Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle 
+
+#rq[ça risque d'être interessant pour le mémoire sur le thème "raisonner" ça ⬆️]
+
+- Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle
+
+#prop()[
+  Un triangle est rectangle si, et seulement si, un de ses cotés est un diamètre de son cercle circonscrit
+]
+
 - Déterminer le centre du cercle circonscrit d'un triangle rectangle.
+
+#methodo[
+Tracer les médiatrices des cotés, elles sont concurrentes en le centre du cercle circonscrit
+
+(schéma)
+]
+
 - Construire des rectangles sans équerre
 
 === Prolongements possibles
