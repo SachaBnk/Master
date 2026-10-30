@@ -84,7 +84,7 @@ Dans un triangle :
 #methodo[
 Tracer les médiatrices des cotés, elles sont concurrentes en le centre du cercle circonscrit
 
-(schéma)
+#image("assets/Bonus_circonscrit.png", width:50%)
 ]
 
 - Construire des rectangles sans équerre

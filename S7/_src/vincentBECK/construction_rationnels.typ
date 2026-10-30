@@ -184,7 +184,7 @@ $->$ À l'école on définit les choses à l'envert, on manipule les objets avan
 $(a,b)Rr(a+n,b+n) &ssi a + b+ cancel(n) = b+a+ cancel(n)"    ok"$
 ]
 
-#def[
+#rq[
   On note $ol((a,b))$ la classe d'équivalence de $(a,b)$ par rapport à $Rr$
 ]
 
