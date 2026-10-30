@@ -14,7 +14,7 @@
   v(12pt)
   strong(it)
 }
-// #show heading.where(level: 2): set heading(outlined: false)
+#show heading.where(level: 3): set heading(outlined: false)
 #show heading.where(level: 1): it => {text(1.5em, it)+v(1em)}
 #show heading.where(level: 2): it => {text(1.3em, it)+v(0.5em)}
 #text(1.3em)[#outline(title : "")]
@@ -41,3 +41,35 @@ Introduction avec la description de ce qui est mesurable dans un triangle : 6 me
 $->$ Le papier calque permet de comparer avec son voisin
 ]
 
+
+#pagebreak()
+= [BONUS] Notes perso avant le stage de Novembre
+
+
+== Programme de quatrième
+
+=== Automatismes
+
+- Reconnaitre les droites remarquables, y compris dans les triangles particuliers (médiatrices, médianes, hauteurs, bissectrices)
+
+=== Objectifs d'apprentissages
+
+- Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle
+
+#thm("des milieux")[
+Dans un triangle :
+- si une droite passe par les milieux des deux côtés, alors elle est parallèle au troisième côté\
+- si une droite passe par le milieu d'un côté et est parallèle au deuxième côté, alors elle coupe le troisième en son milieu
+- si un segment a pour extremité les milieux de deux côtés, alors il a pour longueur la moitié du troisième côté
+]
+
+- Pythagore, réciproque, contraposée
+- Mener un travail logique sur la réciproque et la contraposée
+- Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle 
+- Déterminer le centre du cercle circonscrit d'un triangle rectangle.
+- Construire des rectangles sans équerre
+
+=== Prolongements possibles
+
+- Thm de Varignon (preuve d'Euclide avec les aires)
+- histoire des maths avec pythagore
