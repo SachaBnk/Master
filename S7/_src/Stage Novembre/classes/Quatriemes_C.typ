@@ -1,6 +1,6 @@
-#import "../_Template/titres.typ" : *
-#import "frontpage.typ" : frontpage
-#import "../_Template/raccourcis.typ" : *
+#import "../../_Template/titres.typ" : *
+#import "../frontpage.typ" : frontpage
+#import "../../_Template/raccourcis.typ" : *
 
 #set text(font: "Arial",size: 12pt, lang: "fr")
 #import "@preview/longops:0.2.0": addition, soustraction, multiplication, division, racine
@@ -36,7 +36,7 @@
 
 *Ex 2*
 
-#image("assets/IMG_0.png", width:50%)
+#image("../assets/IMG_0.png", width:50%)
 
 - permet d'associer images et antécédents par une translation
 
@@ -65,3 +65,47 @@ certains élèves le dessinent de manière disproportionnée $->$ *d'où vient l
 
 - Séance terminée par un exercice sur la proportionnalité $->$ *Est ce que ça aide les élèves ?*
 
+
+= 06/11 
+
+Lors du cours sur les translations, un$dot$e élève demande "Si on a pas la flèche $P P'$, comment on fait pour tracer l'image d'une figure par la translation"
+
+$->$ iel a vu que c'était une "flèche" (bon signe en vue de l'introduction des vecteurs plus tard)
+
+#pagebreak()
+= 09/11
+
+== Automatismes
+
+#cadre[Soit un rectangle de longueur $5 c m$, largeur $2c m$\
+*Périmètre ? Aire ? *
+]
+*Rédaction proposée :*\
+#text(blue)[
+$Pr : (5+2)times 2 = 14$\
+Le périmètre est de $14 c m$
+
+$"Aire" : 5 times 2 = 10$\
+L'aire est de $10c m$
+]
+
+\ 
+*Correction proposée :*\
+On peut directement noter
+- $Pr = (5+...$
+- $"Aire" = 5 times ...$ $->$ ah ouais ?
+
+== Correction d'exo
+
+$->$ interprétation après un pb concret
+
+#cadre[
+3 mois $->$ 19.5€ ; 1 an $->$ 68€\
+*Est-ce une situation de ppté ?*
+]
+#text(blue)[Non c'est pas proportionnel, mais est ce que c'est une situation réaliste ?]
+
+== Cours ppté
+
+- ($2m^2$ de carrelage coûte#strong[nt])
+- voir remarques poly ppté

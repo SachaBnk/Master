@@ -511,3 +511,4 @@
 #let memo = reminder
 
 
+#let cadre(body) = block(inset:1em, stroke: 1pt, body)

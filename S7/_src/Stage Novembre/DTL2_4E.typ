@@ -22,39 +22,9 @@
 
 = Notes générales
 
-== Léana $redstar$
+- exo 1 bien réussi, exo 3 plutot réussi, exo 2 insuffisant
 
-=== Ex1
-
-- bonne rédaction
-- Phrase de conculsion
-
-TB
-
-=== Ex2
-
-- Traits de construction
-- codage
-- longueur indiquées
-
-TB
-
-=== Ex3
-TB, il manque juste une phrase de conclusion complète
-
-== Inès $redstar$
-
-=== Ex1
-
-*1.* il manque la preuve de ce que tu avances
-
-*2.* B (un schéma ne constitue pas une preuve) 
-
-*3.* Attention, il y a une plus grande *quantité* de noisettes dans la tablette 2, mais une plus petite *proportion*
-
-=== Ex3
-
-Bonne phrase de conclusion, TB
+- Parfois, réponses justes mais raisonnement aux fraises $->$ réponses recopiées sur des camarades
 
 
 #rq["$6/8 = 6/8$ et $(3 times 2)/(4 times 2) = 6/8$\
@@ -63,20 +33,55 @@ Sur le même dénominateur ils ont le même numérateur. Donc les deux personnag
 
 Dans une autre copie : "Le numérateur et le dénominateur sont identiques donc les quantités sont les mêmes"
 
-*$->$ possiblement une confusion entre nombre rationnel et écriture fractionnaire*]
+*$->$ confusion entre nombre rationnel et écriture fractionnaire* et vocabulaire pas maitrisé]
 
 #rq[
 
 #block(inset:1em, stroke:1pt, width:100%)[Tracer un parallélogramme $A B C D$ tel que $A D = 4c m$, $A B = 4.3c m$ et $hat(D A B) = 105°$]
 
-Un$dot$e élève a dessiné la figure à main levée avec le codage (dimensions, mesure d'angle) ce qui lui a permis de savoir ou iel allait pour la construire au propre  
+Un$dot$e élève a dessiné la figure à main levée avec le codage (dimensions, mesure d'angle) ce qui lui a permis de savoir ou iel allait pour la construire au propre 
+
+$->$ *difficultés à utiliser le rapporteur* (il va dans "deux sens")
 ]
 
+#rq[
+#cadre[
+Tracer le parallélogramme $A B C D$ tel que $A B = 4.5c m$, $A D = 4c m$ et $hat(D A B) = 105°$
+]
+
+Un$dot$e élève, pendant la lecture du sujet, a dessiné la figure à main levée avant de tracer la figure]
+
+
+
+
+
+#pagebreak()
+#rq("- preuves visuelles")[
+
+#block(inset:1em, stroke:1pt, width:100%)[
++ Loïc a rempli les $3/6$ de son verre, et Florian les $5/9$ du sien. *Les deux garçons ont-ils la même proportion de soda ?*
++ Soline a mangé les $6/8$ de sa pizza alors que Louise a mangé les $3/4$ de la sienne. *Les deux filles ont-elles mangé la même proportion de pizza ?*
+]
+
+#image("assets/IMG_2.png", width:70%)
+
+*1.* L'élève s'est ellui même rendu compte que représenter $3/6$ et $5/9$ comme ça ce n'est pas très pratique, même pour formuler une conjecture
+
+*2.* Dessiner les pizzas n'est pas suffisant pour une preuve : ici l'élève semble se reposer sur le fait que $2/8 = 1/4$ (ce qu'il faut justement démontrer)
+]
+
+#pagebreak()
 = Erreurs fréquentes
 
 - "$3/4 times 2 = 6/8$" $->$ correction : $3/4 = (3 times 2)/(4times 2) = 6/8$
 
-- Confusion $hat(D A B)$ et $hat(A B C)$
+- Confusion $hat(D A B)$ et $hat(A B C)$ (difficulté à utiliser le rapporteur)
 
 - confusion abscisse / ordonnée
+
+- erreurs de lecture de coordonnées
+
+- confusion entre les coordonnées $(x, y), (-x, y)$ et $(x, -y)$ lorsqu'il faut les placer sur dans le repère
+
+
 

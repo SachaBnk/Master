@@ -2,13 +2,12 @@
 #import "frontpage.typ" : frontpage
 #import "../_Template/raccourcis.typ" : *
 
+#import "@preview/flagada:1.0.1" : *
+
 #set text(font: "Arial",size: 12pt, lang: "fr")
 #import "@preview/longops:0.2.0": addition, soustraction, multiplication, division, racine
 
-// On embrasse Jean Toromanoff
-#let opp = $"opp"$
-
-#frontpage("Préparation des séquences de 3e")
+#frontpage("Préparation séquence théorème de Pythagore")
 
 #show outline.entry.where(level: 1): it => {
   v(12pt)
@@ -22,6 +21,3 @@
 #pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
 
-= Triangles semblables
-
-= Calcul littéral

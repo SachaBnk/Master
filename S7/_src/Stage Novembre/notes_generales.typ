@@ -40,7 +40,7 @@
 
 = Gestion de classe
 
-- Recadre calmement quand les élèves n'étaient pas rangés dans la cour
+- Recadre quand les élèves n'étaient pas rangés dans la cour
 
 
 = Classe Presse
