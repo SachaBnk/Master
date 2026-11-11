@@ -49,7 +49,8 @@ $->$ *difficultés à utiliser le rapporteur* (il va dans "deux sens")
 Tracer le parallélogramme $A B C D$ tel que $A B = 4.5c m$, $A D = 4c m$ et $hat(D A B) = 105°$
 ]
 
-Un$dot$e élève, pendant la lecture du sujet, a dessiné la figure à main levée avant de tracer la figure]
+Un$dot$e élève, pendant la lecture du sujet, a dessiné la figure à main levée avant de tracer la figure (point positif)]
+
 
 
 

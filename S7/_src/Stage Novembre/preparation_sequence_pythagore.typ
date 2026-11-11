@@ -21,3 +21,106 @@
 #pagebreak()
 #set page(numbering: "1 sur 1", number-align: center)
 
+
+
+= Notes générales / recherches
+
+- *Programme maths 2020 :* "Pythagore et sa réciproque"
+
+- *prérequis : *
+  - carré / racine carrée (le carré d'un nombre est tjrs positif, on n'applique la racine carrée qu'à un nombre positif)
+  - calcul littéral et résolution d'équations (pour déterminer la longueur d'un côté autre que l'hypoténuse)
+  - notion de triangle rectangle / angle droit
+
+= Structure du cours
+
+== Racine carrée
+
+#def("- ou rappel ?")[
+  Soit $a$ un nombre positif.\
+  La *racine carrée de $a$* est le nombre positif dont le carré est $a$.\
+  Elle est notée $sqrt(a)$.
+]
+
+#exemples[
+- $sqrt(16) = 4$\ 
+  car $4^2 = 4 times 4 = 16$
+
+- $sqrt(0.01) = 0.1$
+
+- $sqrt(0.16) = 0.4$ (sans doute pas nécessaire pour pythagore)\
+  car $0.4^2 = (0.1 times 4)^2 = 0.1 times 4 times 0.1 times 4 = 0.1^2 times 4^2 = 0.01 times 16 = 0.16$
+
+]
+
+#question[*Question : *est-ce qu'on peut calculer $sqrt(0)$ ? $sqrt(-1)$ ?   (potentiellement adapter cette question selon le niveau de la classe ou le temps, c'est peut-être pas nécessaire de traiter la racine de zéro pour pythagore)]
+
+#rq[On ne peut pas appliquer la racine carrée à un nombre strictement négatif.]
+
+- est-ce qu'on fait des exos sur la racine carrée ? est ce qu'on traite ça dans des exercices du jour ?
+
+== Théorème de Pythagore
+
+#thm[Dans un triangle rectangle, le carré de la longueur de l'hypothénuse est égale à la somme des carrés des longueurs des deux autres côtés.
+
+(schéma)
+
+*Si* le triangle $A B C$ est rectangle en $B$,\
+*alors* $A B^2 + B C^2 = A C^2$
+]
+
+#ex[
+- calcul de la longueur de l'hypoténuse
+- calcul de la longueur d'un autre coté (résolution d'équations)
+
+$->$ On fait attention à la rédaction (on sait que, or, donc)\
+$->$ On variera la position de $A, B$ et $C$ par rapport à l'angle droit
+]
+
+== Réciproque du théorème
+
+#prop("- Réciproque du théorème de Pythagore")[
+*Si* les côtés d'un triangle $A B C$ vérifient l'égalité suivante : 
+$ A B^2 + B C^2 = A C^2 $
+
+*Alors* le triangle $A B C$ est rectangle en $B$.
+]
+
+#question[Est ce qu'on fait varier l'angle en lequel le triangle est rectangle dans les théorèmes ?]
+
+#ex[
+- Prouver qu'un triangle est rectangle (rédaction sous forme "d'une part, d'autre part")
+]
+
+= Liste d'exercices
+
+== sens direct
+
+- pas dans le livre : prouver le thm avec des calculs d'aires (activité guidée ? activité d'intro ?)
+
+(TransMaths - cycle 4 - 2016)
+
+- 32p439 : appliquer le thm (sans retenir les lettres de la formule par coeur)
+  - dans l'exo les sommets s'appellent $F,C$ et $B$ $->$ on va vouloir changer l'ordre des sommets $A,B$ et $C$ du cours aussi
+
+- 36p440 : construction puis calcul 
+  - les élèves risquent de vouloir mesurer le côté manquant
+
+- 38p440 : rigolo (il faut remarquer que l'hypoténuse est le plus grand côté du triangle)
+
+- 43p440 : propriétés du losange et pythagore
+
+- 59 et 62 pn442 : problème moins guidé
+
+#pagebreak()
+== réciproque
+- 52p441 : avec une figure, classique
+
+- 55p441 : exemple de triangle non-rectangle (les élèves conjecturent puis iels infirment leur conjecture par le calcul)
+
+- 56p441 : problème concret
+
+#question[
+Si on est rigoureux, pour prouver qu'un triangle n'est pas rectangle on utilise le théorème de Pythagore (et non sa réciproque) dans un raisonnement par contraposée. *Comment on présente ça aux élèves ?*
+]
+
