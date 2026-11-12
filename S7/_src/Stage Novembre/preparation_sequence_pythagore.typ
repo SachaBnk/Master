@@ -7,7 +7,7 @@
 #set text(font: "Arial",size: 12pt, lang: "fr")
 #import "@preview/longops:0.2.0": addition, soustraction, multiplication, division, racine
 
-#frontpage("Préparation séquence théorème de Pythagore")
+// #frontpage("Préparation séquence théorème de Pythagore")
 
 #show outline.entry.where(level: 1): it => {
   v(12pt)
@@ -16,9 +16,9 @@
 #show heading.where(level: 3): set heading(outlined: false)
 #show heading.where(level: 1): it => {text(1.5em, it)+v(1em)}
 #show heading.where(level: 2): it => {text(1.3em, it)+v(0.5em)}
+
 #text(1.3em)[#outline(title : "")]
-\ \
-#pagebreak()
+
 #set page(numbering: "1 sur 1", number-align: center)
 
 
@@ -53,43 +53,45 @@
 
 ]
 
-#question[*Question : *est-ce qu'on peut calculer $sqrt(0)$ ? $sqrt(-1)$ ?   (potentiellement adapter cette question selon le niveau de la classe ou le temps, c'est peut-être pas nécessaire de traiter la racine de zéro pour pythagore)]
+#exo[Est-ce qu'on peut calculer $sqrt(0)$ ? $sqrt(-1)$ ?   
+
+(potentiellement adapter cette question selon le niveau de la classe ou le temps, c'est peut-être pas nécessaire de traiter la racine de zéro pour pythagore)]
 
 #rq[On ne peut pas appliquer la racine carrée à un nombre strictement négatif.]
 
-- est-ce qu'on fait des exos sur la racine carrée ? est ce qu'on traite ça dans des exercices du jour ?
+#question[est-ce qu'on fait des exos sur la racine carrée ? est ce qu'on traite ça dans des exercices du jour ?]
 
 == Théorème de Pythagore
 
 #thm[Dans un triangle rectangle, le carré de la longueur de l'hypothénuse est égale à la somme des carrés des longueurs des deux autres côtés.
 
-(schéma)
+(schéma d'un triangle ABC rectangle en B)
 
 *Si* le triangle $A B C$ est rectangle en $B$,\
 *alors* $A B^2 + B C^2 = A C^2$
 ]
 
-#ex[
+#exemples[
 - calcul de la longueur de l'hypoténuse
 - calcul de la longueur d'un autre coté (résolution d'équations)
 
 $->$ On fait attention à la rédaction (on sait que, or, donc)\
-$->$ On variera la position de $A, B$ et $C$ par rapport à l'angle droit
+$->$ On varie la position de $A, B$ et $C$ par rapport à l'angle droit
 ]
 
 == Réciproque du théorème
 
 #prop("- Réciproque du théorème de Pythagore")[
-*Si* les côtés d'un triangle $A B C$ vérifient l'égalité suivante : 
-$ A B^2 + B C^2 = A C^2 $
+(schéma d'un triangle quelconque)
 
-*Alors* le triangle $A B C$ est rectangle en $B$.
+*Si* les côtés d'un triangle $D E F$ vérifient l'égalité suivante : 
+$ D E^2 + E F^2 = D F^2 $
+
+*Alors* le triangle $D E F$ est rectangle en $E$.
 ]
 
-#question[Est ce qu'on fait varier l'angle en lequel le triangle est rectangle dans les théorèmes ?]
-
 #ex[
-- Prouver qu'un triangle est rectangle (rédaction sous forme "d'une part, d'autre part")
+- Prouver qu'un triangle est rectangle (rédaction sous forme "d'une part, d'autre part, donc")
 ]
 
 = Liste d'exercices
@@ -112,15 +114,15 @@ $ A B^2 + B C^2 = A C^2 $
 
 - 59 et 62 pn442 : problème moins guidé
 
-#pagebreak()
-== réciproque
+
+== sens réciproque
 - 52p441 : avec une figure, classique
 
-- 55p441 : exemple de triangle non-rectangle (les élèves conjecturent puis iels infirment leur conjecture par le calcul)
+- 55p441 : exemple de triangle non-rectangle (les élèves conjecturent puis infirment leur conjecture par le calcul)
 
 - 56p441 : problème concret
 
 #question[
-Si on est rigoureux, pour prouver qu'un triangle n'est pas rectangle on utilise le théorème de Pythagore (et non sa réciproque) dans un raisonnement par contraposée. *Comment on présente ça aux élèves ?*
+Si on est rigoureux, pour prouver qu'un triangle n'est pas rectangle on utilise le théorème de Pythagore (et non sa réciproque) dans un raisonnement par contraposée. *Comment présenter ça aux élèves ?*
 ]
 

@@ -102,3 +102,22 @@ $->$ grosso modo ce qu'on a vu, mais à l'inspe on a vu directement que le nombr
 
 #def("- Vocabulaire")[Simplifier une écriture fractionnaire, c'est l'écrire sous la forme $a/b$ ou $(-a)/b$ avec $a$ et $b$ des nombres entiers positifs les plus petits possible.]
 
+= 12/11 - sommes de fractions
+
+Remarque : $-16/24 = (-16)/24 = 16/(-24)$\
+$->$ attention, le $-16/24$ a tendance à devenir $16/24$ d'une ligne à l'autre
+
+
+
+Automatismes de simplification de fractions avant de corriger l'exo où il faut placer les fractions sur une droite graduée
+
+*exemples progressifs*
+
+- $1/5+3/5 = 4/5$ 
+
+- $7/4-3/4 = 4/4 = 1$ $->$ première simplification
+
+- $7/12 - 1/4 = 7/12 - 3/12 = 4/12 = 1/3$ $->$ mise au même dénominateur et simplification
+
+- $2/3 + 4/5 = (2 times 5)/(3 times 5) + (4 times 3)/(5 times 3) = 10/15 + 12/15 = 22/15$ $->$ méthode qui marche tout le temps
+

@@ -37,6 +37,7 @@
 - Laisse un temps pour relire le cours avant de commencer
 - distribue des manuels mis a disposition dans les classes
 - "c'est facile les translations"
+- On veut laisser les élèves chercher en autonomie, plus qu'au lycée, même en classe entière
 
 = Gestion de classe
 

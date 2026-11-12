@@ -97,3 +97,35 @@ $6x + 11 &= 15\
 6x &= 26\
 &...$\
 
+
+= 12/11 - Calcul littéral (distributivité)
+
+== Automatismes 
+
+#cadre[Résoudre $6y - 3 = 8y + 7$]
+
+$->$ "est ce qu'on fait $-6y$ ou $-8y$ en premier ?" (difficulté avec la symétrie du signe "égal")
+
+== Exemple de cours
+
+#cadre[Carl a le triple de l'âge de Kylian\
+Pauline a cinq ans de plus que Kylian\
+La somme de leurs âges est 100 ans\
+*Quel sont leurs âges respectifs ?*]
+
+$->$ les essais sont valorisés (au brevet) même si ils aboutissent pas
+
+$->$ calul essayé : $(x+5)times 3$ (avec $x$ l'âge de Kylian)
+
+résolution de problèmes : l'occasion de travailler le vocabulaire
+
+#pagebreak()
+== Exo
+
+#cadre[Calculer\
+...
+- $D &= 8x(6x+3)$
+- $E = 5(4x + 9) + 6(3x - 2)$
+]
+
+$->$ vu : "$8x times 6x = 48x$" (il manque le carré)

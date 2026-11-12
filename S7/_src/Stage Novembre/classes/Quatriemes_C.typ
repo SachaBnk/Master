@@ -109,3 +109,36 @@ $->$ interprétation après un pb concret
 
 - ($2m^2$ de carrelage coûte#strong[nt])
 - voir remarques poly ppté
+
+
+#pagebreak()
+= 12/11 
+
+== Automatismes
+
+#cadre[
+  #table(columns:3)[3][6][27][11][22][98]
+  *Est-ce un tableau de proportionnalité ?*
+]
+
+Rédaction proposée :
+
+#text(blue)[
+$11 div 3 tilde.eq 3.66\
+22 div 6 tilde.eq 3.66\
+98 div 27 tilde.eq 3.62$\
+Donc ce n'est pas un tableau de ppté
+]
+
+Bof parce que valeurs approchées $->$ un coeff de proportionnalité non-décimal permet de forcer (ou inciter) à utiliser la linéarité
+
+== Correction exo
+
+Bcp n'ont pas fait le travail pour ajd, carnets ramassés
+
+deux exos du type "calculer de deux manières différentes"
+
+
+== Cours ratio
+
+notions d'économie rajoutées dans le prog pour préparer EDUCFI

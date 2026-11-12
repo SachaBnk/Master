@@ -144,3 +144,21 @@ $->$ vu un$dot$e élève qui a réussi à mettre les programmes sous forme litt�
 Les élèves ont plus de mal sur $2x - 3 = 4+x$ que sur $13x + 11 = 8x+28$ (les "$-$" posent problème)
 
 
+= 12/11 - Calcul littéral
+
+== Cours
+
+#cadre[Carl a le triple de l'âge de Kylian\
+Pauline a cinq ans de plus que Kylian\
+La somme de leurs âges est 100 ans\
+*Quel sont leurs âges respectifs ?*]
+
+$->$ introduction aux systèmes d'équations\
+$->$ premier reflexe : essai-erreur (ici si on fait varier l'âge de Kylian ça marche bien)
+
+*modélisation de problème*
+- "$x$ désigne l'âge de Kylian"
+- mise en équation
+- phrase de ccl
+
+
