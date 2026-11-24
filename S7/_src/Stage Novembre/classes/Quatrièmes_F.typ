@@ -77,7 +77,7 @@ Tracer l'image d'un triangle par une transltion à l'aide de droites parallèles
 - Rappel sur la construction de droites parallèles
 
 *9p64 - Quelle est la proportion de bleu dans le drapeau de la Thailande ?*\
-#flag("TH", height:2em)
+#flag("TH", height:6em)
 
 Réponses d'élèves : $2/6$ et $1/5$
 
@@ -120,4 +120,52 @@ Automatismes de simplification de fractions avant de corriger l'exo où il faut 
 - $7/12 - 1/4 = 7/12 - 3/12 = 4/12 = 1/3$ $->$ mise au même dénominateur et simplification
 
 - $2/3 + 4/5 = (2 times 5)/(3 times 5) + (4 times 3)/(5 times 3) = 10/15 + 12/15 = 22/15$ $->$ méthode qui marche tout le temps
+
+#pagebreak()
+
+= 19/11
+
+Intro à la division de fractions :\
+"Vous pensez que ça veut dire quoi l'inverse de 7 ?\
+-- moins 7 ?" $->$ piège à con dès le début du cours
+
+= 20/11
+
+== Matin
+
+#cadre[Les $3/8$ des $48$ livres de Camille sont des BD. *Combien Camille a-t-iel de BD ? Expliquer*]
+
+Corrections proposées : 
+
+#text(green)[
+- Deja $3/8$ c'est un peu moins de la moitié\
+  On va ranger les livres dans huit casiers
+
+  #table(inset:1em, columns:8, stroke : green)[]
+
+  Sur ces 8 casiers, 3 vont être remplis de BD
+
+  #table(inset:1em, columns:8, stroke : green)[x][x][x]
+
+  Or $48 div 8 = 6$, donc chaque casier contient $6$ livres\
+  Trois casiers : $6 times 3 = 18$
+
+- $3/8 times 48 = 3/8 times 48/1 = 144/8 =^(div 2)_(div 2) 72/4 =^(div 2)_(div 2) 36/2 = 18$
+]
+
+#question[Comment expliquer que prendre $3/8$ de $48$ c'est calculer $3/8 times 48$ ?]
+$->$ C'est une définition
+
+#pagebreak()
+== Aprem
+
+=== divisions de fractions
+On veut : "diviser par un nombre c'est multiplier par son inverse"
+
+prérequis : 
+- calculer une fraction d'une qté
+- calculer l'inverse d'un nombre
+
+exemple d'intro : "si j'ai une classe de $27$ élèves et qu'un tiers porte des lunettes, ça fait combien d'élèves ?"
+$->$ les élèves divisent par 3, mais on a vu avant que prendre $1/3$ de $27$ c'est calculer $27 times 1/3$. Donc diviser par $3$ c'est multiplier par $1/3$
 

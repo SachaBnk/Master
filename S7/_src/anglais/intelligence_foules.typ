@@ -36,7 +36,7 @@ faire une activité sur l'intelligence des foules (#lien("https://youtu.be/peDhG
 === ccl : applications
 
 - politique (vote, democratie, représentation dans les médias)
-- robotique / enginering
+- robotique en essaim
 - captchas
 
 == variables
@@ -88,12 +88,13 @@ faire une activité sur l'intelligence des foules (#lien("https://youtu.be/peDhG
   - Henri Poincarré (Fr)
   - Carl Friedrich Gauss (German)
 
-- Which one of these were not assassinated ?
+- Which one of these politicians was NOT assassinated ?
   - Leon Trotski
   - *Nelson Mandela*
   - Martin Luther King
   - Abraham Lincoln
 
+#pagebreak()
 - Which zodiac sign comes after the Cancer ?
   - Taurus
   - Virgo

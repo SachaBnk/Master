@@ -66,3 +66,59 @@ Introduction (plutot un rappel en quatrième) avec des exemples et pas avec une 
 - Une fois qu'on a rappelé que $20% = 20/100$, iels ont eu des idées très vite.
 - Certains ont calculé $89 - 20/100 times 89$, d'autres directement $80/100 times 89$
 
+
+= 16/11 - ppté
+
+Activité lien proportionnalité représentation graphique 
+
+4 graphiques :
+- pts pas alignés et passe pas par l'origine
+- pts alignés qui passent par l'origine
+- pts alignés qui passent pas par l'origine
+- pts pas alignés qui passent par l'origine
+
+
+#pagebreak()
+= 17/11
+
+== Calcul mental
+
+
+- opérations sur les relatifs (produits / sommes)
+- ordre des opérations
+- numération
+
+Diapo qui défile automatiquement $->$ attention aux disgraphiques / discalculiques\
+Les élèves corrigent leurs voisin$dot$es, et ajoutent une appréciation
+
+== Leçon repr graph ppté
+
+- prop : "si ppté alors alignés"
+- *réciproque : "si alignés alors ppté"*
+
+= 19/11 - fin ppté puis intro algo
+
+== prépa de séance 
+
+- automatismes :
+  - Est ce que le tableau suivant est un tableau de ppté ? (oui)
+    #table(columns: 4)[*Masse de tomates* (kg)][2][8][11][
+    *Volume de sauce* (L)][1.5][6][8.25]
+  - Un pantalon valant $32€$ est soldé à $-15%$. Quel est son nouveau prix ? ($27.20€$)
+  - ($35$ et $16$ sont-ils dans le ratio $5 : 2$ ? Non)
+  - Qualifier les triangles suivants (isoscèle, rectangle, quelconque)
+  - Est ce que la situation suivante est une situation de ppté ? (non : pts alignés mais pas avec l'origine)
+
+- exercices à la maison : voir cahier dessin page 1
+
+== Bilan
+
+- faire attention au vocabulaire employé ("on tombe sur $15$" $->$ bof)
+
+#pagebreak()
+== Cours aprem : Pythagore
+
+"la note de mardi est coeff 2 *et* sur 20" $->$ une note sur 10 ça compte moins qu'une note sur 20 ?
+
+premiere partie sur le triangle rectangle : définition + hypoténuse
+

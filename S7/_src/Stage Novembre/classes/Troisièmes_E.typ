@@ -162,3 +162,27 @@ $->$ premier reflexe : essai-erreur (ici si on fait varier l'âge de Kylian ça 
 - phrase de ccl
 
 
+#pagebreak()
+= 17/11
+== cours double distributivité
+
+Commence par la preuve géométrique (calculer l'aire d'un rectangle de côtés de longueurs $a+b$ et $c+d$)
+
+"On va faire une preuve abstraite" $->$ géométrie 2
+
+Besoin de guider le calcul des aires des "petits" rectangles
+
+
+Utilisation des flèches autour de l'expression algébrique pour aider les élèves au début
+
+difficultés sur le signe
+
+= 19/11
+
+== éval ppté
+
+#cadre[Une paire de baskets coûtant $48€$ est soldée à $-60%$.\
+*Quel est son nouveau prix ?*]
+
+$->$ difficulté à identifier qui est la réduction entre $40%$ et $60%$ (car la réduction est supérieure à $50%$)
+

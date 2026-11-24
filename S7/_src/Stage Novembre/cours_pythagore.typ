@@ -28,20 +28,42 @@ On note $n^2$ le carré de $n$.
 
 *Exercice :*
 #table(columns:(1.5fr,2fr), stroke:none)[
-  - $3^2 = .....$
+  - Calculer $3^2$
   
-  - $100^2 = .....$
-
-  - (négatif ? autre ?)
+  - Donner un nombre qui lorsqu'il est mis au carré vaut $36$
+  
 ][
-- Quel est le nombre qui lorsqu'il est mis au carré vaut $36$ ? 
-- Quelle est la longueur d'un carré d'aire égale à $64c m^2$
+- Calculer $100^2$
+
+- Quelle est la longueur des côtés d'un carré d'aire égale à $64c m^2$ ?
 ]
 
-#rq("- carrés parfaits")[
+#rq()[Un *carré parfait* est le carré d'un entier naturel
 
-#text(size:11pt)[#table(columns:(1fr, 1fr, 1fr, 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr))[*$k$*][0][1][2][3][4][5][6][7][8][9][10][11][12][*$k^2$*][0][1][4][9][16][25][36][49][64][81][100][121][144]
-]]
+Par exemple, $25$ est un carré parfait car $25 = 5^2$
+
+#table(columns:(1fr,1fr,1fr), stroke:none, gutter:1em)[
+$ 0^2 &= 0\
+1^2 &= 1\
+2^2 &= 4\
+3^2 &= 9\ 
+4^2 &= 16 $
+][
+$ 5^2 &= 25\
+6^2 &= 36\
+7^2 &= 49\
+8^2 &= 64\
+9^2 &= 81 $
+][
+$ 10^2 &= 100\
+11^2 &= 121\
+12^2 &= 144\ \ 
+&... $
+]
+
+]
+
+
 
 #def[
   Soit $a$ un nombre positif.\
@@ -49,10 +71,19 @@ On note $n^2$ le carré de $n$.
   Elle est notée $sqrt(a)$.
 ]
 
-*Exercice :*\
-(à compléter)
+#pagebreak()
+*Exercice :*
+#table(columns:(1.5fr,2fr), stroke:none)[
 
-#question[Est-ce qu'on peut calculer $sqrt(0)$ ? $sqrt(-1)$ ?]
+- $sqrt(49) = .....$
+
+- Est-ce qu'on peut calculer $sqrt(0)$ ? $sqrt(-1)$ ?
+
+][
+- $sqrt(1600) = .....$
+
+- Quelle est la longueur des côtés d'un carré d'aire égale à $2c m$ ?
+]
 
 #attention[On ne peut pas appliquer la racine carrée à un nombre strictement négatif.]
 
@@ -64,31 +95,30 @@ On note $n^2$ le carré de $n$.
 #ex("1")[
 On considère le triangle $A B C$ :
 
-#align(center, image("assets/IMG_3.png", width:40%))
+#align(center, image("assets/IMG_3.png", width:25%))
 
-*Calculer la longueur $A C$*
+*Calculer la longueur $A C$ :*
 
-On sait que $A B C$ est rectangle en $B$\
+On sait que le triangle $A B C$ est rectangle en $B$\
 Donc, d'après le théorème de Pythagore, $A B^2 + B C^2 = A C^2$
 
 $ A C^2 &= A B^2 + B C^2\
 &= 3.2^2 + 6^2\
 &= 10.24 + 36\
 A C^2 &= 46.24\
-A C &= sqrt((A C^2))"     car" A C >= 0\
+A C &= sqrt(A C^2)"     car" A C >= 0\
 &= sqrt(46.24)\
 A C &= 6.8 $
 *Donc la longueur $A C$ mesure $6.8c m$*
 ]
 
-#pagebreak()
 #ex("2")[On considère le triangle $D E F$
 
 #align(center, image("assets/IMG_4.png", width: 40%))
 
 *Calculer la longueur $D E$*
 
-On sait que $D E F$ est rectangle en $E$\
+On sait que le triangle $D E F$ est rectangle en $E$\
 Donc, d'après le théorème de Pythagore, $D E^2 + E F^2 = D F^2$
 
 $ D E^2 + E F^2 &= D F^2\
@@ -127,5 +157,8 @@ On considère le triangle $G H I$
   &= 81 + 144\
   &= 225c m^2$
 
-$H G^2 = H I^2 + I G^2$ donc, *d'après la réciproque du théorème de Pythagore, le triangle $G H I$ est rectangle en $I$.*
+On a bien l'égalité suivante : $H G^2 = H I^2 + I G^2$\ 
+donc, *d'après la réciproque du théorème de Pythagore, le triangle $G H I$ est rectangle en $I$.*
 ]
+
+

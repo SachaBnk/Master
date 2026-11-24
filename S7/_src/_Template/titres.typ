@@ -458,3 +458,4 @@
 
 
 #let cadre(body) = block(inset: 1em, stroke: 1pt, body)
+#let indent(body) = table(inset: 0pt, stroke:0pt, columns:(1fr,15fr))[][#body]

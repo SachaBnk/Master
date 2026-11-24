@@ -129,3 +129,27 @@ résolution de problèmes : l'occasion de travailler le vocabulaire
 ]
 
 $->$ vu : "$8x times 6x = 48x$" (il manque le carré)
+
+= 16/11
+
+Évaluation surprise : 4 questions de calcul littéral (substitution, résolution d'eq et problème à modéliser)
+
+Quel barème pour être le plus juste possible ?
+
+= 19/11 - double distributivité
+
+preuve géométrique *avant* de donner la formule
+
+exprimer l'aire d'un rectangle de dimensions $(a+b) times (c+d)$
+
+"$a,b,c$ et $d$ sont des nombres *relatifs*" $->$ comment on quantifie au collège ? Est ce qu'iels connaissent les réels ?
+
+= 24/11 - fin calcul littéral et début trigo
+
+Pas d'exo du jour (remplacé par un bout de vie de classe)\
+Exercices de factorisation\
+$A = 7x -14$ ; $B = 12t+6$\
+$C = (x+3) times (x+5) + (x+3) times 7$\
+$D = (3x-7)(2x+9) + (3x-7)(4x+10)$
+
+intro trigo : "on va voir les touches 'sin', 'cos' et 'tan' de la calculette"

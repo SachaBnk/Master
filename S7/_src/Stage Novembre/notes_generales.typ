@@ -85,3 +85,11 @@ On aurait peut être pu prévenir ça en expliquant cette méthode plus en déta
 3. On connait $hat(A B C)$, etc\
   $->$ donc $hat(B A C) = 50°$ et $hat(D F E) = 40°$
 ]
+
+
+#pagebreak()
+= Sortie scolaire
+
+Le jeudi 5 j'ai accompagné toutes les classes de 6e au cinéma (bus + 15 minutes à pieds) pour aller voir le film #lien("https://www.youtube.com/watch?v=vob8AGZM4Wc")[Flow]
+
+$->$ travail à faire : "double page culture" sur le film (jolie double-page avec des images et un avis personnel sur le film)

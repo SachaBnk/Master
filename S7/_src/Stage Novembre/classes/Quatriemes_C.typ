@@ -122,7 +122,7 @@ $->$ interprétation après un pb concret
 ]
 
 Rédaction proposée :
-
+ 
 #text(blue)[
 $11 div 3 tilde.eq 3.66\
 22 div 6 tilde.eq 3.66\
@@ -142,3 +142,83 @@ deux exos du type "calculer de deux manières différentes"
 == Cours ratio
 
 notions d'économie rajoutées dans le prog pour préparer EDUCFI
+
+
+#pagebreak()
+= 13/11 - Echelles et Ratios
+
+(deuxième heure, la première j'étais chez Julie avec les 6e)
+
+- Remarque sur les échelles d'agrandissement (après avoir travaillé sur les échelles de réduction)
+
+- "on va faire des exos, mais avant je rends le DM" $->$ annonce la structure du cours
+
+#cadre[Sur une clé USB de $16G o$, $85%$ sont déja utilisés.\
+*Calculer le nombre de gigaoctets restants sur la clé*]
+
+Bcp on calculé $85 div 16$ \
+$->$ possible confusion entre deux méthodes : calculer $85%$ de 16, et calculer la proportion que représente $13$ sur $16$
+
+
+
+= 17/11 - Algorithmique et prgmt° (demi-groupe)
+
+== Exo a la maison
+
+Rédaction proposée :
+
+#indent(text(blue)[
+$75/100 times 69 = 58.65$\
+La première veste coûte $58.65€$
+
+$80/100 times 73 = 58.40$\
+La deuxième veste coûte $58.40€$
+
+Il va choisir la deuxième veste
+])
+
+Il manque un argument : "*$58.65 > 58.40$*"
+
+#pagebreak()
+== Déroulé de la séance 
+- titre (Algorithmique et programmation)
+- 3 logiciels au collège (géogebra, excel en 3e et scratch)
+- constamment au brevet
+- demander des exemples d'algo (micro-ondes, barre de recherche)
+- lecture activité
+- recherche en autonomie puis mise en commun
+- cours (" def : Un algorithme est une suite d'actions à effectuer dans un certain ordre afin d'effectuer l'action “globale“ souhaitée")
+- 
+
+== Activité d'intro : 
+
+#cadre[*Ordonner les actions suivantes dans un ordre logique :*
+- Mettre ses chaussures
+- Se doucher
+- Se laver les dents
+- Enlever ses chaussures
+- etc]
+
+$->$ Lien avec les prgm de calcul en maths\
+
+Ensuite les élèves doivent lire et écrire des arbres de calcul (du style AST)
+
+#cadre[Détailler l'ordre des opérations dans le calcul suivant : $5 times 3 - 1 + 4$]
+
+Rédaction attendue : 
+#indent[
+  - 1re opération : $5 times 3 = 15$
+  - 2e opération : $15 - 1 = 14$
+  - 3e opération : $14+4 = 18$
+]
+
+Question d'un$dot$e élève : "#text(blue)[Le '$-1$' c'est un nombre négatif ou il est rattaché au 3 ?]"
+
+#pagebreak()
+= 20/11 - fin activité et leçon ppté graphique
+
+#strike["pas alignés"] $->$ "sur une courbe"\
+différence faite entre une droite et une courbe (iels n'ont pas encore vu les fonctions)
+
+Commence par expliquer l'exemple avant de demander de recopier
+
