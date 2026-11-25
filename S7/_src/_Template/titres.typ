@@ -418,12 +418,12 @@
 
     clip: true,
     grid(
-      inset: 0.5em,
-      columns: (10%, 90%),
+      inset: 0pt,
+      columns: (11%, 90%),
       fill: (x, _) => (if (x == 0) { colors.at(0) } else { colors.at(1) }),
       stroke: (paint: colors.at(0), thickness: 2pt),
       align(horizon + center, block(width: 100%, inset: 0.5em, text(2em, white, "⚠️"))),
-      align(left, block(inset: 1em, body)),
+      align(left, block(inset: 1.5em, body)),
     ),
   ))
 }
