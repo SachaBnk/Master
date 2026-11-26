@@ -50,12 +50,12 @@ Une peintresse en bâtiments souhaite peindre un mur. Ce dernier est néanmoins 
 _Dans cet exercice il n'y a aucun calcul à faire, uniquement de la lecture graphique. Il est néanmoins attendu de justifier les réponses avec des phrases._ \
 À plusieurs moments, on a mesuré l'altitude d'un ascenseur qui s'enfonce dans le sol et on les a renseignées dans ce tableau : 
 
-#table(columns:(2fr, 1fr, 1fr, 1fr))[*Temps* (en secondes)][5][15][17.5][
-*Altitude* (en mètres)][-4][-12][-14]
+#table(columns:(2fr, 1fr, 1fr, 1fr))[*Temps* (en secondes)][7,5][15][17,5][
+*Altitude* (en mètres)][-6][-12][-14]
 
 *1.* Sur une feuille à petits carreaux, placer ces points dans un repère ($1c m$ pour $5$ minutes en abscisses, et $1 c m$ pour $4$ mètres en ordonnées).
 
 *2.* Ces mesures représentent-elles une situation de proportionnalité ? Justifier uniquement avec votre graphique.
 
-*3.* À ce rythme, au bout de combien de temps l'ascenseur atteindra-t-il une altitude de $-19.5m$ ? Placer le point correspondant sur le graphique.
+*3.* À ce rythme, au bout de combien de temps l'ascenseur atteindra-t-il une altitude de $-22m$ ? Placer le point correspondant sur le graphique.
 
