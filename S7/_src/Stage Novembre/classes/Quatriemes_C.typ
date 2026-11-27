@@ -222,3 +222,8 @@ différence faite entre une droite et une courbe (iels n'ont pas encore vu les f
 
 Commence par expliquer l'exemple avant de demander de recopier
 
+= 27/11 - cours pythagore
+
+"Si le carré d'un nombre $x$ c'est l'aire du carré de coté $x$, $9^2 = ?$\
+-- ça fait 36 ?" $->$ a calculé le périmètre du carré
+

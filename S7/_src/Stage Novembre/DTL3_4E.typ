@@ -32,14 +32,10 @@ Une peintresse en bâtiments souhaite peindre un mur. Ce dernier est néanmoins 
 
 *1.* Sur une feuille à petits carreaux, reproduire cette figure à l'échelle $1/100$ en détaillant les calculs, puis reporter les longueurs en mètres sur votre schéma.
 
-*2. #h(0.9em) a)* Prouver que le quadrilatère $A B C D$ est  un rectangle.\
-#h(2em) *b)* Calculer l'aire de ce rectangle.
+*2.* Calculer l'aire du quadrilatère $A B C D$.
 
-*3.* On admet que la surface grisée est le quart du disque centré en $B$  de rayon $B M$.\
-#h(2em) *a)* Prouver que $B M = B N$.\
-#h(2em) *b)* Calculer la longueur $B M$.\
-#h(2em) *c)* Calculer l'aire de la surface grisée.\
-#h(3em) _Indication : On rappelle que l'aire d'un disque de rayon $r$ vaut  *$pi times r^2$*_
+*3.* On admet que la surface grisée est le quart du disque centré en $B$  de rayon $B M$. Calculer l'aire de la surface grisée.\
+_(Indication : On rappelle que l'aire d'un disque de rayon $r$ vaut  *$pi times r^2$*)_
 
 *4.* Déduire des questions 2 et 3 l'aire de la surface blanche.
 
